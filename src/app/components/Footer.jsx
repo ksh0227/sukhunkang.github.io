@@ -60,7 +60,7 @@ const Footer = () => {
           className="social-icon"
         >
           <Image
-            src="/ssrn.svg"
+            src="ssrn.svg"
             alt="SSRN"
             width={24}
             height={24}
