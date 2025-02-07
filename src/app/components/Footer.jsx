@@ -18,7 +18,7 @@ const Footer = () => {
           className="social-icon"
         >
           <Image
-            src="linkedin.svg"
+            src="/linkedin.svg"
             alt="LinkedIn"
             width={24}
             height={24}
@@ -32,7 +32,7 @@ const Footer = () => {
           className="social-icon"
         >
           <Image
-            src="twitter.svg"
+            src="/twitter.svg"
             alt="Twitter"
             width={24}
             height={24}
@@ -46,7 +46,7 @@ const Footer = () => {
           className="social-icon"
         >
           <Image
-            src="google-scholar.svg"
+            src="/google-scholar.svg"
             alt="Google Scholar"
             width={24}
             height={24}
@@ -60,7 +60,7 @@ const Footer = () => {
           className="social-icon"
         >
           <Image
-            src="ssrn.svg"
+            src="/ssrn.svg"
             alt="SSRN"
             width={24}
             height={24}

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -24,9 +25,7 @@ const Navbar = () => {
             <NavItem href="/research" pathname={pathname}>
               RESEARCH
             </NavItem>
-            <NavItem href="/lab" pathname={pathname}>
-              LAB
-            </NavItem>
+            <LabDropdown pathname={pathname} />
             <NavItem href="/teaching" pathname={pathname}>
               TEACHING
             </NavItem>
@@ -41,7 +40,7 @@ const Navbar = () => {
 };
 
 const NavItem = ({ href, pathname, children }) => {
-  const isActive = pathname === href;
+  const isActive = pathname === href || (pathname === "/" && href === "/about");
   return (
     <Link
       href={href}
@@ -51,6 +50,60 @@ const NavItem = ({ href, pathname, children }) => {
     >
       {children}
     </Link>
+  );
+};
+
+const LabDropdown = ({ pathname }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [closeTimeout, setCloseTimeout] = useState(null);
+
+  const handleMouseEnter = () => {
+    if (closeTimeout) {
+      clearTimeout(closeTimeout);
+      setCloseTimeout(null);
+    }
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsOpen(false);
+    }, 75); 
+    setCloseTimeout(timeout);
+  };
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button
+        className={`text-sm font-medium ${
+          pathname.startsWith("/lab") ? "text-gray-900 font-bold" : "text-gray-300 hover:text-gray-900"
+        }`}
+      >
+        LAB
+      </button>
+
+      {/* dropdown portion */}
+      {isOpen && (
+        <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md p-2">
+          <Link
+            href="/lab/about"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          >
+            About
+          </Link>
+          <Link
+            href="/lab/members"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+          >
+            Members
+          </Link>
+        </div>
+      )}
+    </div>
   );
 };
 
