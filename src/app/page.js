@@ -9,7 +9,7 @@ export default function Home() {
         <div className="text-center p-4">
           <div className="w-[300px] h-[400px] m-auto relative overflow-hidden drop-shadow-xl">
             <img
-              src="/sukhun.jpg"
+              src="sukhun.jpg"
               alt="Profile Picture"
               layout="fill"
               objectFit="cover"
