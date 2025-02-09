@@ -10,15 +10,15 @@ export default function Resources() {
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 Introduction to Expanded Access{" "}
-                <Link href="/" className="underline">[ppt]</Link>
+                <Link href="https://www.dropbox.com/scl/fi/rmfh6l5ztsn1v5okl7f21/Introduction-to-EAP.pdf?rlkey=5ok76ch6x0quqyznanx8ibsao&e=1&dl=0" className="underline">[ppt]</Link>
               </li>
               <li>
                 Introduction to FDA's Expedited Programs{" "}
-                <Link href="/" className="underline">[ppt]</Link>
+                <Link href="https://www.dropbox.com/s/ojy882ush37crbw/Introduction%20to%20FDA%27s%20Expedited%20Programs.pdf?dl=0" className="underline">[ppt]</Link>
               </li>
               <li>
                 Introduction to U.S. Laws, Policies, and Regulations of Pharmaceuticals{" "}
-                <Link href="/" className="underline">[ppt]</Link>
+                <Link href="https://www.dropbox.com/s/8ws5o7gdqdompwo/Introduction%20to%20Laws%2C%20Policies%2C%20and%20Regulations%20of%20Pharmaceuticals.pdf?dl=0" className="underline">[ppt]</Link>
               </li>
             </ul>
           </section>
@@ -28,15 +28,15 @@ export default function Resources() {
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 Strategy and Innovation in Biopharmaceutical Industry, AOM2022{" "}
-                <Link href="/" className="underline">[abstract]</Link>
+                <Link href="https://journals.aom.org/doi/10.5465/AMBPP.2022.10823symposium" className="underline">[abstract]</Link>
               </li>
               <li>
                 Science and Firm Strategy, AOM2021{" "}
-                <Link href="/" className="underline">[abstract]</Link>
+                <Link href="https://journals.aom.org/doi/abs/10.5465/AMBPP.2021.12682symposium" className="underline">[abstract]</Link>
               </li>
               <li>
                 Where do Ecosystems Come From? The Origins of Ecosystem Structure and Performance, AOM2021{" "}
-                <Link href="/" className="underline">[abstract]</Link>
+                <Link href="https://journals.aom.org/doi/abs/10.5465/AMBPP.2021.13345symposium" className="underline">[abstract]</Link>
               </li>
             </ul>
           </section>
@@ -46,19 +46,19 @@ export default function Resources() {
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 Trans-Atlantic Doctoral Conference{" "}
-                <Link href="/" className="underline">[link]</Link>
+                <Link href="https://www.tadclbs.com/" className="underline">[link]</Link>
               </li>
               <li>
                 West Coast Research Symposium{" "}
-                <Link href="/" className="underline">[link]</Link>
+                <Link href="https://thewcrs.wordpress.com/" className="underline">[link]</Link>
               </li>
               <li>
                 Wharton Innovation Doctoral Symposium{" "}
-                <Link href="/" className="underline">[link]</Link>
+                <Link href="https://mackinstitute.wharton.upenn.edu/events-and-programs/wharton-innovation-doctoral-symposium/" className="underline">[link]</Link>
               </li>
               <li>
                 East Coast Doctoral Conference{" "}
-                <Link href="/" className="underline">[link]</Link>
+                <Link href="https://www.eastcoastdoctoralconference.com/home" className="underline">[link]</Link>
               </li>
             </ul>
           </section>

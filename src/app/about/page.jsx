@@ -9,7 +9,7 @@ export default function About() {
         <div className="text-center p-4">
           <div className="w-[300px] h-[400px] mx-auto relative overflow-hidden drop-shadow-xl">
             <Image
-              src="/test.jpg"
+              src="/sukhun.jpg"
               alt="Profile Picture"
               layout="fill"
               objectFit="cover"
