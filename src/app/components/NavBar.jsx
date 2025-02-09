@@ -88,18 +88,18 @@ const LabDropdown = ({ pathname }) => {
 
       {/* dropdown portion */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md p-2">
+        <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg">
           <Link
             href="/lab/about"
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
           >
-            About
+            ABOUT
           </Link>
           <Link
             href="/lab/members"
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
           >
-            Members
+            MEMBERS
           </Link>
         </div>
       )}
