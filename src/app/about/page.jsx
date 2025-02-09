@@ -8,7 +8,7 @@ export default function About() {
         {/* pic and cv */}
         <div className="text-center p-4">
           <div className="w-[300px] h-[400px] mx-auto relative overflow-hidden drop-shadow-xl">
-            <Image
+            <img
               src="/sukhun.jpg"
               alt="Profile Picture"
               layout="fill"
