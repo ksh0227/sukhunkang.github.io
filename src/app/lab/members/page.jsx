@@ -36,7 +36,7 @@ const members = [
 
 const Members = () => {
   return (
-    <div className="max-w-6xl mx-auto p-8">
+    <div className="max-w-6xl mx-auto p-8 px-24">
       {members.map((member, index) => (
         <ProfileCard key={index} {...member} />
       ))}

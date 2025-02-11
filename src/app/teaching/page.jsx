@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Teaching() {
     return (
       <div className="flex flex-col min-h-screen">
-        <main className="flex-grow px-6 lg:px-64 py-8">
+        <main className="flex-grow px-6 lg:px-72 py-8">
           
           <section className="mt-8">
             <h2 className="text-2xl font-semibold">Instructor</h2>
