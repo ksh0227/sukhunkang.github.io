@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Suhkun Kang",
+  title: "Suhkun Kang | Assistant Professor | UC Santa Barbara",
   description: "Suhkun Kang | UC Santa Barbara",
 };
 
