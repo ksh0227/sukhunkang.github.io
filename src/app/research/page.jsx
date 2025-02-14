@@ -1,6 +1,59 @@
 import Link from "next/link";
 
 export default function Research() {
+  // publications
+  const publications = [
+    {
+      authors: "Yongwook Paik, Sukhun Kang, and Robert Seamans",
+      title: "Entrepreneurship, Innovation, and Political Competition: How the Public Sector Helps the Sharing Economy Create Value",
+      journal: "Strategic Management Journal",
+      year: "2019",
+      volume: "40",
+      pages: "503-532",
+      pdfLink: "https://www.dropbox.com/scl/fi/htc20yl5eh4ub75yiyhzf/Paik_et_al-2018-Strategic_Management_Journal-2.pdf?rlkey=r1fjn0h1303pnu4ej64bqrdpn&e=1&dl=0"
+    },
+    {
+      authors: "Sukhun Kang, Sungyong Chang, Joseph Ross, and Jennifer Miller",
+      title: "Implementation of 21st Century Cures Act Expanded Access Policies Requirement",
+      journal: "Clinical Pharmacology & Therapeutics",
+      year: "2021",
+      volume: "110",
+      issue: "6",
+      pages: "1579-1584",
+      pdfLink: "https://www.dropbox.com/scl/fi/0rueqjmrx4yy1ji2cur9q/Kang-Chang-Ross-Miller-2021-CPT.pdf?rlkey=kdcn7f9z5luccmfbbcpbfyn1i&e=1&dl=0"
+    }
+  ];
+
+  // working papers
+  const workingPapers = [
+    {
+      authors: "Sukhun Kang and Sungyong Chang",
+      title: "When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990-2020",
+      pdfLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005"
+    },
+    {
+      authors: "Sarath Balachandran, Sungyong Chang, and Sukhun Kang",
+      title: "How Do Investors Shape Startups' Response to New Market Opportunities?",
+      pdfLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926"
+    },
+    {
+      authors: "Sukhun Kang",
+      title: "From Outward to Inward: Reframing Search with New Mapping Criteria",
+      notes: [
+        "2023 AOM Best Paper Proceedings",
+        "Runner-up for ISA Giarrantani Rising Star Award"
+      ]
+    },
+    {
+      authors: "Sukhun Kang, Olenka Kacperczyk, and Yongwook Paik",
+      title: "Shattering Ceilings While Opening Doors: The Symbolic Effect of the First Female Political Leader on the Mobility Outcomes of Female Employees"
+    },
+    {
+      authors: "Sukhun Kang and Gary Dushnitsky",
+      title: "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance"
+    }
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow px-6 lg:px-72 py-8">
@@ -17,49 +70,38 @@ export default function Research() {
         <section className="mt-8">
           <h2 className="text-2xl font-semibold">Peer-Reviewed Publications</h2>
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
-            <li>
-              <strong>[1]</strong> Yongwook Paik, <strong>Sukhun Kang</strong>, and Robert Seamans. 2019.{" "}
-              <em>“Entrepreneurship, Innovation, and Political Competition: How the Public Sector Helps the Sharing Economy Create Value”</em>{" "}
-              <span className="italic">Strategic Management Journal</span>, 40: 503-532.{" "}
-              <Link href="https://www.dropbox.com/scl/fi/htc20yl5eh4ub75yiyhzf/Paik_et_al-2018-Strategic_Management_Journal-2.pdf?rlkey=r1fjn0h1303pnu4ej64bqrdpn&e=1&dl=0" className="text-blue-600 underline" target="_blank">[pdf]</Link>
-            </li>
-            <li>
-              <strong>[2]</strong> <strong>Sukhun Kang</strong>, Sungyong Chang, Joseph Ross, and Jennifer Miller. 2021.{" "}
-              <em>“Implementation of 21st Century Cures Act Expanded Access Policies Requirement”</em>{" "}
-              <span className="italic">Clinical Pharmacology & Therapeutics</span>, 110; 6:1579-1584.{" "}
-              <Link href="https://www.dropbox.com/scl/fi/0rueqjmrx4yy1ji2cur9q/Kang-Chang-Ross-Miller-2021-CPT.pdf?rlkey=kdcn7f9z5luccmfbbcpbfyn1i&e=1&dl=0" className="text-blue-600 underline">[pdf]</Link>
-            </li>
+            {publications.map((pub, index) => (
+              <li key={index}>
+                <strong>[{index + 1}]</strong> {pub.authors}. {pub.year}.{" "}
+                <em>"{pub.title}"</em>{" "}
+                <span className="italic">{pub.journal}</span>, {pub.volume}{pub.issue ? `; ${pub.issue}` : ''}: {pub.pages}.{" "}
+                {pub.pdfLink && (
+                  <Link href={pub.pdfLink} className="text-blue-600 underline" target="_blank">[pdf]</Link>
+                )}
+              </li>
+            ))}
           </ul>
         </section>
 
         <section className="mt-8">
           <h2 className="text-2xl font-semibold">Working Papers</h2>
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
-            <li>
-              <strong>[3]</strong> <strong>Sukhun Kang</strong> and Sungyong Chang,{" "}
-              <em>“When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990-2020”</em>{" "}
-              <Link href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005" className="text-blue-600 underline">[pdf]</Link>
-            </li>
-            <li>
-              <strong>[4]</strong> Sarath Balachandran, Sungyong Chang, and <strong>Sukhun Kang</strong>,{" "}
-              <em>“How Do Investors Shape Startups' Response to New Market Opportunities?”</em>{" "}
-              <Link href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926" className="text-blue-600 underline">[pdf]</Link>
-            </li>
-            <li>
-              <strong>[5]</strong> <strong>Sukhun Kang</strong>, <em>“From Outward to Inward: Reframing Search with New Mapping Criteria”</em>
-              <ul className="list-disc pl-8 mt-1">
-                <li>2023 AOM Best Paper Proceedings</li>
-                <li>Runner-up for ISA Giarrantani Rising Star Award</li>
-              </ul>
-            </li>
-            <li>
-              <strong>[6]</strong> Sukhun Kang, Olenka Kacperczyk, and Yongwook Paik,{" "}
-              <em>“Shattering Ceilings While Opening Doors: The Symbolic Effect of the First Female Political Leader on the Mobility Outcomes of Female Employees”</em>
-            </li>
-            <li>
-              <strong>[7]</strong> <strong>Sukhun Kang</strong> and Gary Dushnitsky,{" "}
-              <em>“Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance”</em>
-            </li>
+            {workingPapers.map((paper, index) => (
+              <li key={index}>
+                <strong>[{index + publications.length + 1}]</strong> {paper.authors},{" "}
+                <em>"{paper.title}"</em>{" "}
+                {paper.pdfLink && (
+                  <Link href={paper.pdfLink} className="text-blue-600 underline" target="_blank">[pdf]</Link>
+                )}
+                {paper.notes && (
+                  <ul className="list-disc pl-8 mt-1">
+                    {paper.notes.map((note, i) => (
+                      <li key={i}>{note}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
           </ul>
         </section>
 
@@ -70,7 +112,7 @@ export default function Research() {
             <li><em>“Data Privacy and Innovation: The Case of GDPR”</em> (with Jennifer Kao)</li>
           </ul>
         </section>
-
+        
         <section className="mt-8">
           <h2 className="text-2xl font-semibold">Research Affiliates</h2>
           <ul className="list-disc list-outside pl-6 mt-2 space-y-2">

@@ -2,14 +2,13 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 py-10">
-        
-        {/* pic and cv */}
-        <div className="text-center p-4">
-          <div className="w-[300px] h-[400px] mx-auto relative overflow-hidden drop-shadow-xl">
-            <img
-              src="sukhun.jpg"
+    <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-12 xl:px-48 py-10">
+      
+      <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-screen-lg">
+        <div className="text-center flex flex-col items-center">
+          <div className="w-64 h-80 md:w-72 md:h-96 relative overflow-hidden drop-shadow-xl">
+            <Image
+              src="/sukhun.jpg"
               alt="Profile Picture"
               layout="fill"
               objectFit="cover"
@@ -25,42 +24,41 @@ export default function About() {
           </a>
         </div>
 
-        {/* bio */}
-        <div className="max-w-xl text-md">
-          <div className="mt-2">
-            <p>
-              I am an Assistant Professor of Technology Management at{" "}
-              <a href="https://www.tmp.ucsb.edu/" target="_blank" className="underline">
-                University of California Santa Barbara
-              </a>.
-            </p>
-            <br></br>
-            <p>
-              My research interests are in innovation and entrepreneurship with a particular focus on
-              biopharmaceutical and high-tech industry. For more information, please look at the{" "}
-              <a href="/research" className="underline">projects</a> and the{" "}
-              <a href="/lab" className="underline">lab</a>.
-            </p>
-            <br></br>
-            <p>
-              I received a Ph.D in Strategy and Entrepreneurship from the London Business School. My
-              dissertation was recognized as a finalist for the 2024 AOM STR/TIM Outstanding Dissertation
-              Awards, 2022 Organization Science/INFORMS Dissertation Proposal Competition, a runner-up
-              for 2024 ISA Giarrantani Rising Star Award, and by the Strategic Research Foundation (SRF)
-              Dissertation Grant Program and the Sir James Ball PhD Prize.
-            </p>
-            <br></br>
-            <p>
-              I hold a BS in Computer Engineering from the University of Illinois and Master's degrees from
-              the University of Southern California in Computer Engineering and Entrepreneurship & Innovation.
-              Outside of academia, I worked as a semiconductor engineer at Samsung Electronics and led an Internet
-              startup in 2010. These roles afforded me a diverse set of experiences, from designing products to
-              managing a venture, which informs my research.
-            </p>
-          </div>
+        {/* Bio Section */}
+        <div className="max-w-xl text-md text-left">
+          <p>
+            I am an Assistant Professor of Technology Management at{" "}
+            <a href="https://www.tmp.ucsb.edu/" target="_blank" className="underline">
+              University of California Santa Barbara
+            </a>.
+          </p>
+          <br />
+          <p>
+            My research interests are in innovation and entrepreneurship with a particular focus on
+            biopharmaceutical and high-tech industries. For more details, check out my{" "}
+            <a href="/research" className="underline">projects</a> and{" "}
+            <a href="/lab" className="underline">lab</a>.
+          </p>
+          <br />
+          <p>
+            I received a Ph.D in Strategy and Entrepreneurship from the London Business School. My
+            dissertation was recognized as a finalist for the 2024 AOM STR/TIM Outstanding Dissertation
+            Awards, 2022 Organization Science/INFORMS Dissertation Proposal Competition, and was a
+            runner-up for the 2024 ISA Giarrantani Rising Star Award. It was also supported by the
+            Strategic Research Foundation (SRF) Dissertation Grant Program and the Sir James Ball PhD Prize.
+          </p>
+          <br />
+          <p>
+            I hold a BS in Computer Engineering from the University of Illinois and Master's degrees from
+            the University of Southern California in Computer Engineering and Entrepreneurship & Innovation.
+            Outside of academia, I worked as a semiconductor engineer at Samsung Electronics and led an Internet
+            startup in 2010. These roles provided me with a diverse set of experiences, from designing products
+            to managing a venture, which informs my research.
+          </p>
         </div>
 
       </div>
+      
     </main>
   );
 }
