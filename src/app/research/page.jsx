@@ -106,7 +106,7 @@ export default function Research() {
         </section>
 
         <section className="mt-8">
-          <h2 className="text-2xl font-semibold">Work in Progress</h2>
+          <h2 className="text-2xl font-semibold">Works in Progress</h2>
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
             <li><em>“Are Drugs Becoming Less Innovative?”</em> (with Sandra Barbosu)</li>
             <li><em>“Data Privacy and Innovation: The Case of GDPR”</em> (with Jennifer Kao)</li>
