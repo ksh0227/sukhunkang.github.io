@@ -4,35 +4,35 @@ import ProfileCard from "@/app/components/ProfileCard";
 
 const members = [
   {
-    name: "Sean Wang",
+    name: "Ivan Lin",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-    image: "/test.jpg",
+      "Ivan is a fourth-year Economics undergraduate at the University of California of Santa Barbara. He holds a strong interest in the fields of Technology and Business and will continue to pursue his goals through the Masters of Technology Management program at UCSB. His current goal is to eventually take his research work and knowledge to start up a successful business in the digital entertainment industry.",
+    image: "/lab/ivan.jpg",
+  },
+  {
+    name: "Carter Kulm",
+    description:
+      "Carter is a third-year Stats and Data Science undergraduate student at the University of California of Santa Barbara. Upon graduating, he hopes to transition into a position in data science or analytics. His past research has focused primarily on economics and sports, though these are not his only fields of interest.",
+    image: "/lab/carter.jpg",
+  },
+  {
+    name: "Kuan-I (Brian) Lu",
+    description:
+      "Kuan-I Lu is a fourth-year Actuarial Science student at the University of California, Santa Barbara, with a strong focus on data science, including data manipulation, machine learning, and deep learning. Upon graduation, he aims to further expand his expertise in data science and its real-world applications through advanced education. His career interests encompass diverse fields such as fintech, music platforms, and entrepreneurship, with a long-term ambition of launching his own venture.",
+    image: "/lab/brian.jpg",
   },
   {
     name: "Sean Wang",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-    image: "/test.jpg",
+      "Sean is a second-year Statistics and Data Science student at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and using quantitatively-backed rationale in developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
+    image: "/lab/sean.jpg",
   },
-  {
-    name: "Sean Wang",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-    image: "/test.jpg",
-  },
-  {
-    name: "Sean Wang",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-    image: "/test.jpg",
-  },
-  {
-    name: "Sean Wang",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-    image: "/test.jpg",
-  },
+  // {
+  //   name: "Sean Wang",
+  //   description:
+  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
+  //   image: "/test.jpg",
+  // },
 ];
 
 export default function Lab() {
@@ -72,7 +72,7 @@ export default function Lab() {
             </ul>
           </section>
           <section className="mt-8">
-            <h2 className="text-2xl text-center my-12 font-semibold">Members</h2>
+            <h2 className="text-2xl text-center my-12 font-semibold">Current Members</h2>
             <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-24">
               {members.map((member, index) => (
                 <ProfileCard key={index} {...member} />
