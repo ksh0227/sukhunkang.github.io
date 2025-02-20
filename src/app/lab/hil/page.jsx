@@ -68,20 +68,6 @@ export default function Lab() {
               </li>
             </ul>
 
-            <h3 className="text-lg font-semibold mt-4">What I Study</h3>
-            <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
-              <li>
-                My research usually looks at the intersection of innovation and entrepreneurship, especially 
-                within the biopharmaceutical and high-tech industries. My work explores the intricate ways in 
-                which technology influences innovation, aiming to identify the key drivers and obstacles to 
-                technology adoption and its effects on individuals, firms, and our society.
-              </li>
-              <li>
-                My research also investigates the broader implications of technology and innovation, with an 
-                emphasis on how technology alters firm strategy and behavior. My goal is to deepen our 
-                understanding of how to effectively use technology to foster innovation within a business context.
-              </li>
-            </ul>
           </section>
           <section className="mt-8">
             <h2 className="text-2xl text-center my-12 font-semibold">Current Members</h2>
