@@ -136,7 +136,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
       onMouseLeave={handleMouseLeave}
     >
       <button
-        className={`text-sm font-medium ${
+        className={`text-base font-medium ${
           pathname.startsWith("/lab") ? "text-gray-900 font-bold" : "text-gray-500 hover:text-gray-900"
         }`}
       >
@@ -158,7 +158,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
             onClick={onLinkClick}
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
           >
-            HIWG
+            HIWG Seminar
           </Link>
         </div>
       )}
