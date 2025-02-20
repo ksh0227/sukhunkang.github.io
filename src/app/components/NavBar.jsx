@@ -76,10 +76,10 @@ const Navbar = () => {
                 RESEARCH
               </NavItem>
               <NavItem href="/lab/hil" pathname={pathname} onClick={handleLinkClick}>
-                LAB - HIL
+                LAB
               </NavItem>
               <NavItem href="/lab/hiwg" pathname={pathname} onClick={handleLinkClick}>
-                LAB - HIWG
+                HIWG Seminar
               </NavItem>
               <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
                 TEACHING
