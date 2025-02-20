@@ -41,6 +41,18 @@ export default function Lab() {
         <main className="flex-grow px-6 lg:px-72 py-8">
           <section className="mt-8">
             <h2 className="text-2xl font-semibold">Health Innovation Lab (HIL)</h2>
+             <h3 className="text-lg font-semibold mt-4">About</h3>
+            <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
+              <li>
+               Health Innovation Lab is co-directed by Dr. Sukhun Kang and Dr. Sandra Barbosu. 
+              </li>
+              <li>
+                The Health Innovation Lab serves as an integrated environment for research in the area of strategy and management with focus on the healthcare sectors. 
+                We explore the intricate ways in which technology influences innovation, aiming to identify the key drivers and obstacles to technology adoption and its effects on individuals, firms, and our society.
+                We also investigate the broader implications of technology and innovation, with an emphasis on how technology alters firm strategy and behavior. 
+              </li>
+            </ul>
+            
             <h3 className="text-lg font-semibold mt-4">What I Look For</h3>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
