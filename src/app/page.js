@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 py-10">
+    <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-24 xl:px-48 pt-10 pb-2">
       
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-screen-lg">
         
@@ -37,7 +37,7 @@ export default function Home() {
             My research interests are in innovation and entrepreneurship with a particular focus on
             biopharmaceutical and high-tech industries. For more details, check out my{" "}
             <a href="/research" className="underline">projects</a> and{" "}
-            <a href="/lab" className="underline">lab</a>.
+            <a href="/lab/hil" className="underline">lab</a>.
           </p>
           <br />
           <p>

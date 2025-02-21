@@ -76,10 +76,10 @@ const Navbar = () => {
                 RESEARCH
               </NavItem>
               <NavItem href="/lab/hil" pathname={pathname} onClick={handleLinkClick}>
-                LAB - HIL
+                LAB
               </NavItem>
               <NavItem href="/lab/hiwg" pathname={pathname} onClick={handleLinkClick}>
-                LAB - HIWG
+                HIWG Seminar
               </NavItem>
               <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
                 TEACHING
@@ -136,7 +136,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
       onMouseLeave={handleMouseLeave}
     >
       <button
-        className={`text-sm font-medium ${
+        className={`text-base font-medium ${
           pathname.startsWith("/lab") ? "text-gray-900 font-bold" : "text-gray-500 hover:text-gray-900"
         }`}
       >
@@ -158,7 +158,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
             onClick={onLinkClick}
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
           >
-            HIWG
+            HIWG Seminar
           </Link>
         </div>
       )}
