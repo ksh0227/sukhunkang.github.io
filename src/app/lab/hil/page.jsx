@@ -27,6 +27,12 @@ const members = [
       "Sean is a second-year Statistics and Data Science student at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and using quantitatively-backed rationale in developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
     image: "/lab/sean.jpg",
   },
+  {
+    name: "Pramukh Shankar",
+    description:
+      "Pramukh is a fourth-year Data Science and Economics with a minor in Philosophy student at the University of California of Santa Barbara. His career interests include data analytics and economic and policy research. Upon graduating, he hopes to get involved with nonprofit work, further his education and someday run his own business. In his free time he likes to go to the gym, play tennis and play Pokemon!",
+    image: "/lab/pramukh.jpg",
+  },
   // {
   //   name: "Sean Wang",
   //   description:

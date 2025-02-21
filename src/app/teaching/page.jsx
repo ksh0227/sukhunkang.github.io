@@ -46,12 +46,12 @@ export default function Teaching() {
           </section>
 
           {/* images */}
-          {/* <section className="mt-8">
+          <section className="mt-8">
             <div className="flex justify-center gap-4">
-              <img src="test.jpg" alt="Classroom Group 1" className="w-1/2 shadow-md" />
-              <img src="test.jpg" alt="Classroom Group 2" className="w-1/2 shadow-md" />
+              <img src="class1.jpg" alt="Classroom Group 1" className="w-1/2 shadow-md" />
+              <img src="class2.jpg" alt="Classroom Group 2" className="w-1/2 shadow-md" />
             </div>
-          </section> */}
+          </section>
 
           <section className="mt-8">
             <h2 className="text-2xl font-semibold">Past Teaching Experience</h2>
