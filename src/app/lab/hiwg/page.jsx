@@ -8,7 +8,7 @@ const Members = () => {
             <h2 className="text-2xl font-semibold">Health Innovation Working Group (HIWG)</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
-                Health Innovation Working Group is a student-led research seminar series that focuses on social 
+                Health Innovation Working Group (HIWG) Seminar Series is a virtual workshop series that focuses on social 
                 science research related to the pharmaceutical industry and the healthcare sector. Our goal is to 
                 provide a platform for PhD students and junior faculty members in disciplines such as strategy, 
                 economics, health policy, entrepreneurship, and innovation (or related fields) to present their 
@@ -43,6 +43,7 @@ const Members = () => {
               <li>Shruthi Venkatesh (Carnegie Mellon University)</li>
               <li>Ivan Lin (UCSB)</li>
               <li>Xinyu Liang (INSEAD)</li>
+              <li>Giacomo Marchesini (CBS)</li>
             </ul>
           </section>
         </main>
