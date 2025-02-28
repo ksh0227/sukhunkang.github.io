@@ -33,6 +33,18 @@ const members = [
       "Pramukh is a fourth-year Data Science and Economics with a minor in Philosophy student at the University of California of Santa Barbara. His career interests include data analytics and economic and policy research. Upon graduating, he hopes to get involved with nonprofit work, further his education and someday run his own business. In his free time he likes to go to the gym, play tennis and play Pokemon!",
     image: "/lab/pramukh.jpg",
   },
+  {
+    name: "Fan Ye",
+    description:
+      "Fan Ye is a third-year Actuarial Science and Economics student at the University of California, Santa Barbara. His research interest focuses on the intersection of drug development, public policy, and health insurance. Upon graduating, he hopes to pursue further education in economics, specializing in insurance eocnomics.",
+    image: "/lab/fan.jpg",
+  },
+  {
+    name: "Janice Jiang",
+    description:
+      "Janice Jiang is a third-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
+    image: "/lab/janice.jpg",
+  },
   // {
   //   name: "Sean Wang",
   //   description:
