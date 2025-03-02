@@ -24,7 +24,7 @@ const members = [
   {
     name: "Sean Wang",
     description:
-      "Sean is a second-year Statistics and Data Science student at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and using quantitatively-backed rationale in developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
+      "Sean is a second-year Statistics and Data Science student at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
     image: "/lab/sean.jpg",
   },
   {
