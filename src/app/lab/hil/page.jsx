@@ -45,6 +45,12 @@ const members = [
       "Janice Jiang is a third-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
     image: "/lab/janice.jpg",
   },
+  {
+    name: "Amy Ji",
+    description:
+      "Amy Ji is a fourth-year student at the University of California, Santa Barbara, double majoring in Statistics and Data Science and Economics, with a strong interest in data manipulation, biostatistics, and data analytics. After graduation, she hopes to pursue a career in data analytics or consulting in the healthcare or biotech industry. In her free time, she enjoys skiing, hiking, and exploring the outdoors, with a goal of visiting as many national parks as possible.",
+    image: "/lab/amy.jpg",
+  },
   // {
   //   name: "Sean Wang",
   //   description:
