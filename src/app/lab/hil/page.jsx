@@ -24,7 +24,7 @@ const members = [
   {
     name: "Sean Wang",
     description:
-      "Sean is a second-year Statistics and Data Science student at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
+      "Sean is a second-year Statistics and Data Science major at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
     image: "/lab/sean.jpg",
   },
   {
@@ -50,6 +50,12 @@ const members = [
     description:
       "Amy Ji is a fourth-year student at the University of California, Santa Barbara, double majoring in Statistics and Data Science and Economics, with a strong interest in data manipulation, biostatistics, and data analytics. After graduation, she hopes to pursue a career in data analytics or consulting in the healthcare or biotech industry. In her free time, she enjoys skiing, hiking, and exploring the outdoors, with a goal of visiting as many national parks as possible.",
     image: "/lab/amy.jpg",
+  },
+  {
+    name: "Pranav Hegde",
+    description:
+      "Pranav Hegde is a second-year College of Creative Studies Math Major studying at UCSB, with strong interests in Financial Mathematics, Machine Learning, and Global Markets. He hopes to further expand his knowledge through both work experience in the Financial Services industry and further education in a quantitative interdisciplinary field, such as Financial Engineering. Pranav enjoys playing the piano and walking his dog in his free time!",
+    image: "/lab/pranav.jpg",
   },
   // {
   //   name: "Sean Wang",
