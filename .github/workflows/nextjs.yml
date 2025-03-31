@@ -79,6 +79,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+      - name: Set environment variable
+        run: echo "REACT_APP_API_KEY=${{ secrets.NEXT_PUBLIC_MEASUREMENT_ID }}" >> $GITHUB_ENV    
 
   # Deployment job
   deploy:
