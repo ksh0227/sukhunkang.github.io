@@ -50,7 +50,7 @@ export default function About() {
           <br />
           <p>
             I hold a BS in Computer Engineering from the University of Illinois and Master's degrees from
-            the University of Southern California in Computer Engineering and Entrepreneurship & Innovation.
+            the University of Southern California {process.env.NEXT_PUBLIC_MEASUREMENT_ID} in Computer Engineering and Entrepreneurship & Innovation.
             Outside of academia, I worked as a semiconductor engineer at Samsung Electronics and led an Internet
             startup in 2010. These roles provided me with a diverse set of experiences, from designing products
             to managing a venture, which informs my research.
