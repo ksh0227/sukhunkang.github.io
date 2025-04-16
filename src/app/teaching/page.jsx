@@ -49,15 +49,18 @@ export default function Teaching() {
           </section>
 
           {/* images */}
-          <section className="mt-8">
-  <div className="flex justify-center gap-4 mb-4">
-    <img src="class1.jpg" alt="Classroom Group 1" className="w-1/2 max-w-sm shadow-md" />
-    <img src="class2.jpg" alt="Classroom Group 2" className="w-1/2 max-w-sm shadow-md" />
-  </div>
+         <section className="mt-8 space-y-6">
+  {/* First row – smaller images */}
   <div className="flex justify-center gap-4">
-    <img src="class3.jpeg" alt="Classroom Group 3" className="w-1/3 max-w-sm shadow-md" />
-    <img src="class4.jpeg" alt="Classroom Group 4" className="w-1/3 max-w-sm shadow-md" />
-    <img src="class5.jpeg" alt="Classroom Group 5" className="w-1/3 max-w-sm shadow-md" />
+    <img src="class1.jpg" alt="Classroom Group 1" className="w-[42%] max-w-md shadow-md" />
+    <img src="class2.jpg" alt="Classroom Group 2" className="w-[42%] max-w-md shadow-md" />
+  </div>
+
+  {/* Second row – slightly larger images */}
+  <div className="flex justify-center gap-4">
+    <img src="class3.jpeg" alt="Classroom Group 3" className="w-[30%] max-w-lg shadow-md" />
+    <img src="class4.jpeg" alt="Classroom Group 4" className="w-[30%] max-w-lg shadow-md" />
+    <img src="class5.jpeg" alt="Classroom Group 5" className="w-[30%] max-w-lg shadow-md" />
   </div>
 </section>
 
