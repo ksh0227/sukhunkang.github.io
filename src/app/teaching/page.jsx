@@ -49,20 +49,16 @@ export default function Teaching() {
           </section>
 
           {/* images */}
-         <section className="mt-8 space-y-6">
-  {/* First row – smaller images */}
-  <div className="flex justify-center gap-4">
-    <img src="class1.jpg" alt="Classroom Group 1" className="w-[42%] max-w-md shadow-md" />
-    <img src="class2.jpg" alt="Classroom Group 2" className="w-[42%] max-w-md shadow-md" />
-  </div>
-
-  {/* Second row – slightly larger images */}
-  <div className="flex justify-center gap-4">
-    <img src="class3.jpeg" alt="Classroom Group 3" className="w-[30%] max-w-lg shadow-md" />
-    <img src="class4.jpeg" alt="Classroom Group 4" className="w-[30%] max-w-lg shadow-md" />
-    <img src="class5.jpeg" alt="Classroom Group 5" className="w-[30%] max-w-lg shadow-md" />
+         <section className="mt-8">
+  <div className="flex overflow-x-scroll snap-x snap-mandatory space-x-4 pb-4">
+    <img src="class1.jpg" alt="Classroom Group 1" className="w-full max-w-lg flex-shrink-0 snap-center shadow-md" />
+    <img src="class2.jpg" alt="Classroom Group 2" className="w-full max-w-lg flex-shrink-0 snap-center shadow-md" />
+    <img src="class3.jpeg" alt="Classroom Group 3" className="w-full max-w-lg flex-shrink-0 snap-center shadow-md" />
+    <img src="class4.jpeg" alt="Classroom Group 4" className="w-full max-w-lg flex-shrink-0 snap-center shadow-md" />
+    <img src="class5.jpeg" alt="Classroom Group 5" className="w-full max-w-lg flex-shrink-0 snap-center shadow-md" />
   </div>
 </section>
+
 
           <section className="mt-8">
             <h2 className="text-2xl font-semibold">Past Teaching Experience</h2>
