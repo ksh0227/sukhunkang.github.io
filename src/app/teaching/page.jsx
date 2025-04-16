@@ -53,6 +53,9 @@ export default function Teaching() {
             <div className="flex justify-center gap-4">
               <img src="class1.jpg" alt="Classroom Group 1" className="w-1/2 shadow-md" />
               <img src="class2.jpg" alt="Classroom Group 2" className="w-1/2 shadow-md" />
+              <img src="class3.jpeg" alt="Classroom Group 3" className="w-1/2 shadow-md" />
+              <img src="class4.jpeg" alt="Classroom Group 4" className="w-1/2 shadow-md" />
+              <img src="class5.jpeg" alt="Classroom Group 5" className="w-1/2 shadow-md" />
             </div>
           </section>
 
