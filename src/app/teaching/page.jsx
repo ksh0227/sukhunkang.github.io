@@ -12,7 +12,7 @@ export default function Teaching() {
                 <span className="font-semibold">TMP120: Fundamentals of Business Strategy</span>
                 <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
                   <li>UCSB Undergraduate, 2023-Present</li>
-                  <li>Teaching Evaluation: 4.5 / 5 (2023-2024)</li>
+                  <li>Teaching Evaluation: 4.5/5 (Winter 2024); 4.8/5 (Winter 2025)</li>
                   <li>Selected Comments:</li>
                   <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
                     <li>
@@ -28,16 +28,19 @@ export default function Teaching() {
                       background in business, and it showed through his teaching."
                     </li>
                     <li>
-                      "Professor Kang is one of the only classes that does not put me to sleep."
+                      "Thank you, Professor Kang. Your networks and advice is truly valuable and taking this entry tmp class with you was such a great way to start the program. Your encouragement, hard work, and effort doesn't go unnoticed. Ending this quarter and having our last lecture with you felt bittersweet, thank you for pushing me to do better through the case studies and projects! Feeling inspired after taking your course. Id 100% recomment my friends interested in business to take this class, especially if youre the one teaching it."
                     </li>
                     <li>
-                      "Amazing professor – really loved taking the class with him and I do think that him teaching it made the 
-                      material more enjoyable to learn."
+                      "Super passionate guy. Participation matters a lot to him but it's really not too challenging. 
+                      Easy weekly quizzes and a big group project due at the end. Really well-structured as a intro to business class, trust me take this course with Sukhun. if you show up and pay attention in class I promise you'll do well."
                     </li>
                     <li>
                       "My king. His class has been my favorite at UCSB thus far. He is very supportive and inspirational. 
                       It is definitely a tough course and there is no easy A, especially when it comes to participation 
                       and speaking up in class, but Professor Kang was amazing."
+                    </li>
+                    <li>
+                        "I learned more in this course about businesses and the way the succeed than in my entire life."
                     </li>
                   </ul>
                 </ul>
