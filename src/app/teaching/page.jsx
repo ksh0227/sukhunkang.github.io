@@ -12,7 +12,7 @@ export default function Teaching() {
                 <span className="font-semibold">TMP120: Fundamentals of Business Strategy</span>
                 <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
                   <li>UCSB Undergraduate, 2023-Present</li>
-                  <li>Teaching Evaluation: 4.5/5 (Winter 2024); 4.8/5 (Winter 2025)</li>
+                  <li>Teaching Evaluation: 4.5/5 (Winter 2024); 4.8/5 (Winter 2025); Rate My Professor.com  <Link href="https://www.ratemyprofessors.com/professor/2974949" className="underline">[Click here]</Link> </li>
                   <li>Selected Comments:</li>
                   <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
                     <li>
