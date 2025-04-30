@@ -26,6 +26,10 @@ export default function Resources() {
           <section className="mt-8">
             <h2 className="text-2xl font-semibold">Conference Organization</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
+               <li>
+                Rethinking Strategy & Innovation in Biopharmaceutical and Healthcare Industries, SMS2025{" "}
+                <Link href="https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/" className="underline">[abstract]</Link>
+              </li>
               <li>
                 Strategy and Innovation in Biopharmaceutical Industry, AOM2022{" "}
                 <Link href="https://journals.aom.org/doi/10.5465/AMBPP.2022.10823symposium" className="underline">[abstract]</Link>
