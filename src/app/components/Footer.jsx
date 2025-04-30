@@ -32,7 +32,7 @@ const Footer = () => {
           className="social-icon"
         >
           <img
-            src="X_logo.jpeg"
+            src="X_logo.jpg"
             alt="X"
             width={24}
             height={24}
