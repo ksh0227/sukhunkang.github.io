@@ -32,8 +32,8 @@ const Footer = () => {
           className="social-icon"
         >
           <img
-            src="twitter.svg"
-            alt="Twitter"
+            src="x_logo.png"
+            alt="X"
             width={24}
             height={24}
             className="hover:scale-110 transition-transform duration-300"
