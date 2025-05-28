@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
+import LinkCarousel from "../components/LinkCarousel";
+
 
 export default function About() {
   return (
     <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-12 xl:px-48 py-10">
+      <LinkCarousel/>
       <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-screen-lg">
         <div className="text-center flex flex-col items-center">
           <div className="w-64 h-80 md:w-72 md:h-96 relative overflow-hidden drop-shadow-xl">
