@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Script from "next/script";
+import LinkCarousel from "./components/LinkCarousel";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
                         gtag('config', 'G-5XRGPSLYNT');
                       `
                     }
-                  </Script>
+          </Script>
+          <LinkCarousel/>
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-screen-lg">
             <div className="text-center flex flex-col items-center">
               <div className="w-64 h-80 md:w-72 md:h-96 relative overflow-hidden drop-shadow-xl">
