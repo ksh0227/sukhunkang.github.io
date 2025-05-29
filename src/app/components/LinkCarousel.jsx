@@ -5,8 +5,8 @@ import React, { useState, useEffect } from 'react';
 const LinkCarousel = () => {
   const links = [
     { label: 'AOM2025 Biopharma PDW Pre-Registration', href: '…' },
-    { label: 'AOM2025 Managing Your Dissertation Workshop Application', href: '…' },
-    { label: 'SMS2025 Extension on Biopharma Strategy Registration', href: '…' },
+    { label: 'AOM2025 Dissertation Workshop Application', href: '…' },
+    { label: 'SMS2025 Biopharma Strategy Reg. Extension', href: '…' },
   ];
 
   const [index, setIndex] = useState(0);
@@ -19,19 +19,36 @@ const LinkCarousel = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center mb-6">
-      <div className="flex items-center justify-center gap-3 mb-4 text-sm text-black">
-        <span className="text-lg">📢</span>
-        <button onClick={prev} className="px-1 text-sm opacity-50 hover:opacity-80 transition">
+    <div className="w-full flex flex-col items-center my-4">
+      <div className="flex items-center gap-2 text-sm text-black py-1">
+        <span className="text-lg leading-none">📢</span>
+
+        <button
+          onClick={prev}
+          className="leading-none text-sm opacity-50 hover:opacity-80 transition"
+        >
           ‹
         </button>
-        <a href={links[index].href} target="_blank" rel="noopener" className="underline">
-          {links[index].label}
-        </a>
-        <button onClick={next} className="px-1 text-sm opacity-50 hover:opacity-80 transition">
+
+        <div className="flex-1 text-center">
+          <a
+            href={links[index].href}
+            target="_blank"
+            rel="noopener"
+            className="underline leading-none"
+          >
+            {links[index].label}
+          </a>
+        </div>
+
+        <button
+          onClick={next}
+          className="leading-none text-sm opacity-50 hover:opacity-80 transition"
+        >
           ›
         </button>
       </div>
+
       <div className="w-[300px] lg:w-[500px] h-px bg-gradient-to-r from-transparent via-neutral-700 to-transparent opacity-50 dark:via-neutral-600" />
     </div>
   );
