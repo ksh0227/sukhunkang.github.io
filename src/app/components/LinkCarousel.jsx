@@ -52,7 +52,6 @@ const LinkCarousel = () => {
     goTo(newIndex);
   };
 
-  // Start auto-scroll on mount
   useEffect(() => {
     clearAndSetTimeout(() => {
       const nextIndex = (indexRef.current + 1) % links.length;
