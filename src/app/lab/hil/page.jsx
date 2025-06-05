@@ -4,22 +4,16 @@ import ProfileCard from "@/app/components/ProfileCard";
 
 const members = [
   {
+    name: "Janice Jiang",
+    description:
+      "Janice Jiang is a third-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
+    image: "/lab/janice.jpg",
+  },
+  {
     name: "Ivan Lin",
     description:
       "Ivan is a fourth-year Economics undergraduate at the University of California of Santa Barbara. He holds a strong interest in the fields of Technology and Business and will continue to pursue his goals through the Masters of Technology Management program at UCSB. His current goal is to eventually take his research work and knowledge to start up a successful business in the digital entertainment industry.",
     image: "/lab/ivan.jpg",
-  },
-  {
-    name: "Carter Kulm",
-    description:
-      "Carter is a third-year Stats and Data Science undergraduate student at the University of California of Santa Barbara. Upon graduating, he hopes to transition into a position in data science or analytics. His past research has focused primarily on economics and sports, though these are not his only fields of interest.",
-    image: "/lab/carter.jpg",
-  },
-  {
-    name: "Kuan-I (Brian) Lu",
-    description:
-      "Kuan-I Lu is a fourth-year Actuarial Science student at the University of California, Santa Barbara, with a strong focus on data science, including data manipulation, machine learning, and deep learning. Upon graduation, he aims to further expand his expertise in data science and its real-world applications through advanced education. His career interests encompass diverse fields such as fintech, music platforms, and entrepreneurship, with a long-term ambition of launching his own venture.",
-    image: "/lab/brian.jpg",
   },
   {
     name: "Sean Wang",
@@ -28,34 +22,10 @@ const members = [
     image: "/lab/sean.jpg",
   },
   {
-    name: "Pramukh Shankar",
-    description:
-      "Pramukh is a fourth-year Data Science and Economics with a minor in Philosophy student at the University of California of Santa Barbara. His career interests include data analytics and economic and policy research. Upon graduating, he hopes to get involved with nonprofit work, further his education and someday run his own business. In his free time he likes to go to the gym, play tennis and play Pokemon!",
-    image: "/lab/pramukh.jpg",
-  },
-  {
     name: "Fan Ye",
     description:
       "Fan Ye is a third-year Actuarial Science and Economics student at the University of California, Santa Barbara. His research interest focuses on the intersection of drug development, public policy, and health insurance. Upon graduating, he hopes to pursue further education in economics, specializing in insurance eocnomics.",
     image: "/lab/fan.jpg",
-  },
-  {
-    name: "Janice Jiang",
-    description:
-      "Janice Jiang is a third-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
-    image: "/lab/janice.jpg",
-  },
-  {
-    name: "Amy Ji",
-    description:
-      "Amy Ji is a fourth-year student at the University of California, Santa Barbara, double majoring in Statistics and Data Science and Economics, with a strong interest in data manipulation, biostatistics, and data analytics. After graduation, she hopes to pursue a career in data analytics or consulting in the healthcare or biotech industry. In her free time, she enjoys skiing, hiking, and exploring the outdoors, with a goal of visiting as many national parks as possible.",
-    image: "/lab/amy.jpg",
-  },
-  {
-    name: "Pranav Hegde",
-    description:
-      "Pranav Hegde is a second-year College of Creative Studies Math Major studying at UCSB, with strong interests in Financial Mathematics, Machine Learning, and Global Markets. He hopes to further expand his knowledge through both work experience in the Financial Services industry and further education in a quantitative interdisciplinary field, such as Financial Engineering. Pranav enjoys playing the piano and walking his dog in his free time!",
-    image: "/lab/pranav.jpg",
   },
   // {
   //   name: "Sean Wang",
@@ -107,6 +77,17 @@ export default function Lab() {
               ))}
             </div>
           </section>
+
+          <section className="mt-8">
+            <h2 className="text-2xl text-center my-12 font-semibold">Lab Alumni</h2>
+            <ul className="list-disc list-outside pl-6">
+              <li>Brian Lu (UCSB, Actuarial Science, 2025), MIT Master's Student</li>
+              <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), Americorps Forest Corps</li>
+              <li>Carter Kulm (UCSB, Data Science, 2025)</li>
+              <li>Amy Ji (UCSB, Data Science and Economics, 2025)</li>
+              <li>Pranav Hegde (UCSB, Mathematics, 2025), Capital Group</li>
+            </ul>
+        </section>
         </main>
       </div>
     );
