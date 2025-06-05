@@ -44,7 +44,7 @@ export default function Lab() {
              <h3 className="text-lg font-semibold mt-4">About</h3>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
-               Health Innovation Lab is co-directed by Dr. Sukhun Kang and <a href="https://www.barbosu.com/" className="">Dr. Sandra Barbosu.</a>
+               Health Innovation Lab is co-directed by Dr. Sukhun Kang and <a href="https://www.barbosu.com/" className="underline">Dr. Sandra Barbosu.</a>
               </li>
               <li>
                 The Health Innovation Lab serves as an integrated environment for research in the area of strategy and management with focus on the healthcare sectors. 
