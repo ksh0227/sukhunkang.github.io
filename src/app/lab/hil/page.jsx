@@ -81,7 +81,7 @@ export default function Lab() {
           <section className="mt-8">
             <h2 className="text-2xl text-center my-12 font-semibold">Lab Alumni</h2>
             <ul className="list-disc list-outside pl-6">
-              <li>Brian Lu (UCSB, Actuarial Science, 2025), MIT Master's Student</li>
+              <li>Brian Lu (UCSB, Actuarial Science, 2025), Research Associate, MIT Master's Student</li>
               <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), Americorps Forest Corps</li>
               <li>Carter Kulm (UCSB, Data Science, 2025)</li>
               <li>Amy Ji (UCSB, Data Science and Economics, 2025)</li>
