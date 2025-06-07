@@ -4,6 +4,11 @@ import ProfileCard from "@/app/components/ProfileCard";
 
 const members = [
   {
+    name: "Sandra Barbosu",
+    description: "Sandra Barbosu is a researcher and policy analyst specializing in the economics of science and health innovation. She holds a PhD in Strategic Management from the Rotman School of Management at the University of Toronto and has worked across academia, philanthropic funding, and science policy. She is currently associate director of ITIF’s Center for Life Sciences Innovation and an adjunct professor in the Technology Management and Innovation Department at NYU’s Tandon School of Engineering.",
+    image: "/lab/sandra.jpeg",
+  },
+  {
     name: "Janice Jiang",
     description:
       "Janice Jiang is a third-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
@@ -14,6 +19,12 @@ const members = [
     description:
       "Ivan is a fourth-year Economics undergraduate at the University of California of Santa Barbara. He holds a strong interest in the fields of Technology and Business and will continue to pursue his goals through the Masters of Technology Management program at UCSB. His current goal is to eventually take his research work and knowledge to start up a successful business in the digital entertainment industry.",
     image: "/lab/ivan.jpg",
+  },
+  {
+    name: "Masoom Suchdeo",
+    description:
+      "Masoom is a PhD student in Technology management at UCSB. Prior to arriving at UCSB, he was a predoctoral researcher at Haas School of Business, UC Berkeley where he used ethnography and field experimentation to study gender and remote work. Masoom is currently studying interdisciplinary innovation in emergent technologies, identifying mechanisms that lead to scientific and technological breakthroughs.",
+    image: "/lab/masoom.jpg",
   },
   {
     name: "Sean Wang",
