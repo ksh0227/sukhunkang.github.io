@@ -55,7 +55,7 @@ export default function Lab() {
              <h3 className="text-lg font-semibold mt-4">About</h3>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
-               Health Innovation Lab is co-directed by Dr. Sukhun Kang and <a href="https://www.barbosu.com/" className="">Dr. Sandra Barbosu.</a>
+               Health Innovation Lab is co-directed by Dr. Sukhun Kang and <a href="https://www.barbosu.com/" className="underline">Dr. Sandra Barbosu.</a>
               </li>
               <li>
                 The Health Innovation Lab serves as an integrated environment for research in the area of strategy and management with focus on the healthcare sectors. 
@@ -92,7 +92,7 @@ export default function Lab() {
           <section className="mt-8">
             <h2 className="text-2xl text-center my-12 font-semibold">Lab Alumni</h2>
             <ul className="list-disc list-outside pl-6">
-              <li>Brian Lu (UCSB, Actuarial Science, 2025), MIT Master's Student</li>
+              <li>Kuan-I (Brian) Lu (UCSB, Actuarial Science, 2025), Research Associate, MIT Master's Student</li>
               <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), Americorps Forest Corps</li>
               <li>Carter Kulm (UCSB, Data Science, 2025)</li>
               <li>Amy Ji (UCSB, Data Science and Economics, 2025)</li>
