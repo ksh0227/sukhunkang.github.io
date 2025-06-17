@@ -41,7 +41,7 @@ export default function About() {
             My research interests are in innovation and entrepreneurship with a particular focus on
             biopharmaceutical and high-tech industries. For more details, check out my{" "}
             <a href="/research" className="underline">projects</a> and{" "}
-            <a href="/lab" className="underline">lab</a>.
+            <a href="/lab/hil" className="underline">lab</a>.
           </p>
           <br />
           <p>
