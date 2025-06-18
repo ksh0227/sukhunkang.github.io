@@ -91,7 +91,7 @@ export default function Research() {
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
             {publications.map((pub, index) => (
               <li key={index}>
-                <strong>[{index+ 1}]{pub.authors}. {pub.year}.{" "}
+                <strong>[{index+ 1}]</strong> {pub.authors}. {pub.year}.{" "}
                 <em>"{pub.title}"</em>{" "}
                 <span className="italic">{pub.journal}</span>, {pub.volume}{pub.issue ? `; ${pub.issue}` : ''}: {pub.pages}.{" "}
                 {pub.pdfLink && (
@@ -107,7 +107,7 @@ export default function Research() {
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
             {workingPapers.map((paper, index) => (
               <li key={index}>
-                </strong> {paper.authors},{" "}
+                {paper.authors},{" "}
                 <em>"{paper.title}"</em>{" "}
                 {paper.pdfLink && (
                   <Link href={paper.pdfLink} className="text-blue-600 underline" target="_blank">[pdf]</Link>
