@@ -91,7 +91,7 @@ export default function Research() {
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
             {publications.map((pub, index) => (
               <li key={index}>
-                <strong>[{index + 1}]</strong> {pub.authors}. {pub.year}.{" "}
+                {pub.authors}. {pub.year}.{" "}
                 <em>"{pub.title}"</em>{" "}
                 <span className="italic">{pub.journal}</span>, {pub.volume}{pub.issue ? `; ${pub.issue}` : ''}: {pub.pages}.{" "}
                 {pub.pdfLink && (
