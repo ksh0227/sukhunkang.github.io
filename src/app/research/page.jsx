@@ -52,7 +52,7 @@ export default function Research() {
       title: "Shattering Ceilings While Opening Doors: The Symbolic Effect of the First Female Political Leader on the Mobility Outcomes of Female Employees"
     },
     {
-      authors: "Sukhun Kang and Gary Dushnitsky",
+      authors: "Gary Dushnitsky and Sukhun Kang",
       title: "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance"
     },
     {
