@@ -84,7 +84,7 @@ export default function Research() {
         </section>
 
         <section className="mt-8">
-          <h2 className="text-2xl font-semibold">Working Papers</h2>
+          <h2 className="text-2xl font-semibold">Working Papers / Works in Progress </h2>
           <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
             {workingPapers.map((paper, index) => (
               <li key={index}>
@@ -105,35 +105,7 @@ export default function Research() {
           </ul>
         </section>
 
-        <section className="mt-8">
-          <h2 className="text-2xl font-semibold">Works in Progress</h2>
-          <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
-            <li><em>“Are Drugs Becoming Less Innovative?”</em> (with Sandra Barbosu)</li>
-            <li><em>“Data Privacy and Innovation: The Case of GDPR”</em> (with Jennifer Kao)</li>
-          </ul>
-        </section>
-        
-        <section className="mt-8">
-          <h2 className="text-2xl font-semibold">Research Affiliates</h2>
-          <ul className="list-disc list-outside pl-6 mt-2 space-y-2">
-            {[
-              ["Sarath Balachandran", "Assistant Professor of Strategy and Entrepreneurship, London Business School", "https://www.london.edu/faculty-and-research/faculty-profiles/s/sarath-balachandran"],
-              ["Sandra Barbosu", "Senior Policy Manager, Information Technology and Innovation Foundation", "https://www.barbosu.com/home"],
-              ["Sungyong Chang", "Assistant Professor of Management and Organization, Cornell University", "https://sungyongchang.com/"],
-              ["Gary Dushnitsky", "Associate Professor of Strategy and Entrepreneurship, London Business School", "https://www.dushnitsky.com/index.html"],
-              ["Olenka Kacperczyk", "Professor of Strategy and Entrepreneurship, London Business School", "https://www.london.edu/faculty-and-research/faculty-profiles/o/olenka-kacperczyk"],
-              ["Jennifer Kao", "Assistant Professor of Strategy, UCLA Anderson School of Management", "https://www.jennifer-kao.com/"],
-              ["Jennifer Miller", "Associate Professor, School of Medicine, Yale University", "http://www.jennifermiller.info/"],
-              ["Yongwook Paik", "Associate Professor of Strategy, KAIST College of Business", "https://medicine.yale.edu/profile/joseph_ross/"],
-              ["Joseph Ross", "Professor, School of Medicine and Public Health, Yale University", "https://medicine.yale.edu/profile/joseph_ross/"],
-              ["Rob Seamans", "Associate Professor of Strategy, NYU Stern School of Business", "https://robertseamans.com/"]
-            ].map(([name, title, url]) => (
-              <li key={name}>
-                <Link href={url} className="underline" target="_blank">{name}</Link> - {title}
-              </li>
-            ))}
-          </ul>
-        </section>
+
       </main>
     </div>
   );
