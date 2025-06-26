@@ -95,7 +95,7 @@ export default function Lab() {
               <li>Kuan-I (Brian) Lu (UCSB, Actuarial Science, 2025), Research Associate, MIT Master's Student</li>
               <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), Americorps Forest Corps</li>
               <li>Carter Kulm (UCSB, Data Science, 2025)</li>
-              <li>Amy Ji (UCSB, Data Science and Economics, 2025)</li>
+              <li>Amy Ji (UCSB, Data Science and Economics, 2025), IQVIA</li>
               <li>Pranav Hegde (UCSB, Mathematics, 2025), Capital Group</li>
             </ul>
         </section>
