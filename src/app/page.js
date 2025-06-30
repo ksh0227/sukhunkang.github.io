@@ -2,17 +2,11 @@ import Image from "next/image";
 import Script from "next/script";
 import LinkCarousel from "./components/LinkCarousel";
 
-export default function Page() {
-  return (
-    <>
-      <h1>Sukhun Kang | UC Santa Barbara</h1>
-      {/* existing content */}
-    </>
-  );
-}
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-12 xl:px-48 py-10">
+          <h1>Sukhun Kang | UC Santa Barbara</h1>
+  
           {/* <!-- Google tag (gtag.js) --> */}
           <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}></Script>
                   <Script id="google-analytics">
