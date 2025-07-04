@@ -21,6 +21,12 @@ const members = [
     image: "/lab/ivan.jpg",
   },
   {
+    name: "Divya Subramonian",
+    description:
+      "Divya is a third-year undergraduate at the University of California, Santa Barbara pursuing a bachelor’s degree in Computer Science. Her interests lie in machine learning and human-computer interaction, and she hopes leverage her skills to contribute to AI for healthcare or content discovery and recommendation systems research. Upon graduating, she aims to pursue a Master’s degree and expand her expertise in machine learning. In her free time, she loves to dance, bake, and go on hikes with friends and family!",
+    image: "/lab/divya.jpg",
+  },
+  {
     name: "Masoom Suchdeo",
     description:
       "Masoom is a PhD student in Technology management at UCSB. Prior to arriving at UCSB, he was a predoctoral researcher at Haas School of Business, UC Berkeley where he used ethnography and field experimentation to study gender and remote work. Masoom is currently studying interdisciplinary innovation in emergent technologies, identifying mechanisms that lead to scientific and technological breakthroughs.",
