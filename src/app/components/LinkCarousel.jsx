@@ -4,14 +4,14 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const LinkCarousel = () => {
   const links = [
-    {
-      label: 'AOM2025 Biopharma PDW Pre-Registration',
-      href: 'https://docs.google.com/forms/d/e/1FAIpQLSfE1MgUwsJAC6a3I5SbpyeZWVjKb9m81yt6SmZR5eXd2FuR5g/viewform',
-    },
-    {
-      label: 'AOM2025 Managing Your Dissertation Workshop Application',
-      href: 'https://docs.google.com/forms/d/e/1FAIpQLScFDD-ptIHpoND7KVsGwTVgOdwmlJPHE1ooKo_jc1hkJeBTzg/viewform',
-    },
+//    {
+//      label: 'AOM2025 Biopharma PDW Pre-Registration',
+//      href: 'https://docs.google.com/forms/d/e/1FAIpQLSfE1MgUwsJAC6a3I5SbpyeZWVjKb9m81yt6SmZR5eXd2FuR5g/viewform',
+//    },
+//    {
+ //     label: 'AOM2025 Managing Your Dissertation Workshop Application',
+//      href: 'https://docs.google.com/forms/d/e/1FAIpQLScFDD-ptIHpoND7KVsGwTVgOdwmlJPHE1ooKo_jc1hkJeBTzg/viewform',
+//    },
     {
       label: 'SMS2025 Extension on Biopharma Strategy Registration',
       href: 'https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/',
