@@ -6,7 +6,7 @@ const members = [
   {
     name: "Sungyong Chang",
     description: "Sungyong Chang is an assistant professor of Management and Organizations at SC Johnson Graduate School of Management – Cornell University. He earned a Ph.D. in Management from Columbia University. His research interests lie in the areas of entrepreneurship and strategy, grand challenges, and computational social science. He examines how technology shapes industries, influences firm strategy, and creates opportunities for innovation. In the healthcare sector, he examines how technological advancements help entrepreneurial firms address critical challenges, improve patient outcomes, and expand access to life-saving treatments. In cultural industries, he studies how technology transforms creative markets, enabling individuals to develop their talents, reach broader audiences, and navigate industry complexities.",
-    image: "/lab/sungyong.jpeg",
+    image: "/lab/sungyong.webp",
   },
   {
     name: "Sandra Barbosu",
