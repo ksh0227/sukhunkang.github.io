@@ -55,10 +55,6 @@ export default function Research() {
       authors: "Gary Dushnitsky and Sukhun Kang",
       title: "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance"
     },
-    {
-      authors: "Sandra Barbosu and Sukhun Kang",
-      title: "Innovation in the Biopharmaceutical Industry: Slowing Down or Shifting Focus?"
-    },
    {
       authors: "Sukhun Kang and Jennifer Kao",
       title: "Data Privacy Regulation and Innovation: The Role of Cost and Trust in Collaborative R&D"
