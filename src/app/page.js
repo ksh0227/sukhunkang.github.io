@@ -51,16 +51,12 @@ export default function Home() {
               <p>
                 My research interests are in innovation and entrepreneurship with a particular focus on
                 biopharmaceutical and high-tech industries. For more details, check out my{" "}
-                <a href="/research" className="underline">projects</a> and{" "}
+                <a href="/research" className="underline">research</a> and{" "}
                 <a href="/lab/hil" className="underline">lab</a>.
               </p>
               <br />
               <p>
-                I received a Ph.D in Strategy and Entrepreneurship from the London Business School. My
-                dissertation was recognized as a finalist for the 2024 AOM STR/TIM Outstanding Dissertation
-                Awards, 2022 Organization Science/INFORMS Dissertation Proposal Competition, and was a
-                runner-up for the 2024 ISA Giarrantani Rising Star Award. It was also supported by the
-                Strategic Research Foundation (SRF) Dissertation Grant Program and the Sir James Ball PhD Prize.
+                I received a Ph.D in Strategy and Entrepreneurship from the London Business School. My research has been recognized by several awards including the Sumantra Ghoshal Research and Practice Award, AOM STR's Distinguished Best Paper Award, AOM STR/TIM Outstanding Dissertation Awards,  Organization Science/INFORMS Dissertation Proposal Competition, ISA Giarrantani Rising Star Award, and the Sir James Ball PhD Prize.
               </p>
               <br />
               <p>
