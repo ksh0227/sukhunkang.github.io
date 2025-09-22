@@ -4,18 +4,18 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const LinkCarousel = () => {
   const links = [
+   {
+     label: 'SMS2025 Extension on Biopharma Strategy Registration',
+     href: 'https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/',
+   },
+    {
+      label: 'Fall 2026 UCSB Technology PhD Program Application',
+      href: 'https://tmp.ucsb.edu/academics/phd-technology-management',  
+     },
 //    {
-//      label: 'AOM2025 Biopharma PDW Pre-Registration',
-//      href: 'https://docs.google.com/forms/d/e/1FAIpQLSfE1MgUwsJAC6a3I5SbpyeZWVjKb9m81yt6SmZR5eXd2FuR5g/viewform',
+//      label: 'SMS2025 Extension on Biopharma Strategy Registration',
+//      href: 'https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/',
 //    },
-    {
-      label: '2025 IQVIA Institute Research Forum',
-      href: 'https://www.events.iqvia.com/event/ResearchForum25/summary',
-    },
-    {
-      label: 'SMS2025 Extension on Biopharma Strategy Registration',
-      href: 'https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/',
-    },
   ];
 
   const [index, setIndex] = useState(0);
