@@ -8,15 +8,25 @@ const members = [
     description: "Dr. Sandra Barbosu is a researcher and policy analyst specializing in the economics of science and health innovation. She holds a PhD in Strategic Management from the Rotman School of Management at the University of Toronto and has worked across academia, philanthropic funding, and science policy. She is currently associate director of ITIF’s Center for Life Sciences Innovation and an adjunct professor in the Technology Management and Innovation Department at NYU’s Tandon School of Engineering.",
     image: "/lab/sandra.jpeg",
   },
-   {
+  {
+    name: "Lucy Cao",
+    description: "Lucy Cao is a fourth-year Economics and Statistics & Data Science student at the University of California, Santa Barbara. Her research interests focus on sustainable finance, agricultural economics, and environmental economics. After graduation, she hopes to pursue a Ph.D. in environmental economics. In her free time, she enjoys playing piano and exploring new restaurants.",
+    image: "/lab/lucy.jpeg",
+  },
+  {
     name: "Sungyong Chang, PhD",
     description: "Dr. Sungyong Chang is an assistant professor of Management and Organizations at SC Johnson Graduate School of Management – Cornell University. He earned a Ph.D. in Management from Columbia University. His research interests lie in the areas of entrepreneurship and strategy, grand challenges, and computational social science. He examines how technology shapes industries, influences firm strategy, and creates opportunities for innovation. In the healthcare sector, he examines how technological advancements help entrepreneurial firms address critical challenges, improve patient outcomes, and expand access to life-saving treatments. In cultural industries, he studies how technology transforms creative markets, enabling individuals to develop their talents, reach broader audiences, and navigate industry complexities.",
     image: "/lab/sungyong.webp",
   },
   {
+    name: "Seongho Hwang",
+    description: "Seongho Hwang is a PhD student in Technology Management at UC Santa Barbara. He holds a Master’s in Economics from the Barcelona School of Economics and a Master’s in Development Policy from the Korea Development Institute (KDI) School of Public Policy and Management. His research focuses on the dynamics of innovation and entrepreneurship, particularly how innovative firms start and grow, as well as the factors shaping venture capital investment decisions in startups.",
+    image: "/lab/seongho.jpg",
+  },
+  {
     name: "Janice Jiang",
     description:
-      "Janice Jiang is a third-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
+      "Janice Jiang is a fourth-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
     image: "/lab/janice.jpg",
   },
   {
@@ -40,13 +50,13 @@ const members = [
   {
     name: "Sean Wang",
     description:
-      "Sean is a second-year Statistics and Data Science major at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
+      "Sean is a third-year Statistics and Data Science major at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
     image: "/lab/sean.jpg",
   },
   {
     name: "Fan Ye",
     description:
-      "Fan Ye is a third-year Actuarial Science and Economics student at the University of California, Santa Barbara. His research interest focuses on the intersection of drug development, public policy, and health insurance. Upon graduating, he hopes to pursue further education in economics, specializing in insurance eocnomics.",
+      "Fan Ye is a fourth-year Actuarial Science and Economics student at the University of California, Santa Barbara. His research interest focuses on the intersection of drug development, public policy, and health insurance. Upon graduating, he hopes to pursue further education in economics, specializing in insurance eocnomics.",
     image: "/lab/fan.jpg",
   },
   // {
