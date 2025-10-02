@@ -10,7 +10,7 @@ export default function Research() {
       year: "2019",
       volume: "40",
       pages: "503-532",
-      pdfLink: "https://www.dropbox.com/scl/fi/htc20yl5eh4ub75yiyhzf/Paik_et_al-2018-Strategic_Management_Journal-2.pdf?rlkey=r1fjn0h1303pnu4ej64bqrdpn&e=1&dl=0"
+      pdfLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077"
     },
     {
       authors: "Sukhun Kang, Sungyong Chang, Joseph Ross, and Jennifer Miller",
@@ -20,7 +20,7 @@ export default function Research() {
       volume: "110",
       issue: "6",
       pages: "1579-1584",
-      pdfLink: "https://www.dropbox.com/scl/fi/0rueqjmrx4yy1ji2cur9q/Kang-Chang-Ross-Miller-2021-CPT.pdf?rlkey=kdcn7f9z5luccmfbbcpbfyn1i&e=1&dl=0"
+      pdfLink: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401"
     }
   ];
 
@@ -35,7 +35,9 @@ export default function Research() {
       authors: "Sarath Balachandran, Sungyong Chang, and Sukhun Kang",
       title: "How Do Investors Shape Startups' Response to New Market Opportunities?",
       notes: [
-        "2025 AOM Best Paper Proceedings"
+        "2025 AOM Best Paper Proceedings",
+        "2025 Sumantra Ghoshal Research and Practice Award",
+        "2025 AOM STR's Distinguished Best Paper Award"
       ],
       pdfLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926"
     },
