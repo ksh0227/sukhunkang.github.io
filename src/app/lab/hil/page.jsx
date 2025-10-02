@@ -36,6 +36,12 @@ const members = [
     image: "/lab/ivan.jpg",
   },
   {
+    name: "Isabella Pepich",
+    description:
+      "Isabella Pepich is a fourth-year student at the University of California, Santa Barbara, pursuing a bachelor’s degree in Statistics and Data Science and a Technology Management Certificate. Her academic interests include biostatistics and business. She enjoys conducting research to uncover insights and help solve real-world problems, and plans to pursue graduate studies in biostatistics, business data analytics, or a related data-driven field. In her free time, she enjoys weightlifting and exploring new matcha cafés.",
+    image: "/lab/isabella.jpeg",
+  },
+  {
     name: "Divya Subramonian",
     description:
       "Divya is a third-year undergraduate at the University of California, Santa Barbara pursuing a bachelor’s degree in Computer Science. Her interests lie in machine learning and human-computer interaction, and she hopes leverage her skills to contribute to AI for healthcare or content discovery and recommendation systems research. Upon graduating, she aims to pursue a Master’s degree and expand her expertise in machine learning. In her free time, she loves to dance, bake, and go on hikes with friends and family!",
@@ -52,6 +58,12 @@ const members = [
     description:
       "Sean is a third-year Statistics and Data Science major at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
     image: "/lab/sean.jpg",
+  },
+  {
+    name: "Aaron Tang",
+    description:
+      "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further my education in data science and continue honing his skills. Outside of school, he loves to spend time with family and friends!",
+    image: "/lab/aaron.jpg",
   },
   {
     name: "Fan Ye",
