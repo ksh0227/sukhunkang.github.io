@@ -93,7 +93,7 @@ export default function Research() {
                 <em><strong>"{pub.title}"</strong></em>{" "}
                 <span className="italic">{pub.journal}</span>, {pub.volume}{pub.issue ? `; ${pub.issue}` : ''}: {pub.pages}.{" "}
                 {pub.pdfLink && (
-                  <Link href={pub.pdfLink} className="text-blue-600 underline" target="_blank">[pdf]</Link>
+                  <Link href={pub.pdfLink} className="text-blue-600 underline" target="_blank">[link]</Link>
                 )}
               </li>
             ))}
@@ -108,7 +108,7 @@ export default function Research() {
                 {paper.authors},{" "}
                 <em><strong>"{paper.title}"</strong></em>{" "}
                 {paper.pdfLink && (
-                  <Link href={paper.pdfLink} className="text-blue-600 underline" target="_blank">[pdf]</Link>
+                  <Link href={paper.pdfLink} className="text-blue-600 underline" target="_blank">[link]</Link>
                 )}
                 {paper.notes && (
                   <ul className="list-disc pl-8 mt-1">
