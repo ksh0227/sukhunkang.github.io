@@ -5,27 +5,18 @@ export default function Teaching() {
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow px-6 lg:px-72 py-8">
             <section className="mt-12">
-              <h2 className="text-3xl font-semibold text-gray-900">Case Studies</h2>
+              <h2 className="text-2xl font-semibold">Case Studies</h2>
               <ul className="list-disc list-outside pl-6 mt-4 space-y-4">
                 <li>
-                  <span className="font-semibold text-lg">
-                    Behind the Scenes of a YouTube Mega-Hit: <em>Baby Shark, The Pinkfong Company, and What's Next</em>
-                  </span>
-                  <p className="text-gray-700 mt-2">
-                    This case explores how The Pinkfong Company transformed a viral video into a global multimedia brand. This case can be used on courses on Strategy, Corporate Strategy, and Entrepreneurship class. It examines strategic questions around leveraging viral IP, digital platform dependence, and entrepreneurial growth.
-                  </p>
-                  <ul className="list-none pl-0 mt-3 space-y-1">
-                    <li>
-                      <a
+                  <span className="font-semibold">Behind the Scenes of a YouTube Mega-Hit: Baby Shark, The Pinkfong Company, and What's Next</span>
+                  <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
+                    <li>This case explores how The Pinkfong Company transformed a viral video into a global multimedia brand. This case can be used on courses on Strategy, Corporate Strategy, and Entrepreneurship class. It examines strategic questions around leveraging viral IP, digital platform dependence, and entrepreneurial growth.</li>
+                    <li><a
                         href="[https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077]"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800 underline"
-                      >
-                        📘 View the case
-                      </a>
-                    </li>
-                  </ul>
+                        "Link to the case
+                      ></li>
                 </li>
               </ul>
             </section>
