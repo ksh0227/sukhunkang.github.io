@@ -16,15 +16,14 @@ export default function Teaching() {
                       This case explores how The Pinkfong Company transformed a viral video into a global multimedia brand. 
                       This case can be used in courses on Strategy, Corporate Strategy, and Entrepreneurship. 
                       It examines strategic questions around leveraging viral IP, digital platform dependence, and entrepreneurial growth.
-                    </li>
-                    <li>
+                   
                       <a
                         href="https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-800 underline"
                       >
-                        Link to the case
+                        [link]
                       </a>
                     </li>
                   </ul>
