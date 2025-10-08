@@ -59,7 +59,7 @@ export default function Research() {
     },
    {
       authors: "Sukhun Kang and Jennifer Kao",
-      title: "Data Privacy Regulation and Innovation: The Role of Cost and Trust in Collaborative R&D"
+      title: "Data Privacy Regulation and Innovation"
     },
    {
       authors: "Wesley Greenblatt, Young Hou, and Sukhun Kang",
