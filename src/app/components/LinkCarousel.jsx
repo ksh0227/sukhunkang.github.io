@@ -5,12 +5,12 @@ import React, { useState, useEffect, useRef } from 'react';
 const LinkCarousel = () => {
   const links = [
    {
-     label: 'SMS2025 Extension on Biopharma Strategy Registration',
-     href: 'https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/',
+     label: '2026 UCSB Technology Management PhD Program Application',
+     href: 'https://tmp.ucsb.edu/academics/phd-technology-management',
    },
     {
-      label: 'Fall 2026 UCSB Technology PhD Program Application',
-      href: 'https://tmp.ucsb.edu/academics/phd-technology-management',  
+      label: 'Measuring Biopharmaceutical Innovation in the Modern Era',
+      href: 'https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/',  
      },
 //    {
 //      label: 'SMS2025 Extension on Biopharma Strategy Registration',
