@@ -12,10 +12,10 @@ const LinkCarousel = () => {
       label: 'Measuring Biopharmaceutical Innovation in the Modern Era',
       href: 'https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/',  
      },
-//    {
-//      label: 'SMS2025 Extension on Biopharma Strategy Registration',
-//      href: 'https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/',
-//    },
+    {
+      label: 'New Teaching Case on the "Baby Shark" company',
+      href: 'https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077',
+    },
   ];
 
   const [index, setIndex] = useState(0);
