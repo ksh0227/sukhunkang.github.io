@@ -16,6 +16,10 @@ const LinkCarousel = () => {
       label: 'New Teaching Case on the "Baby Shark" company',
       href: 'https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077',
     },
+    {
+      label: 'EIP Virtual Seminar: Data Privacy Regulation and Innovation',
+      href: 'https://uconn-edu.zoom.us/meeting/register/2MTYxVAySYaPjqk_AQlGxw#/registration',
+    },
   ];
 
   const [index, setIndex] = useState(0);
