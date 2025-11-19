@@ -4,10 +4,6 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const LinkCarousel = () => {
   const links = [
-   {
-     label: '2026 UCSB Technology Management PhD Program Application',
-     href: 'https://tmp.ucsb.edu/academics/phd-technology-management',
-   },
     {
       label: 'Measuring Biopharmaceutical Innovation in the Modern Era',
       href: 'https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/',  
@@ -20,6 +16,10 @@ const LinkCarousel = () => {
       label: 'EIP Virtual Seminar: Data Privacy Regulation and Innovation',
       href: 'https://uconn-edu.zoom.us/meeting/register/2MTYxVAySYaPjqk_AQlGxw#/registration',
     },
+     {
+     label: '2026 UCSB Technology Management PhD Program Application',
+     href: 'https://tmp.ucsb.edu/academics/phd-technology-management',
+   },
   ];
 
   const [index, setIndex] = useState(0);
