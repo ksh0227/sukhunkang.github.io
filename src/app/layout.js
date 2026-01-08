@@ -15,18 +15,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Sukhun Kang | UC Santa Barbara",
+  description: "Sukhun Kang | UC Santa Barbara",
+};
+
+export default function RootLayout({ children }) {
+
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-        />
-      </head>
-      <body>{children}</body>
-    </html>
-  );
-}
+        {/* <!-- Google tag (gtag.js) --> */}
+      <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}></Script>
+              <Script id="google-analytics">
+                {
+                  `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-5XRGPSLYNT');
+                  `
+                }
+              </Script>
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
         <Navbar />
