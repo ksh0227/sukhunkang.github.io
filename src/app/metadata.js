@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Suhkun Kang | UC Santa Barbara",
-    description: "Suhkun Kang | UC Santa Barbara",
+    title: "Sukhun Kang | UC Santa Barbara",
+    description: "Sukhun Kang | UC Santa Barbara",
   };
   
