@@ -19,7 +19,7 @@ export default function About() {
             />
           </div>
           <a
-            href="https://www.dropbox.com/scl/fi/7ig3640wv8ratddydr9uy/Sukhun-Kang-CV.pdf?rlkey=f7sruuwo8mk10jvn4a6xxodg6&e=1&dl=0"
+            href="/Sukhun-Kang-CV.pdf"
             target="_blank"
             className="mt-4 inline-block px-6 py-2 bg-black text-white font-semibold border-2 border-black transition 
                       hover:bg-white hover:text-black hover:border-black"
