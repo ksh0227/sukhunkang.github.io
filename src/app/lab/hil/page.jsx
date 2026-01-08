@@ -2,9 +2,6 @@ import Link from "next/link";
 import React from "react";
 import ProfileCard from "@/app/components/ProfileCard";
 
-import { hilMetadata } from "../../metadata";
-export const metadata = hilMetadata;
-
 const members = [
   {
     name: "Sandra Barbosu, PhD",
