@@ -2,6 +2,9 @@ import Link from "next/link";
 import React from "react";
 import ProfileCard from "@/app/components/ProfileCard";
 
+import { teachingMetadata } from "../../metadata";
+export const metadata = teachingMetadata;
+
 const members = [
   {
     name: "Sandra Barbosu, PhD",
