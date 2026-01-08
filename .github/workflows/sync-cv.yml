@@ -1,0 +1,31 @@
+name: Sync CV from Dropbox
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  workflow_dispatch:  # Allows manual trigger from GitHub Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download CV from Dropbox
+        run: |
+          curl -L "https://www.dropbox.com/scl/fi/7ig3640wv8ratddydr9uy/Sukhun-Kang-CV.pdf?rlkey=f7sruuwo8mk10jvn4a6xxodg6&dl=1" -o public/Sukhun-Kang-CV.pdf
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/Sukhun-Kang-CV.pdf
+          if git diff --staged --quiet; then
+            echo "No changes to CV"
+          else
+            git commit -m "Update CV from Dropbox"
+            git push
+          fi
