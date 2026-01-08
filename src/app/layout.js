@@ -39,6 +39,49 @@ export default function RootLayout({ children }) {
                 }
               </Script>
         <link rel="icon" href="/favicon.ico" />
+                export default function RootLayout({ children }) {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sukhun Kang",
+    "givenName": "Sukhun",
+    "familyName": "Kang",
+    "jobTitle": "Assistant Professor of Technology Management",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "University of California, Santa Barbara"
+    },
+    "url": "https://sukhunkang.com",
+    "sameAs": [
+      "https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ",
+      "https://www.linkedin.com/in/sukhunkang/",
+      "https://x.com/sukhunkang"
+    ],
+    "alumniOf": [
+      {
+        "@type": "Organization",
+        "name": "London Business School"
+      },
+      {
+        "@type": "Organization",
+        "name": "University of Illinois"
+      }
+    ],
+    "knowsAbout": ["Innovation", "Entrepreneurship", "Biopharmaceutical Industry", "Technology Management"]
+  };
+
+  return (
+    <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}
       </head>
       <body>
         <Navbar />
