@@ -13,9 +13,9 @@ export default function Teaching() {
               how firms create and capture value through strategy, innovation,
               and entrepreneurship
             </strong>
-            . I emphasize real-world applications through case studies and
+            . I emphasize critical thinking through real-world applications using case studies and
             interactive discussions, drawing on my experience as both a
-            researcher and former entrepreneur. Feel free to reach out if you
+            researcher and former entrepreneur and engineer. Feel free to reach out if you
             would like to discuss any of these materials.
           </p>
         </section>
@@ -23,8 +23,8 @@ export default function Teaching() {
         <section className="mt-10">
           <h2 className="text-2xl font-semibold mb-3">Case Studies</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            I develop case studies that explore strategic challenges facing
-            technology and media companies. These cases are designed for use in
+            I develop case studies that explore strategic challenges facing.
+            These cases are designed for use in
             strategy, corporate strategy, and entrepreneurship courses.
           </p>
 
@@ -86,10 +86,8 @@ export default function Teaching() {
             <p className="text-gray-700 leading-relaxed mb-4">
               An introduction to strategic management for technology management
               students. The course covers frameworks for analyzing competitive
-              advantage, industry dynamics, and firm boundaries. Students apply
-              these concepts through case discussions and a group strategy
-              project. Teaching evaluations: 4.5/5 (Winter 2024), 4.8/5 (Winter
-              2025).
+              advantage, industry profitability, and innovation. Students apply
+              these concepts through case discussions and a group project. 
             </p>
           </div>
         </section>
