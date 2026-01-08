@@ -3,12 +3,7 @@ import React from "react";
 import ProfileCard from "@/app/components/ProfileCard";
 
 import { hilMetadata } from "../../metadata";
-
 export const metadata = hilMetadata;
-
-export default function HILLayout({ children }) {
-  return children;
-}
 
 const members = [
   {
