@@ -192,4 +192,64 @@ export default function Research() {
 
         <section className="mt-8">
           <h2 className="text-2xl font-semibold">Peer-Reviewed Publications</h2>
-          <ul classNa
+          <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
+            {publications.map((pub, index) => (
+              <li key={index}>
+                <strong>[{index + 1}]</strong> {pub.authors}. {pub.year}.{" "}
+                <em><strong>"{pub.title}"</strong></em>{" "}
+                <span className="italic">{pub.journal}</span>, {pub.volume}{pub.issue ? `; ${pub.issue}` : ''}: {pub.pages}.{" "}
+                {pub.pdfLink && (
+                  <Link href={pub.pdfLink} className="text-blue-600 underline" target="_blank">[link]</Link>
+                )}
+                {pub.abstract && (
+                  <div className="mt-1">
+                    <button
+                      onClick={() => toggleAbstract(index)}
+                      className="text-gray-600 hover:text-gray-900 text-sm flex items-center gap-1"
+                    >
+                      <span
+                        className="inline-block transition-transform duration-200"
+                        style={{ transform: expandedAbstracts[index] ? 'rotate(90deg)' : 'rotate(0deg)' }}
+                      >
+                        ▶
+                      </span>
+                      Abstract
+                    </button>
+                    {expandedAbstracts[index] && (
+                      <p className="mt-2 text-gray-700 text-sm pl-4 border-l-2 border-gray-300">
+                        {pub.abstract}
+                      </p>
+                    )}
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-8">
+          <h2 className="text-2xl font-semibold">Working Papers / Works in Progress </h2>
+          <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
+            {workingPapers.map((paper, index) => (
+              <li key={index}>
+                {paper.authors},{" "}
+                <em><strong>"{paper.title}"</strong></em>{" "}
+                {paper.pdfLink && (
+                  <Link href={paper.pdfLink} className="text-blue-600 underline" target="_blank">[link]</Link>
+                )}
+                {paper.notes && (
+                  <ul className="list-disc pl-8 mt-1">
+                    {paper.notes.map((note, i) => (
+                      <li key={i}>{note}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+      </main>
+    </div>
+  );
+}
