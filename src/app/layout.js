@@ -21,23 +21,58 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sukhun Kang",
+    "givenName": "Sukhun",
+    "familyName": "Kang",
+    "jobTitle": "Assistant Professor of Technology Management",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "University of California, Santa Barbara"
+    },
+    "url": "https://sukhunkang.com",
+    "sameAs": [
+      "https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ",
+      "https://www.linkedin.com/in/sukhunkang/",
+      "https://x.com/sukhunkang",
+      "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2596230"
+    ],
+    "alumniOf": [
+      {"@type": "Organization", "name": "London Business School"},
+      {"@type": "Organization", "name": "University of Illinois"},
+      {"@type": "Organization", "name": "University of Southern California"}
+    ],
+    "knowsAbout": [
+      "Innovation",
+      "Entrepreneurship",
+      "Technology Management",
+      "Biopharmaceutical Industry",
+      "Strategic Management"
+    ]
+  };
 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         {/* <!-- Google tag (gtag.js) --> */}
-      <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}></Script>
-              <Script id="google-analytics">
-                {
-                  `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+        <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}></Script>
+        <Script id="google-analytics">
+          {
+            `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-                    gtag('config', 'G-5XRGPSLYNT');
-                  `
-                }
-              </Script>
+              gtag('config', 'G-5XRGPSLYNT');
+            `
+          }
+        </Script>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
