@@ -23,7 +23,7 @@ export default function Research() {
       volume: "40",
       pages: "503-532",
       pdfLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077",
-      abstract: "ADD YOUR ABSTRACT HERE"
+      abstract: "With the recent growth of the sharing economy, regulators must frequently strike the right balance between private and public interests to maximize value creation. In this article, we argue that political competition is a critical ingredient that explains whether cities accommodate or ban ridesharing platforms and that this relationship is moderated in more populous cities and in cities with higher unemployment rates. We test our arguments using archival data covering ridesharing bans in various U.S. cities during the 2011–2015 period. We supplement these data with semistructured interviews. We find broad support for our arguments while mitigating potential endogeneity concerns. Our study has important implications for nonmarket strategy, entrepreneurship and innovation, and public-private partnership literatures. In addition, our findings inform policy debates on the sharing economy."
     },
     {
       authors: "Sukhun Kang, Sungyong Chang, Joseph Ross, and Jennifer Miller",
@@ -34,7 +34,7 @@ export default function Research() {
       issue: "6",
       pages: "1579-1584",
       pdfLink: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401",
-      abstract: "ADD YOUR ABSTRACT HERE"
+      abstract: "The US Food and Drug Administration (FDA) expanded access pathway allows patients with life-threatening or serious conditions to access investigational drugs outside of trials, under certain conditions. The 21st Century Cures Act (“Cures Act”) requires certain drug companies to publicly disclose their expanded access policies. We characterized the proportion of applicable US biopharmaceutical companies, with an oncology related drug, implementing Cures Act requirements for expanded access policies and whether available policies contain the information described in the Act. We found about one-third of applicable biopharmaceutical companies (32%, 140/423) implemented the Cures Act requirement to have a public expanded access policy. Less than one-third of public policies contained all described information (31%, 44/140). Larger companies and those with at least one drug receiving an FDA expedited designation (59% vs. 21%; P < 0.001), or at least one FDA-approved drug (57% vs. 28%; P < 0.001) were more likely to have a public policy. Our results suggest the Cures Act may be having a limited impact on its goals of supporting timely medical decisions and closing informational gaps for patients and doctors around expanded access to investigational oncology therapies, especially for products sponsored by smaller and newer companies."
     }
   ];
 
