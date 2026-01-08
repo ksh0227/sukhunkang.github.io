@@ -1,5 +1,13 @@
 import Link from "next/link";
 
+import { resourcesMetadata } from "../metadata";
+
+export const metadata = resourcesMetadata;
+
+export default function ResourcesLayout({ children }) {
+  return children;
+}
+
 export default function Resources() {
     return (
       <div className="flex flex-col min-h-screen">
