@@ -1,6 +1,18 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Research() {
+  const [expandedAbstracts, setExpandedAbstracts] = useState({});
+
+  const toggleAbstract = (index) => {
+    setExpandedAbstracts(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   // publications
   const publications = [
     {
@@ -10,7 +22,8 @@ export default function Research() {
       year: "2019",
       volume: "40",
       pages: "503-532",
-      pdfLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077"
+      pdfLink: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077",
+      abstract: "ADD YOUR ABSTRACT HERE"
     },
     {
       authors: "Sukhun Kang, Sungyong Chang, Joseph Ross, and Jennifer Miller",
@@ -20,7 +33,8 @@ export default function Research() {
       volume: "110",
       issue: "6",
       pages: "1579-1584",
-      pdfLink: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401"
+      pdfLink: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401",
+      abstract: "ADD YOUR ABSTRACT HERE"
     }
   ];
 
@@ -178,43 +192,4 @@ export default function Research() {
 
         <section className="mt-8">
           <h2 className="text-2xl font-semibold">Peer-Reviewed Publications</h2>
-          <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
-            {publications.map((pub, index) => (
-              <li key={index}>
-                <strong>[{index + 1}]</strong> {pub.authors}. {pub.year}.{" "}
-                <em><strong>"{pub.title}"</strong></em>{" "}
-                <span className="italic">{pub.journal}</span>, {pub.volume}{pub.issue ? `; ${pub.issue}` : ''}: {pub.pages}.{" "}
-                {pub.pdfLink && (
-                  <Link href={pub.pdfLink} className="text-blue-600 underline" target="_blank">[link]</Link>
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <section className="mt-8">
-          <h2 className="text-2xl font-semibold">Working Papers / Works in Progress </h2>
-          <ul className="list-disc list-outside pl-6 mt-2 space-y-4">
-            {workingPapers.map((paper, index) => (
-              <li key={index}>
-                {paper.authors},{" "}
-                <em><strong>"{paper.title}"</strong></em>{" "}
-                {paper.pdfLink && (
-                  <Link href={paper.pdfLink} className="text-blue-600 underline" target="_blank">[link]</Link>
-                )}
-                {paper.notes && (
-                  <ul className="list-disc pl-8 mt-1">
-                    {paper.notes.map((note, i) => (
-                      <li key={i}>{note}</li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-      </main>
-    </div>
-  );
-}
+          <ul classNa
