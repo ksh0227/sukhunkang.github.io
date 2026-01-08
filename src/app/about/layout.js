@@ -1,4 +1,4 @@
-import { hiwgMetadata } from "../../metadata";
+import { hiwgMetadata } from "../metadata";
 
 export const metadata = hiwgMetadata;
 
