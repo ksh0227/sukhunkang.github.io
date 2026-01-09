@@ -50,8 +50,7 @@ export default function About() {
               <strong>
                 PhD in Strategy and Entrepreneurship from London Business School
               </strong>{" "}
-              (committee: Gary Dushnitsky, Sungyong Chang, Sendil Ethiraj, Olenka
-              Kacperczyk, Abhishek Nagaraj). My dissertation, "Essays on
+              . My dissertation, "Essays on
               Innovation Commercialization," was recognized as a finalist for
               the AOM STR/TIM Outstanding Dissertation Award and the
               Organization Science/INFORMS Dissertation Proposal Competition,
