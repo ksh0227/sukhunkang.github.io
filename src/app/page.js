@@ -45,18 +45,32 @@ export default function Home() {
             />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 mb-1">Sukhun Kang</h1>
-          <p className="text-gray-600 mb-4">
-            Assistant Professor of Technology Management
-            <br />
-            <Link
-              href="https://tmp.ucsb.edu/"
-              target="_blank"
-              className="hover:underline"
-            >
-                College of Engineering <br />
-              UC Santa Barbara
-            </Link>
-          </p>
+         <p className="text-gray-600 mb-4">
+  Assistant Professor of{" "}
+  <Link
+    href="https://tmp.ucsb.edu/"
+    target="_blank"
+    className="hover:underline"
+  >
+    Technology Management
+  </Link>
+  <br />
+  <Link
+    href="https://engineering.ucsb.edu/"
+    target="_blank"
+    className="hover:underline"
+  >
+    Robert Mehbrabian College of Engineering
+  </Link>
+  <br />
+  <Link
+    href="https://www.ucsb.edu"
+    target="_blank"
+    className="hover:underline"
+  >
+    UC Santa Barbara
+  </Link>
+</p>
 
           {/* Keyword Tags */}
           <div className="flex flex-wrap justify-center gap-2 mb-5">
