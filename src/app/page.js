@@ -60,7 +60,7 @@ export default function Home() {
     target="_blank"
     className="hover:underline"
   >
-    Robert Mehbrabian College of Engineering
+    Robert Mehrabian College of Engineering
   </Link>
   <br />
   <Link
