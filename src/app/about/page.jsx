@@ -42,7 +42,7 @@ export default function About() {
               </Link>
               . I serve on the{" "}
               <strong>Editorial Review Board of Organization Science</strong>{" "}
-              and on research committees for AOM and SMS.
+              and on research committees for AOM's STR Division and as the Rep-at-Large at Innovation & Knowledge and Research Methods Community at SMS.
             </p>
 
             <p>
@@ -59,24 +59,18 @@ export default function About() {
             </p>
 
             <p>
-              My research uses strategy, economics, and policy analysis to
-              understand{" "}
+              My research explores the intricate ways in which{" "}
               <strong>
-                how innovative firms navigate regulatory environments, how
-                entrepreneurs respond to market opportunities, and how
-                organizations search for new ideas
+                technology influences innovation, aiming to identify the key drivers and obstacles to technology adoption and its effects on individuals, firms, and our society
               </strong>
-              . I focus particularly on the biopharmaceutical and high-tech
-              industries. Recent work examines expanded access to investigational
-              drugs, how investors shape startup pivots, and the direction of
-              innovation under policy constraints.
+              . My research also investigates the broader implications of technology and innovation, with an emphasis on how technology alters firm strategy and behavior. My goal is to deepen our understanding of how to effectively use technology to foster innovation within a business context.
             </p>
 
             <p>
               Before academia, I was a{" "}
               <strong>semiconductor engineer at Samsung Electronics</strong>{" "}
-              (2012–2014) and a research engineer at I&C Technology. In 2010, I
-              founded <strong>Egghead</strong>, an Internet startup in Seoul. I
+              and a research engineer at I&C Technology. In 2010, I
+              founded an Internet startup in Seoul. I
               hold a BS in Computer Engineering from the University of Illinois
               and Master's degrees from USC in Computer Engineering and
               Entrepreneurship & Innovation. These experiences inform my
@@ -94,8 +88,7 @@ export default function About() {
               </Link>{" "}
               at NYU and have served on the International Rare Diseases Research
               Consortium (IRDiRC) Task Force on Funding Models. I mentor
-              startups through the CancerX Accelerator and PhD students through
-              the West Coast Research Symposium Doctoral Consortium.
+              startups through the CancerX Accelerator.
             </p>
 
             <p>
@@ -142,8 +135,6 @@ export default function About() {
               <li>STR Dissertation Award, Finalist, AOM, 2024</li>
               <li>Sir James Ball PhD Award, London Business School, 2022</li>
               <li>Organization Science/INFORMS Dissertation Proposal Competition, Finalist, 2022</li>
-              <li>Best Reviewer Award, AOM TIM, 2021</li>
-              <li>Best Reviewer Award, AOM ENT, 2019</li>
             </ul>
           </section>
 
@@ -182,32 +173,6 @@ export default function About() {
                 , Think at London Business School (The Why Podcast), 2023
               </li>
             </ul>
-          </section>
-
-          {/* Service */}
-          <section className="mt-10">
-            <h2 className="text-xl font-semibold mb-4">Service</h2>
-            <div className="space-y-3 text-gray-700">
-              <p>
-                <strong>Editorial:</strong> Organization Science (ERB,
-                2025–Present). Ad-hoc reviewer for Management Science, Strategic
-                Management Journal, Research Policy, Journal of Business
-                Venturing, Strategy Science, and others.
-              </p>
-              <p>
-                <strong>Professional:</strong> Rep-at-Large, SMS Knowledge and
-                Innovation IG (2026–); Research Committee, AOM STR Division
-                (2025–); Rep-at-Large, SMS Research Methods IG (2025–);
-                Giarrantani Rising Star Award Committee, ISA (2025).
-              </p>
-              <p>
-                <strong>Conference Organization:</strong> Co-organizer of PDWs
-                on Strategy and Innovation in Pharmaceutical Industry (AOM
-                2023–2025), Empirical Research on Organization Search (AOM
-                2022–2024), and West Coast Research Symposium Doctoral Consortium
-                (2025).
-              </p>
-            </div>
           </section>
         </section>
       </main>
