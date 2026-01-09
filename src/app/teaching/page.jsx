@@ -23,7 +23,7 @@ export default function Teaching() {
         <section className="mt-10">
           <h2 className="text-2xl font-semibold mb-3">Case Studies</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            I develop case studies that explore strategic challenges facing.
+            I develop case studies that explore strategic challenges facing firms.
             These cases are designed for use in
             strategy, corporate strategy, and entrepreneurship courses.
           </p>
