@@ -53,6 +53,7 @@ export default function Home() {
               target="_blank"
               className="hover:underline"
             >
+                College of Engineering
               UC Santa Barbara
             </Link>
           </p>
