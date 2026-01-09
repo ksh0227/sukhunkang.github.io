@@ -1,75 +1,125 @@
 import Image from "next/image";
 import Script from "next/script";
+import Link from "next/link";
 import LinkCarousel from "./components/LinkCarousel";
 
 export default function Home() {
+  const keywords = [
+    "Innovation",
+    "Entrepreneurship",
+    "Biopharma",
+    "Strategy",
+    "Technology Policy",
+  ];
+
   return (
-    <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-12 xl:px-48 py-10">  
-          {/* <!-- Google tag (gtag.js) --> */}
-          <Script async src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}></Script>
-                  <Script id="google-analytics">
-                    {
-                      `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
+    <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-12 xl:px-48 py-10">
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}
+      ></Script>
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-5XRGPSLYNT');
+        `}
+      </Script>
 
-                        gtag('config', 'G-5XRGPSLYNT');
-                      `
-                    }
-          </Script>
-          <LinkCarousel/>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-screen-lg">
-            <div className="text-center flex flex-col items-center">
-              <div className="w-64 h-80 md:w-72 md:h-96 relative overflow-hidden drop-shadow-xl">
-                <Image
-                  src="/sukhun.jpg"
-                  alt="Profile Picture"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <a
-                href="/Sukhun-Kang-CV.pdf"
-                target="_blank"
-                className="mt-4 inline-block px-6 py-2 bg-black text-white font-semibold border-2 border-black transition 
-                          hover:bg-white hover:text-black hover:border-black"
-              >
-                CV
-              </a>
-            </div>
+      <div className="max-w-2xl mx-auto">
+        {/* Announcements */}
+        <div className="mb-8">
+          <LinkCarousel />
+        </div>
 
-            {/* Bio Section */}
-            <div className="max-w-xl text-md text-left">
-              <p>
-                I am an Assistant Professor of Technology Management at{" "}
-                <a href="https://www.tmp.ucsb.edu/" target="_blank" className="underline">
-                  University of California Santa Barbara
-                </a>.
-              </p>
-              <br />
-              <p>
-                My research interests are in innovation and entrepreneurship with a particular focus on
-                biopharmaceutical and high-tech industries. For more details, check out my{" "}
-                <a href="/research" className="underline">research</a> and{" "}
-                <a href="/lab/hil" className="underline">lab</a>.
-              </p>
-              <br />
-              <p>
-                I received a Ph.D in Strategy and Entrepreneurship from the London Business School. My research has been recognized by several awards including the Sumantra Ghoshal Research and Practice Award, AOM STR's Distinguished Best Paper Award, AOM STR/TIM Outstanding Dissertation Awards,  Organization Science/INFORMS Dissertation Proposal Competition, ISA Giarrantani Rising Star Award, and the Sir James Ball PhD Prize.
-              </p>
-              <br />
-              <p>
-                I hold a BS in Computer Engineering from the University of Illinois and Master's degrees from
-                the University of Southern California in Computer Engineering and Entrepreneurship & Innovation.
-                Outside of academia, I worked as a semiconductor engineer at Samsung Electronics and led an Internet
-                startup in 2010. These roles provided me with a diverse set of experiences, from designing products
-                to managing a venture, which informs my research.
-              </p>
-            </div>
-
+        {/* Centered Header */}
+        <div className="text-center mb-8">
+          <div className="w-36 h-36 relative rounded-full mx-auto mb-5 overflow-hidden shadow-lg">
+            <Image
+              src="/sukhun.jpg"
+              alt="Sukhun Kang"
+              fill
+              style={{ objectFit: "cover" }}
+              priority
+            />
           </div>
-          
-        </main>
+          <h1 className="text-3xl font-bold text-gray-900 mb-1">Sukhun Kang</h1>
+          <p className="text-gray-600 mb-4">
+            Assistant Professor of Technology Management
+            <br />
+            <Link
+              href="https://www.tmp.ucsb.edu/"
+              target="_blank"
+              className="hover:underline"
+            >
+              UC Santa Barbara
+            </Link>
+          </p>
+
+          {/* Keyword Tags */}
+          <div className="flex flex-wrap justify-center gap-2 mb-5">
+            {keywords.map((keyword) => (
+              <span
+                key={keyword}
+                className="px-3 py-1 text-sm bg-gray-100 text-gray-700 rounded-full"
+              >
+                {keyword}
+              </span>
+            ))}
+          </div>
+
+          {/* CV Button */}
+          <Link
+            href="/Sukhun-Kang-CV.pdf"
+            target="_blank"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:border-gray-400 transition"
+          >
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            Curriculum Vitae
+          </Link>
+        </div>
+
+        {/* Bio */}
+        <div className="space-y-4 text-gray-700 leading-relaxed">
+          <p>
+            I study how firms innovate and how entrepreneurs build new ventures,
+            with a focus on the biopharmaceutical and high-tech industries. My
+            work examines regulatory strategy, organizational search, and how
+            policy shapes innovation outcomes.
+          </p>
+          <p>
+            Before academia, I was a semiconductor engineer at Samsung and
+            founded an Internet startup. I hold a PhD from London Business
+            School and degrees in Computer Engineering from Illinois and USC.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div className="mt-8 pt-6 border-t border-gray-200 flex justify-center gap-6 text-sm">
+          <Link href="/research" className="text-gray-900 hover:underline">
+            Research
+          </Link>
+          <Link href="/lab/hil" className="text-gray-900 hover:underline">
+            Lab
+          </Link>
+          <Link href="/teaching" className="text-gray-900 hover:underline">
+            Teaching
+          </Link>
+        </div>
+      </div>
+    </main>
   );
 }
