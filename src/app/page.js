@@ -68,7 +68,7 @@ export default function Home() {
     target="_blank"
     className="hover:underline"
   >
-    UC Santa Barbara
+    University of Californi Santa Barbara (UCSB)
   </Link>
 </p>
 
