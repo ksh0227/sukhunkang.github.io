@@ -49,7 +49,7 @@ export default function Home() {
             Assistant Professor of Technology Management
             <br />
             <Link
-              href="https://www.tmp.ucsb.edu/"
+              href="https://tmp.ucsb.edu/"
               target="_blank"
               className="hover:underline"
             >
