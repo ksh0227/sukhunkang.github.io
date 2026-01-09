@@ -50,11 +50,9 @@ export default function About() {
               <strong>
                 PhD in Strategy and Entrepreneurship from London Business School
               </strong>{" "}
-              . My dissertation, "Essays on
-              Innovation Commercialization," was recognized as a finalist for
-              the AOM STR/TIM Outstanding Dissertation Award and the
-              Organization Science/INFORMS Dissertation Proposal Competition,
-              and was runner-up for the ISA Giarrantani Rising Star Award.
+              My research has been recognized by AOM Sumantra Goshal Research and Practice Award (2025), AOM STR Distinguished Paper Award in Corporate and International Strategy (2025), 
+              the AOM STR/TIM Outstanding Dissertation Award Finalists (2024), ISA Giarrantani Rising Star Award Runner-up (2024), Sir James Ball PhD Award by London Business School (2024), and the
+              Organization Science/INFORMS Dissertation Proposal Competition (2022).
             </p>
 
             <p>
