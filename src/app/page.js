@@ -111,18 +111,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Quick Links */}
-        <div className="mt-8 pt-6 border-t border-gray-200 flex justify-center gap-6 text-sm">
-          <Link href="/research" className="text-gray-900 hover:underline">
-            Research
-          </Link>
-          <Link href="/lab/hil" className="text-gray-900 hover:underline">
-            Lab
-          </Link>
-          <Link href="/teaching" className="text-gray-900 hover:underline">
-            Teaching
-          </Link>
-        </div>
       </div>
     </main>
   );
