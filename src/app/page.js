@@ -95,13 +95,13 @@ export default function Home() {
         {/* Bio */}
         <div className="space-y-4 text-gray-700 leading-relaxed">
           <p>
-          His work explores the intricate ways in which technology influences innovation, 
+          My research explores the intricate ways in which technology influences innovation, 
           aiming to identify the key drivers and obstacles to technology adoption and its 
           effects on individuals, firms, and our society.
           
-          His research also investigates the broader implications of technology and innovation, 
+          My research also investigates the broader implications of technology and innovation, 
           with an emphasis on how technology alters firm strategy and behavior. 
-          His goal is to deepen our understanding of how to effectively use technology to foster 
+          My goal is to deepen our understanding of how to effectively use technology to foster 
             innovation within a business context.
           </p>
           <p>
