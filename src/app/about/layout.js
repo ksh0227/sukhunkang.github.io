@@ -1,7 +1,7 @@
-import { hiwgMetadata } from "../metadata";
+import { aboutMetadata } from "../metadata";
 
-export const metadata = hiwgMetadata;
+export const metadata = aboutMetadata;
 
-export default function HIWGLayout({ children }) {
+export default function AboutLayout({ children }) {
   return children;
 }
