@@ -35,7 +35,7 @@ export default function Home() {
 
         {/* Centered Header */}
         <div className="text-center mb-8">
-          <div className="w-36 h-36 relative rounded-full mx-auto mb-5 overflow-hidden shadow-lg">
+          <div className="w-44 h-44 relative rounded-full mx-auto mb-5 overflow-hidden shadow-lg">
             <Image
               src="/sukhun.jpg"
               alt="Sukhun Kang"
