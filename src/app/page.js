@@ -107,7 +107,7 @@ export default function Home() {
           <p>
             Before academia, I was a semiconductor engineer at Samsung and
             founded an Internet startup. I hold a PhD from London Business
-            School and degrees in Computer Engineering from Illinois and USC.
+            School and Bacherlor's and Master's degrees in Computer Engineering from UIUC and USC.
           </p>
         </div>
 
