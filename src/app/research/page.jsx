@@ -55,7 +55,7 @@ export default function Research() {
         "Runner-up for ISA Giarrantani Rising Star Award",
       ],
       links: [],
-      notes: [Previous titles: “Objects may be closer than they appear: The impact of public scientific map on organizational search”],
+      notes: ["Previous titles: “Objects may be closer than they appear: The impact of public scientific map on organizational search”"],
     },
     {
       id: "wp-2",
