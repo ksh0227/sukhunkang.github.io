@@ -190,6 +190,9 @@ export default function Research() {
             {paper.abstract && (
               <p className="text-sm text-gray-700 leading-relaxed">{paper.abstract}</p>
             )}
+            {paper.notes && (
+              <p className="text-sm text-gray-500 italic mt-2">{paper.notes}</p>
+            )}
           </div>
         )}
       </div>
