@@ -61,7 +61,7 @@ export default function Research() {
       title: "When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990-2020",
       coauthors: "with Sungyong Chang",
       hook: "We examine firm-level determinants of providing expanded access in the oncology market.",
-      abstract: "",
+      abstract: "One of the grand challenges in healthcare is the limited availability of life-saving drugs and therapies. While providing early access to investigational drugs is seen as a potential solution to this issue, our understanding of what deters or facilitates firms from granting early access remains limited. We examine when firms provide early access to investigational oncology drugs from 1990 to 2020. Our study finds that while entrepreneurial firms are known as engines for developing novel drugs, they are less likely to provide early access due to uncertainties from thinner product pipelines and concerns over equity values. Regulatory certification significantly reduces such uncertainties, encouraging firms to provide early access, but its benefits are more pronounced for established firms. We discuss the intricacies involved in improving early access, highlighting the complex interaction between company incentives and industry structure.",
       links: [
         { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005" },
       ],
