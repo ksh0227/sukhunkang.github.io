@@ -43,7 +43,7 @@ export default function Research() {
   ];
 
   const workingPapers = [
-    {
+    
        {
       id: "wp-1",
       title: "From Outward to Inward: Reframing Search with New Mapping Criteria",
@@ -56,6 +56,7 @@ export default function Research() {
       ],
       links: [],
     },
+    {
       id: "wp-2",
       title: "When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990-2020",
       coauthors: "with Sungyong Chang",
