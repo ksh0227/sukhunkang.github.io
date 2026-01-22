@@ -104,6 +104,55 @@ export default function RootLayout({ children }) {
     ],
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://sukhunkang.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "About",
+        item: "https://sukhunkang.com/about",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Research",
+        item: "https://sukhunkang.com/research",
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: "Teaching",
+        item: "https://sukhunkang.com/teaching",
+      },
+      {
+        "@type": "ListItem",
+        position: 5,
+        name: "Resources",
+        item: "https://sukhunkang.com/resources",
+      },
+      {
+        "@type": "ListItem",
+        position: 6,
+        name: "Health Innovation Lab",
+        item: "https://sukhunkang.com/lab/hil",
+      },
+      {
+        "@type": "ListItem",
+        position: 7,
+        name: "HIWG Seminar",
+        item: "https://sukhunkang.com/lab/hiwg",
+      },
+    ],
+  };
+
   const publicationsSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -264,6 +313,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(labSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         <script
           type="application/ld+json"
