@@ -7,8 +7,7 @@ export default function About() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow max-w-3xl mx-auto px-6 py-8">
         <section className="mt-8">
-          <h1 className="text-3xl font-bold mb-6">About</h1>
-
+          <h1 className="text-3xl font-bold mb-4">About</h1>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
               I am an{" "}
@@ -127,9 +126,10 @@ export default function About() {
               .
             </p>
           </div>
+        </section>
 
-          {/* Awards Section */}
-          <section className="mt-10">
+        {/* Awards Section */}
+        <section className="mt-10">
             <h2 className="text-xl font-semibold mb-4">Selected Awards</h2>
             <ul className="space-y-2 text-gray-700">
               <li>Sumantra Ghoshal Research and Practice Award, AOM, 2025</li>
@@ -140,10 +140,10 @@ export default function About() {
               <li>Sir James Ball PhD Award, London Business School, 2022</li>
               <li>Organization Science/INFORMS Dissertation Proposal Competition, Finalist, 2022</li>
             </ul>
-          </section>
+        </section>
 
-          {/* Media & Outreach */}
-          <section className="mt-10">
+        {/* Media & Outreach */}
+        <section className="mt-10">
             <h2 className="text-xl font-semibold mb-4">Media & Outreach</h2>
             <ul className="space-y-2 text-gray-700">
               <li>
@@ -177,7 +177,6 @@ export default function About() {
                 , Think at London Business School (The Why Podcast), 2023
               </li>
             </ul>
-          </section>
         </section>
       </main>
     </div>
