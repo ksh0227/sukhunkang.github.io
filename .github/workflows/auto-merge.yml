@@ -1,12 +1,32 @@
 name: Auto-merge Claude PRs
 
 on:
+  push:
+    branches:
+      - 'claude/**'
   pull_request:
     types: [opened, synchronize, reopened]
 
 jobs:
+  create-pr:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Create Pull Request
+        run: |
+          gh pr create --repo "$GITHUB_REPOSITORY" \
+            --head "$GITHUB_REF_NAME" \
+            --base main \
+            --title "$GITHUB_REF_NAME" \
+            --body "Auto-generated PR from branch $GITHUB_REF_NAME"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   auto-merge:
-    if: startsWith(github.head_ref, 'claude/')
+    if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'claude/')
     runs-on: ubuntu-latest
     permissions:
       contents: write
