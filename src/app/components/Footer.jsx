@@ -19,7 +19,7 @@ const Footer = () => {
           aria-label="LinkedIn"
         >
           <img
-            src="linkedin.svg"
+            src="/linkedin.svg"
             alt="LinkedIn"
             width={24}
             height={24}
@@ -34,7 +34,7 @@ const Footer = () => {
           aria-label="X (Twitter)"
         >
           <img
-            src="X_logo.jpg"
+            src="/X_logo.jpg"
             alt="X"
             width={24}
             height={24}
@@ -49,7 +49,7 @@ const Footer = () => {
           aria-label="Google Scholar"
         >
           <img
-            src="google-scholar.svg"
+            src="/google-scholar.svg"
             alt="Google Scholar"
             width={24}
             height={24}
@@ -64,7 +64,7 @@ const Footer = () => {
           aria-label="SSRN"
         >
           <img
-            src="ssrn.svg"
+            src="/ssrn.svg"
             alt="SSRN"
             width={24}
             height={24}
