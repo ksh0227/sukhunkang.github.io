@@ -153,6 +153,76 @@ export default function RootLayout({ children }) {
     ],
   };
 
+  const teachingSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Courses and Teaching by Sukhun Kang",
+    itemListElement: [
+      {
+        "@type": "Course",
+        position: 1,
+        name: "TMP 412: Technology Strategy",
+        description: "Why do some technology-intensive firms outperform others? This course examines strategy in industries shaped by rapid innovation, intellectual property, and platform dynamics. Topics include S-curves and technology evolution, value capture and appropriability, IP strategy, platform and ecosystem design, corporate venture capital, and technology's role in addressing grand societal challenges.",
+        provider: {
+          "@type": "Organization",
+          name: "University of California, Santa Barbara",
+        },
+        educationalLevel: "Graduate",
+        teaches: [
+          "Technology Strategy",
+          "Innovation Management",
+          "Intellectual Property Strategy",
+          "Platform Economics",
+          "Corporate Venture Capital",
+        ],
+        instructor: {
+          "@type": "Person",
+          name: "Sukhun Kang",
+          url: "https://sukhunkang.com",
+        },
+      },
+      {
+        "@type": "Course",
+        position: 2,
+        name: "TMP 120: Fundamentals of Business Strategy",
+        description: "An introduction to strategic management for technology management students. The course covers frameworks for analyzing competitive advantage, industry profitability, and innovation. Students apply these concepts through case discussions and a group project.",
+        provider: {
+          "@type": "Organization",
+          name: "University of California, Santa Barbara",
+        },
+        educationalLevel: "Undergraduate",
+        teaches: [
+          "Business Strategy",
+          "Competitive Advantage",
+          "Industry Analysis",
+          "Strategic Management",
+        ],
+        instructor: {
+          "@type": "Person",
+          name: "Sukhun Kang",
+          url: "https://sukhunkang.com",
+        },
+      },
+      {
+        "@type": "CreativeWork",
+        position: 3,
+        name: "Behind the Scenes of a YouTube Mega-Hit: Baby Shark, The Pinkfong Company, and What's Next",
+        description: "How did The Pinkfong Company transform a viral video into a global multimedia brand? This case examines strategic questions around leveraging viral IP, digital platform dependence, and entrepreneurial growth.",
+        publisher: {
+          "@type": "Organization",
+          name: "Harvard Business Publishing",
+        },
+        datePublished: "2024",
+        author: {
+          "@type": "Person",
+          name: "Sukhun Kang",
+          url: "https://sukhunkang.com",
+        },
+        url: "https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077",
+      },
+    ],
+  };
+
   const publicationsSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -317,6 +387,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(teachingSchema) }}
         />
         <script
           type="application/ld+json"
