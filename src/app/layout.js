@@ -24,13 +24,20 @@ export default function RootLayout({ children }) {
     name: "Sukhun Kang",
     givenName: "Sukhun",
     familyName: "Kang",
+    alternateName: ["S. Kang", "Dr. Sukhun Kang", "Dr. Kang"],
     jobTitle: "Assistant Professor of Technology Management",
     worksFor: {
       "@type": "Organization",
       name: "University of California, Santa Barbara",
     },
     url: "https://sukhunkang.com",
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "ORCID",
+      value: "0000-0002-6712-2040",
+    },
     sameAs: [
+      "https://orcid.org/0000-0002-6712-2040",
       "https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ",
       "https://www.linkedin.com/in/sukhunkang/",
       "https://x.com/sukhunkang",

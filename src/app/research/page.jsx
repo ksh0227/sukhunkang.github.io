@@ -133,7 +133,7 @@ export default function Research() {
     const hasExpandableContent = paper.abstract || paper.awards;
 
     return (
-      <article className="py-4 border-b border-gray-200 last:border-b-0">
+      <article id={paper.id} className="py-4 border-b border-gray-200 last:border-b-0 scroll-mt-20">
         <div
           className={`flex items-start gap-2 ${hasExpandableContent ? "cursor-pointer group" : ""}`}
           onClick={() => hasExpandableContent && togglePaper(paper.id)}
