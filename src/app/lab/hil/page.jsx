@@ -62,7 +62,7 @@ const members = [
   {
     name: "Aaron Tang",
     description:
-      "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further my education in data science and continue honing his skills. Outside of school, he loves to spend time with family and friends!",
+      "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further his education in data science and continue honing his skills. Outside of school, he loves to spend time with family and friends!",
     image: "/lab/aaron.jpg",
   },
   {
@@ -85,7 +85,7 @@ export default function Lab() {
         <main className="flex-grow max-w-5xl mx-auto px-6 py-8">
           <section className="mt-8">
             <h1 className="text-3xl font-bold mb-4">Health Innovation Lab (HIL)</h1>
-             <h3 className="text-lg font-semibold mt-4">About</h3>
+             <h2 className="text-lg font-semibold mt-4">About</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                Health Innovation Lab is co-directed by Dr. Sukhun Kang, <a href="https://www.barbosu.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sandra Barbosu</a>, and <a href="https://sungyongchang.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sungyong Chang</a>.
@@ -97,7 +97,7 @@ export default function Lab() {
               </li>
             </ul>
             
-            <h3 className="text-lg font-semibold mt-4">What I Look For</h3>
+            <h2 className="text-lg font-semibold mt-4">What I Look For</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 I am usually looking for research assistants to help me on ongoing research projects, 

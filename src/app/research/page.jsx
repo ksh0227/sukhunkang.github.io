@@ -21,7 +21,7 @@ export default function Research() {
       year: "2019",
       volume: "40: 503-532",
       coauthors: "with Yongwook Paik & Robert Seamans",
-      hook: "Political competition can explain whether cities accomodate or ban ridesharing platforms.",
+      hook: "Political competition can explain whether cities accommodate or ban ridesharing platforms.",
       abstract: "With the recent growth of the sharing economy, regulators must frequently strike the right balance between private and public interests to maximize value creation. In this article, we argue that political competition is a critical ingredient that explains whether cities accommodate or ban ridesharing platforms and that this relationship is moderated in more populous cities and in cities with higher unemployment rates. We test our arguments using archival data covering ridesharing bans in various U.S. cities during the 2011–2015 period. We supplement these data with semistructured interviews. We find broad support for our arguments while mitigating potential endogeneity concerns. Our study has important implications for nonmarket strategy, entrepreneurship and innovation, and public-private partnership literatures. In addition, our findings inform policy debates on the sharing economy.",
       links: [
         { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077" },
@@ -104,12 +104,12 @@ export default function Research() {
       id: "wp-5",
       title: "Shattering Ceilings While Opening Doors: The Symbolic Effect of the First Female Political Leader on the Mobility Outcomes of Female Employees",
       coauthors: "with Olenka Kacperczyk & Yongwook Paik",
-      hook: "We examine how feamle political leadership impacts female employee's mobility.",
+      hook: "We examine how female political leadership impacts female employee's mobility.",
       abstract: "",
       links: [],
     },
     {
-      id: "wp-5",
+      id: "wp-6",
       title: "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance",
       coauthors: "with Gary Dushnitsky",
       hook: "We suggest that CVC can be used to initiate and orchestrate an ecosystem of innovative startups.",
@@ -225,6 +225,7 @@ export default function Research() {
             <Link
               href="/Sukhun-Kang-CV.pdf"
               target="_blank"
+              rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
             >
               CV can be viewed here [PDF]
