@@ -89,6 +89,13 @@ export default function About() {
             </p>
 
             <p>
+              I engage in a variety of consulting, advising, and speaking activities.
+              This includes advising startups on entrepreneurial strategy, consulting with firms on their
+              strategy, and speaking to a variety of audiences on topics around
+              strategy, innovation, and entrepreneurship.
+            </p>
+
+            <p>
               I can be reached at{" "}
               <Link href="mailto:sukhunkang@ucsb.edu" className="underline">
                 sukhunkang@ucsb.edu

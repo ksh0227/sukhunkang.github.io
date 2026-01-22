@@ -67,18 +67,6 @@ export default function Resources() {
             </ul>
           </section>
 
-          <section className="mt-8">
-            <h2 className="text-2xl font-semibold">Consulting, Advising, and Speaking</h2>
-            <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
-              <li>
-                Sukhun engages in a variety of different consulting, advising, and speaking activities. 
-                This includes advising startups on entrepreneurial strategy, consulting with firms on their 
-                strategy, and speaking to a variety of different audiences on a variety of topics around 
-                strategy, innovation, and entrepreneurship. Contact Sukhun via his e-mail.
-              </li>
-            </ul>
-          </section>
-
         </main>
       </div>
     );
