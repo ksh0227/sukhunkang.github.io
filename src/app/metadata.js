@@ -1,5 +1,12 @@
 const baseUrl = "https://sukhunkang.com";
 
+const defaultImage = {
+  url: `${baseUrl}/sukhun.jpg`,
+  width: 1200,
+  height: 1500,
+  alt: "Sukhun Kang - Assistant Professor at UC Santa Barbara",
+};
+
 export const rootMetadata = {
   metadataBase: new URL(baseUrl),
   title: "Sukhun Kang | UC Santa Barbara",
@@ -13,13 +20,15 @@ export const rootMetadata = {
     siteName: "Sukhun Kang",
     locale: "en_US",
     type: "website",
+    images: [defaultImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Sukhun Kang | UC Santa Barbara",
     description:
       "Assistant Professor of Technology Management at UC Santa Barbara.",
     creator: "@sukhunkang",
+    images: [defaultImage.url],
   },
   robots: { index: true, follow: true },
   alternates: { canonical: baseUrl },
@@ -35,12 +44,14 @@ export const aboutMetadata = {
       "Assistant Professor of Technology Management at UC Santa Barbara, researching innovation and entrepreneurship in biopharmaceutical and high-tech industries.",
     url: `${baseUrl}/about`,
     type: "profile",
+    images: [defaultImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "About | Sukhun Kang",
     description:
       "Assistant Professor of Technology Management at UC Santa Barbara, researching innovation and entrepreneurship.",
+    images: [defaultImage.url],
   },
 };
 
@@ -54,12 +65,14 @@ export const researchMetadata = {
       "Academic publications on innovation, entrepreneurship, expanded access, GDPR, venture capital, and biopharmaceutical strategy.",
     url: `${baseUrl}/research`,
     type: "website",
+    images: [defaultImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Research | Sukhun Kang",
     description:
       "Publications on innovation, expanded access, GDPR, venture capital, and biopharmaceutical strategy.",
+    images: [defaultImage.url],
   },
 };
 
@@ -73,12 +86,14 @@ export const teachingMetadata = {
       "Case studies and courses in business strategy at UC Santa Barbara. Includes Harvard Business Publishing cases.",
     url: `${baseUrl}/teaching`,
     type: "website",
+    images: [defaultImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Teaching | Sukhun Kang",
     description:
       "Business strategy teaching and case studies at UC Santa Barbara.",
+    images: [defaultImage.url],
   },
 };
 
@@ -92,12 +107,14 @@ export const resourcesMetadata = {
       "Educational resources on FDA programs, pharmaceutical regulation, and doctoral research opportunities.",
     url: `${baseUrl}/resources`,
     type: "website",
+    images: [defaultImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Resources | Sukhun Kang",
     description:
       "Resources on FDA programs, pharmaceutical policy, and strategy research.",
+    images: [defaultImage.url],
   },
 };
 
@@ -111,12 +128,14 @@ export const hilMetadata = {
       "Research lab at UC Santa Barbara focused on pharmaceutical innovation and health policy.",
     url: `${baseUrl}/lab/hil`,
     type: "website",
+    images: [defaultImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Health Innovation Lab | Sukhun Kang",
     description:
       "UC Santa Barbara research lab on pharmaceutical innovation and health policy.",
+    images: [defaultImage.url],
   },
 };
 
@@ -130,11 +149,13 @@ export const hiwgMetadata = {
       "Virtual seminar series for PhD students and faculty researching pharmaceuticals and healthcare strategy.",
     url: `${baseUrl}/lab/hiwg`,
     type: "website",
+    images: [defaultImage],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "HIWG Seminar | Sukhun Kang",
     description:
       "Virtual workshop series for research on pharmaceuticals, healthcare, and health policy.",
+    images: [defaultImage.url],
   },
 };
