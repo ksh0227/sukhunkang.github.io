@@ -163,7 +163,12 @@ Schema.org JSON-LD is in the root `layout.js`.
 
 ## Git Workflow
 
-Always commit changes with descriptive messages:
+**IMPORTANT: Always sync before starting new work:**
+```bash
+git pull origin main
+```
+
+Then commit changes with descriptive messages:
 ```bash
 git add .
 git commit -m "Description of changes"
