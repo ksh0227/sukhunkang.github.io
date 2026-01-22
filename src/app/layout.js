@@ -180,6 +180,7 @@ export default function RootLayout({ children }) {
           name: "Sukhun Kang",
           url: "https://sukhunkang.com",
         },
+        syllabusPdf: "https://sukhunkang.com/syllabi/TMP412-syllabus.pdf",
       },
       {
         "@type": "Course",
@@ -202,6 +203,7 @@ export default function RootLayout({ children }) {
           name: "Sukhun Kang",
           url: "https://sukhunkang.com",
         },
+        syllabusPdf: "https://sukhunkang.com/syllabi/TMP120-syllabus.pdf",
       },
       {
         "@type": "CreativeWork",

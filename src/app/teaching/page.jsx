@@ -65,7 +65,7 @@ export default function Teaching() {
             <p className="text-gray-700 leading-relaxed mb-2">
               Master's course at UC Santa Barbara (2025–Present)
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-2">
               Why do some technology-intensive firms outperform others? This course
               examines strategy in industries shaped by rapid innovation, intellectual
               property, and platform dynamics. Topics include S-curves and technology
@@ -73,6 +73,16 @@ export default function Teaching() {
               ecosystem design, corporate venture capital, and technology's role in
               addressing grand societal challenges. The course uses the case method
               with guest speakers from industry.
+            </p>
+            <p className="text-sm mt-2">
+              <Link
+                href="/syllabi/TMP412-syllabus.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                [Syllabus]
+              </Link>
             </p>
           </div>
 
@@ -83,11 +93,21 @@ export default function Teaching() {
             <p className="text-gray-700 leading-relaxed mb-2">
               Undergraduate course at UC Santa Barbara (2023–Present)
             </p>
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-2">
               An introduction to strategic management for technology management
               students. The course covers frameworks for analyzing competitive
               advantage, industry profitability, and innovation. Students apply
-              these concepts through case discussions and a group project. 
+              these concepts through case discussions and a group project.
+            </p>
+            <p className="text-sm mt-2">
+              <Link
+                href="/syllabi/TMP120-syllabus.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                [Syllabus]
+              </Link>
             </p>
           </div>
         </section>
