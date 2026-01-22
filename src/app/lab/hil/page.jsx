@@ -82,7 +82,7 @@ const members = [
 export default function Lab() {
     return (
       <div className="flex flex-col min-h-screen">
-        <main className="flex-grow max-w-4xl mx-auto px-6 py-8">
+        <main className="flex-grow max-w-5xl mx-auto px-6 py-8">
           <section className="mt-8">
             <h1 className="text-3xl font-bold mb-4">Health Innovation Lab (HIL)</h1>
              <h3 className="text-lg font-semibold mt-4">About</h3>

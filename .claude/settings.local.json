@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(wc:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd Claude.md for website maintenance documentation\n\nDocuments project structure, tech stack, common tasks,\nand development workflow for AI-assisted maintenance.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(npm audit fix:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd papers folder for PDF uploads\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)",
+      "Bash(npm run build:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git fetch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git stash:*)",
+      "Bash(git pull:*)",
+      "Bash(gh api:*)",
+      "Bash(npm audit:*)",
+      "Bash(npm outdated:*)",
+      "Bash(npm update:*)"
+    ]
+  }
+}

@@ -27,7 +27,7 @@ export default function Home() {
         `}
       </Script>
 
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         {/* Announcements */}
         <div className="mb-8">
           <LinkCarousel />

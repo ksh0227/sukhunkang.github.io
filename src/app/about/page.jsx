@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-grow max-w-3xl mx-auto px-6 py-8">
+      <main className="flex-grow max-w-4xl mx-auto px-6 py-8">
         <section className="mt-8">
           <h1 className="text-3xl font-bold mb-4">About</h1>
           <div className="space-y-4 text-gray-700 leading-relaxed">
