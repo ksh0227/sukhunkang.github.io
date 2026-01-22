@@ -7,20 +7,39 @@ export default function Resources() {
           
           <section className="mt-8">
             <h1 className="text-3xl font-bold mb-4">Resources</h1>
-            <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
-              <li>
-                Introduction to Expanded Access{" "}
-                <Link href="https://www.dropbox.com/scl/fi/rmfh6l5ztsn1v5okl7f21/Introduction-to-EAP.pdf?rlkey=5ok76ch6x0quqyznanx8ibsao&e=1&dl=0" className="underline">[ppt]</Link>
-              </li>
-              <li>
-                Introduction to FDA's Expedited Programs{" "}
-                <Link href="https://www.dropbox.com/s/ojy882ush37crbw/Introduction%20to%20FDA%27s%20Expedited%20Programs.pdf?dl=0" className="underline">[ppt]</Link>
-              </li>
-              <li>
-                Introduction to U.S. Laws, Policies, and Regulations of Pharmaceuticals{" "}
-                <Link href="https://www.dropbox.com/s/8ws5o7gdqdompwo/Introduction%20to%20Laws%2C%20Policies%2C%20and%20Regulations%20of%20Pharmaceuticals.pdf?dl=0" className="underline">[ppt]</Link>
-              </li>
-            </ul>
+            <h2 className="text-2xl font-semibold mb-3">Educational Materials</h2>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Slide decks covering key topics in pharmaceutical regulation and drug development policy.
+            </p>
+            <div className="space-y-4">
+              <div className="border-l-2 border-gray-200 pl-4">
+                <h3 className="font-semibold text-gray-900">Introduction to Expanded Access</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Overview of FDA's expanded access (compassionate use) program, including eligibility criteria, application processes, and key considerations for patients and sponsors.
+                </p>
+                <p className="text-sm mt-2">
+                  <Link href="/resources/Introduction-to-Expanded-Access.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PDF]</Link>
+                </p>
+              </div>
+              <div className="border-l-2 border-gray-200 pl-4">
+                <h3 className="font-semibold text-gray-900">Introduction to FDA's Expedited Programs</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Guide to FDA's four expedited pathways: Fast Track, Breakthrough Therapy, Accelerated Approval, and Priority Review. Covers eligibility, benefits, and strategic considerations.
+                </p>
+                <p className="text-sm mt-2">
+                  <Link href="/resources/Introduction-to-FDA-Expedited-Programs.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PDF]</Link>
+                </p>
+              </div>
+              <div className="border-l-2 border-gray-200 pl-4">
+                <h3 className="font-semibold text-gray-900">Introduction to U.S. Pharmaceutical Laws and Regulations</h3>
+                <p className="text-sm text-gray-600 mt-1">
+                  Overview of the U.S. regulatory framework for pharmaceuticals, including the FDA's role, drug approval process, and key legislation shaping the industry.
+                </p>
+                <p className="text-sm mt-2">
+                  <Link href="/resources/Introduction-to-Pharmaceutical-Regulations.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">[PDF]</Link>
+                </p>
+              </div>
+            </div>
           </section>
 
           <section className="mt-8">

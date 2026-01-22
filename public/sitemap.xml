@@ -54,4 +54,22 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://sukhunkang.com/resources/Introduction-to-Expanded-Access.pdf</loc>
+    <lastmod>2020-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sukhunkang.com/resources/Introduction-to-FDA-Expedited-Programs.pdf</loc>
+    <lastmod>2020-06-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sukhunkang.com/resources/Introduction-to-Pharmaceutical-Regulations.pdf</loc>
+    <lastmod>2020-06-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
