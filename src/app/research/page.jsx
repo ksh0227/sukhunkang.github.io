@@ -133,12 +133,13 @@ export default function Research() {
     const hasExpandableContent = paper.abstract || paper.awards;
 
     return (
-      <div className="py-4 border-b border-gray-200 last:border-b-0">
+      <article className="py-4 border-b border-gray-200 last:border-b-0">
         <div
           className={`flex items-start gap-2 ${hasExpandableContent ? "cursor-pointer group" : ""}`}
           onClick={() => hasExpandableContent && togglePaper(paper.id)}
           role={hasExpandableContent ? "button" : undefined}
           tabIndex={hasExpandableContent ? 0 : undefined}
+          aria-expanded={hasExpandableContent ? isExpanded : undefined}
           onKeyDown={(e) => {
             if (hasExpandableContent && (e.key === "Enter" || e.key === " ")) {
               e.preventDefault();
@@ -150,17 +151,18 @@ export default function Research() {
             <span
               className="text-gray-400 mt-1 transition-all duration-200 select-none group-hover:text-gray-600"
               style={{ transform: isExpanded ? "rotate(90deg)" : "rotate(0deg)" }}
+              aria-hidden="true"
             >
               ▸
             </span>
           )}
-          {!hasExpandableContent && <span className="w-4" />}
+          {!hasExpandableContent && <span className="w-4" aria-hidden="true" />}
           <div className="flex-1">
             <h3 className={`font-semibold text-gray-900 ${hasExpandableContent ? "group-hover:text-gray-700 transition-colors duration-200" : ""}`}>{paper.title}</h3>
             <p className="text-sm text-gray-600 mt-1">
               {paper.venue && <span className="italic">{paper.venue}</span>}
               {paper.venue && paper.year && <span> · </span>}
-              {paper.year && <span>{paper.year}</span>}
+              {paper.year && <time dateTime={paper.year}>{paper.year}</time>}
               {paper.volume && <span> · {paper.volume}</span>}
               {paper.coauthors && <span> · {paper.coauthors}</span>}
             </p>
@@ -175,6 +177,7 @@ export default function Research() {
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                       onClick={(e) => e.stopPropagation()}
+                      aria-label={`${link.label} for ${paper.title}`}
                     >
                       [{link.label}]
                     </Link>
@@ -189,10 +192,10 @@ export default function Research() {
         {isExpanded && (
           <div className="ml-6 mt-3 pl-4 border-l-2 border-gray-200">
             {paper.awards && paper.awards.length > 0 && (
-              <div className="mb-3">
+              <div className="mb-3" role="list" aria-label="Awards">
                 {paper.awards.map((award, i) => (
-                  <p key={i} className="text-sm text-gray-600">
-                    🏆 {award}
+                  <p key={i} className="text-sm text-gray-600" role="listitem">
+                    <span aria-hidden="true">🏆</span> {award}
                   </p>
                 ))}
               </div>
@@ -205,7 +208,7 @@ export default function Research() {
             )}
           </div>
         )}
-      </div>
+      </article>
     );
   };
 
@@ -216,7 +219,7 @@ export default function Research() {
           <h1 className="text-3xl font-bold mb-4">Research</h1>
           <p className="text-gray-700 leading-relaxed">
             My research focuses on {" "}
-            <strong>the intersection of innovation and entrepreneurship, especially within the biopharmaceutical and high-tech industries.</strong>.
+            <strong>the intersection of innovation and entrepreneurship, especially within the biopharmaceutical and high-tech industries</strong>.
             My work explores the intricate ways in which technology influences innovation, aiming to identify the key drivers and obstacles to technology adoption and its effects on individuals, firms, and our society.
             My{" "}
             <Link

@@ -23,6 +23,7 @@ export default function About() {
               <Link
                 href="https://www.barbosu.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Sandra Barbosu
@@ -31,6 +32,7 @@ export default function About() {
               <Link
                 href="https://www.sungyongchang.com/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Sungyong Chang
@@ -48,7 +50,7 @@ export default function About() {
               I hold a{" "}
               <strong>
                 PhD in Strategy and Entrepreneurship from London Business School
-              </strong>{" "}
+              </strong>.{" "}
               My research has been recognized by AOM Sumantra Goshal Research and Practice Award (2025), AOM STR Distinguished Paper Award in Corporate and International Strategy (2025), 
               the AOM STR/TIM Outstanding Dissertation Award Finalists (2024), ISA Giarrantani Rising Star Award Runner-up (2024), Sir James Ball PhD Award by London Business School (2024), and the
               Organization Science/INFORMS Dissertation Proposal Competition (2022).
@@ -78,6 +80,7 @@ export default function About() {
               <Link
                 href="https://med.nyu.edu/centers-programs/medical-ethics/access-programs"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Working Group on Compassionate Use & Preapproval Access (CUPA)
@@ -103,6 +106,7 @@ export default function About() {
               <Link
                 href="https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Google Scholar
@@ -111,6 +115,7 @@ export default function About() {
               <Link
                 href="https://www.linkedin.com/in/sukhunkang/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 LinkedIn
@@ -119,6 +124,7 @@ export default function About() {
               <Link
                 href="https://x.com/sukhunkang"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 X/Twitter
@@ -150,6 +156,7 @@ export default function About() {
                 <Link
                   href="https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
                 >
                   "Measuring Biopharmaceutical Innovation in the Modern Era"
@@ -160,6 +167,7 @@ export default function About() {
                 <Link
                   href="https://www.youtube.com/watch?v=XoXJaQyXbKU"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
                 >
                   "Conversation with Sukhun Kang on access to medicines"
@@ -170,6 +178,7 @@ export default function About() {
                 <Link
                   href="https://www.london.edu/think/why-should-collaboration-enhance-oncology-drug-innovation"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
                 >
                   "Why should collaboration enhance oncology drug innovation?"

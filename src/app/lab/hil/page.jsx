@@ -68,7 +68,7 @@ const members = [
   {
     name: "Fan Ye",
     description:
-      "Fan Ye is a fourth-year Actuarial Science and Economics student at the University of California, Santa Barbara. His research interest focuses on the intersection of drug development, public policy, and health insurance. Upon graduating, he hopes to pursue further education in economics, specializing in insurance eocnomics.",
+      "Fan Ye is a fourth-year Actuarial Science and Economics student at the University of California, Santa Barbara. His research interest focuses on the intersection of drug development, public policy, and health insurance. Upon graduating, he hopes to pursue further education in economics, specializing in insurance economics.",
     image: "/lab/fan.jpg",
   },
   // {
@@ -88,7 +88,7 @@ export default function Lab() {
              <h3 className="text-lg font-semibold mt-4">About</h3>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
-               Health Innovation Lab is co-directed by Dr. Sukhun Kang, <a href="https://www.barbosu.com/" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sandra Barbosu</a>, and <a href="https://sungyongchang.com/" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sungyong Chang.</a>
+               Health Innovation Lab is co-directed by Dr. Sukhun Kang, <a href="https://www.barbosu.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sandra Barbosu</a>, and <a href="https://sungyongchang.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sungyong Chang</a>.
               </li>
               <li>
                 The Health Innovation Lab serves as an integrated environment for research in the area of strategy and management with focus on the healthcare sectors. 

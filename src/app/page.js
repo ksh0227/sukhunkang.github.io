@@ -50,6 +50,7 @@ export default function Home() {
   <Link
     href="https://tmp.ucsb.edu/"
     target="_blank"
+    rel="noopener noreferrer"
     className="hover:underline hover:text-blue-600 transition-colors duration-200"
   >
     Technology Management
@@ -58,6 +59,7 @@ export default function Home() {
   <Link
     href="https://engineering.ucsb.edu/"
     target="_blank"
+    rel="noopener noreferrer"
     className="hover:underline hover:text-blue-600 transition-colors duration-200"
   >
     Robert Mehrabian College of Engineering
@@ -66,6 +68,7 @@ export default function Home() {
   <Link
     href="https://www.ucsb.edu"
     target="_blank"
+    rel="noopener noreferrer"
     className="hover:underline hover:text-blue-600 transition-colors duration-200"
   >
     University of California Santa Barbara
@@ -88,6 +91,8 @@ export default function Home() {
           <Link
             href="/Sukhun-Kang-CV.pdf"
             target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Curriculum Vitae (PDF)"
             className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:border-gray-400 hover:shadow-sm active:scale-[0.98] transition-all duration-200"
           >
             <svg
@@ -122,7 +127,7 @@ export default function Home() {
           <p>
             Before academia, I was a semiconductor engineer at Samsung and
             founded an Internet startup. I hold a PhD from London Business
-            School and Bacherlor's and Master's degrees in Computer Engineering from UIUC and USC.
+            School and Bachelor's and Master's degrees in Computer Engineering from UIUC and USC.
           </p>
         </div>
 
