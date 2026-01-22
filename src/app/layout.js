@@ -382,6 +382,77 @@ export default function RootLayout({ children }) {
     ],
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What does Sukhun Kang research?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dr. Sukhun Kang researches innovation and entrepreneurship, with a focus on the biopharmaceutical and high-tech industries. His work explores how technology influences innovation, identifying drivers and obstacles to technology adoption and its effects on individuals, firms, and society. Key research areas include expanded access to investigational drugs, the impact of data privacy regulations (like GDPR) on pharmaceutical R&D, venture capital's role in startup strategy, and how scientific breakthroughs reshape organizational search.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is expanded access (compassionate use)?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Expanded access, also known as compassionate use, is an FDA pathway that allows patients with serious or life-threatening conditions to access investigational drugs outside of clinical trials when no comparable alternatives exist. Dr. Kang's research examines when and why pharmaceutical firms provide expanded access, finding that entrepreneurial firms are often less likely to offer it due to pipeline uncertainties and equity concerns.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the Health Innovation Lab?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Health Innovation Lab (HIL) at UC Santa Barbara is co-directed by Dr. Sukhun Kang, Dr. Sandra Barbosu, and Dr. Sungyong Chang. It serves as an integrated research environment focused on strategy and management in healthcare sectors, exploring how technology influences innovation and firm strategy. The lab welcomes research assistants with data analytics skills (Stata, R, Python) and econometric training.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What courses does Sukhun Kang teach?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dr. Kang teaches TMP 412: Technology Strategy (graduate level) and TMP 120: Fundamentals of Business Strategy (undergraduate level) at UC Santa Barbara. His courses use the case method to examine strategy in technology-intensive industries, covering topics like S-curves, intellectual property strategy, platform economics, and corporate venture capital.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How does GDPR affect pharmaceutical innovation?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dr. Kang's research with Jennifer Kao finds that GDPR reduces clinical trials by approximately 18 percent. Firms shift their projects away from EU sites, conduct fewer multi-country trials, and target narrower disease sets. Research collaborations decline and shift toward established partners. Trials take longer, are less likely to succeed, and young firms are most affected.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the HIWG Seminar?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The Health Innovation Working Group (HIWG) Seminar is a virtual workshop series for PhD students and junior faculty presenting research on pharmaceuticals, healthcare strategy, and health policy. It is organized by Dr. Sukhun Kang, Dr. Sandra Barbosu, and Dr. Sungyong Chang. Interested presenters can contact sukhunkang@ucsb.edu.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is Sukhun Kang's educational background?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dr. Sukhun Kang holds a PhD in Strategy and Entrepreneurship from London Business School, a Master's degree in Computer Engineering and a Master's in Entrepreneurship & Innovation from USC, and a Bachelor's degree in Computer Engineering from the University of Illinois. Before academia, he worked as a semiconductor engineer at Samsung Electronics and founded an Internet startup in Seoul.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How can I contact Sukhun Kang?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Dr. Sukhun Kang can be reached at sukhunkang@ucsb.edu. He is also available on Google Scholar, LinkedIn, and X/Twitter (@sukhunkang). For research assistant opportunities, email with a short introduction and resume/CV indicating proficiency with data analytics tools.",
+        },
+      },
+    ],
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -408,6 +479,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(workingPapersSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         <Script
           async
