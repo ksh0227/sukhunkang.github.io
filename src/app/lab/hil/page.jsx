@@ -84,7 +84,7 @@ export default function Lab() {
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow px-6 lg:px-72 py-8">
           <section className="mt-8">
-            <h2 className="text-2xl font-semibold">Health Innovation Lab (HIL)</h2>
+            <h1 className="text-3xl font-bold mb-4">Health Innovation Lab (HIL)</h1>
              <h3 className="text-lg font-semibold mt-4">About</h3>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>

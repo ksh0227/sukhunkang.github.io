@@ -50,12 +50,108 @@ export default function RootLayout({ children }) {
     ],
   };
 
+  const labSchema = {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    name: "Health Innovation Lab",
+    alternateName: "HIL",
+    url: "https://sukhunkang.com/lab/hil",
+    parentOrganization: {
+      "@type": "Organization",
+      name: "University of California, Santa Barbara",
+    },
+    description: "The Health Innovation Lab serves as an integrated environment for research in strategy and management with focus on healthcare sectors, exploring how technology influences innovation and firm strategy.",
+    member: [
+      {
+        "@type": "Person",
+        name: "Sukhun Kang",
+        jobTitle: "Co-Director",
+        url: "https://sukhunkang.com",
+      },
+      {
+        "@type": "Person",
+        name: "Sandra Barbosu",
+        jobTitle: "Co-Director",
+        url: "https://www.barbosu.com/",
+      },
+      {
+        "@type": "Person",
+        name: "Sungyong Chang",
+        jobTitle: "Co-Director",
+        url: "https://sungyongchang.com/",
+      },
+    ],
+    knowsAbout: [
+      "Healthcare Innovation",
+      "Pharmaceutical Strategy",
+      "Technology Adoption",
+      "Drug Development",
+      "Health Policy",
+    ],
+  };
+
+  const publicationsSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Publications by Sukhun Kang",
+    itemListElement: [
+      {
+        "@type": "ScholarlyArticle",
+        position: 1,
+        name: "Entrepreneurship, Innovation, and Political Competition: How the Public Sector Helps the Sharing Economy Create Value",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Yongwook Paik" },
+          { "@type": "Person", name: "Robert Seamans" },
+        ],
+        datePublished: "2019",
+        isPartOf: {
+          "@type": "Periodical",
+          name: "Strategic Management Journal",
+        },
+        volumeNumber: "40",
+        pageStart: "503",
+        pageEnd: "532",
+        description: "Political competition can explain whether cities accommodate or ban ridesharing platforms.",
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 2,
+        name: "Implementation of 21st Century Cures Act Expanded Access Policies Requirement",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Sungyong Chang" },
+          { "@type": "Person", name: "Joseph Ross" },
+          { "@type": "Person", name: "Jennifer Miller" },
+        ],
+        datePublished: "2021",
+        isPartOf: {
+          "@type": "Periodical",
+          name: "Clinical Pharmacology & Therapeutics",
+        },
+        volumeNumber: "110",
+        issue: "6",
+        pageStart: "1579",
+        pageEnd: "1584",
+        description: "Most drug companies do not publicly disclose their expanded access policies despite the Cures Act.",
+      },
+    ],
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(labSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(publicationsSchema) }}
         />
         <Script
           async
