@@ -138,6 +138,101 @@ export default function RootLayout({ children }) {
     ],
   };
 
+  const workingPapersSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Working Papers by Sukhun Kang",
+    itemListElement: [
+      {
+        "@type": "ScholarlyArticle",
+        position: 1,
+        name: "Revealed Relatedness: How New Mapping Criteria Reshape Organizational Search",
+        author: [{ "@type": "Person", name: "Sukhun Kang" }],
+        description: "Research on organizational search assumes that the criteria for assessing domain relatedness remain stable. I examine what happens when new mapping criteria reveal that domains share causal mechanisms despite appearing unrelated under existing criteria—a phenomenon I term revealed relatedness.",
+        award: ["2023 AOM Best Paper Proceedings", "Runner-up for ISA Giarrantani Rising Star Award"],
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 2,
+        name: "When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990-2020",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Sungyong Chang" },
+        ],
+        description: "We examine firm-level determinants of providing expanded access in the oncology market, finding that entrepreneurial firms are less likely to provide early access due to uncertainties from thinner product pipelines.",
+        url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005",
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 3,
+        name: "Data Privacy Regulation and Innovation",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Jennifer Kao" },
+        ],
+        description: "We examine how GDPR data privacy regulation impacts pharmaceutical R&D, finding the regulation lowers clinical trials by 18 percent and shifts project types pursued.",
+        url: "https://sukhunkang.com/papers/Kang_Kao_GDPR.pdf",
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 4,
+        name: "How Do Investors Shape Startups' Response to New Market Opportunities?",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Sarath Balachandran" },
+          { "@type": "Person", name: "Sungyong Chang" },
+        ],
+        description: "Venture Capital portfolio is associated with how startups enter a market.",
+        award: ["2025 AOM Best Paper Proceedings", "2025 Sumantra Ghoshal Research and Practice Award", "2025 AOM STR's Distinguished Best Paper Award"],
+        url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926",
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 5,
+        name: "Do Biomedical Researchers Study Topics Related to Their Own Ethnicities? Evidence from NIH",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Wesley Greenblatt" },
+          { "@type": "Person", name: "Young Hou" },
+        ],
+        description: "Scientists' ethnic backgrounds shape what diseases they choose to study.",
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 6,
+        name: "Shattering Ceilings While Opening Doors: The Symbolic Effect of the First Female Political Leader on the Mobility Outcomes of Female Employees",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Olenka Kacperczyk" },
+          { "@type": "Person", name: "Yongwook Paik" },
+        ],
+        description: "We examine how female political leadership impacts female employee's mobility.",
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 7,
+        name: "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Gary Dushnitsky" },
+        ],
+        description: "We suggest that CVC can be used to initiate and orchestrate an ecosystem of innovative startups.",
+      },
+      {
+        "@type": "ScholarlyArticle",
+        position: 8,
+        name: "Whitespace in Drug Development: Quantifying the Inter-trial Intervals Between Clinical Trials",
+        author: [
+          { "@type": "Person", name: "Sukhun Kang" },
+          { "@type": "Person", name: "Sandra Barbosu" },
+          { "@type": "Person", name: "Sungyong Chang" },
+          { "@type": "Person", name: "Fan Ye" },
+        ],
+        description: "Measuring the gaps between clinical trials reveals hidden inefficiencies in drug development.",
+      },
+    ],
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -152,6 +247,10 @@ export default function RootLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(publicationsSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(workingPapersSchema) }}
         />
         <Script
           async
