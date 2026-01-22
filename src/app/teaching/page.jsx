@@ -47,7 +47,7 @@ export default function Teaching() {
                 href="https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
               >
                 [Harvard Business Publishing]
               </Link>
@@ -79,7 +79,7 @@ export default function Teaching() {
                 href="/syllabi/TMP412-syllabus.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
               >
                 [Syllabus]
               </Link>
@@ -104,7 +104,7 @@ export default function Teaching() {
                 href="/syllabi/TMP120-syllabus.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+                className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
               >
                 [Syllabus]
               </Link>

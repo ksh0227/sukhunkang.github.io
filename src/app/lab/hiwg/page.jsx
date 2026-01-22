@@ -17,7 +17,7 @@ const Members = () => {
               <li>
                 If you have a working paper that you would like to present at our seminar series, please don’t 
                 hesitate to reach out to me at 
-                <a href="mailto:sukhunkang@ucsb.edu" className=""> sukhunkang@ucsb.edu</a>.
+                <a href="mailto:sukhunkang@ucsb.edu" className="text-blue-600 hover:text-blue-800 transition-colors duration-200"> sukhunkang@ucsb.edu</a>.
               </li>
             </ul>
           </section>  

@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-center h-16 items-center">
           <div className="flex items-center space-x-8">
-            <Link href="/" onClick={handleLinkClick} className="text-xl font-semibold text-gray-900">
+            <Link href="/" onClick={handleLinkClick} className="text-xl font-semibold text-gray-900 hover:text-gray-600 transition-colors duration-200">
               SUKHUN KANG
             </Link>
             <div className="h-6 w-px bg-gray-400 hidden md:block"></div>
@@ -101,11 +101,16 @@ const NavItem = ({ href, pathname, children, onClick }) => {
     <Link
       href={href}
       onClick={onClick}
-      className={`block px-3 py-2 text-base font-medium ${
-        isActive ? "text-gray-900 font-bold" : "text-gray-500 hover:text-gray-900"
+      className={`relative block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+        isActive
+          ? "text-gray-900 font-bold"
+          : "text-gray-500 hover:text-gray-900"
       }`}
     >
       {children}
+      {isActive && (
+        <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-gray-900 rounded-full hidden md:block" />
+      )}
     </Link>
   );
 };
@@ -136,27 +141,33 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
       onMouseLeave={handleMouseLeave}
     >
       <button
-        className={`text-base font-medium ${
+        className={`relative text-base font-medium transition-colors duration-200 ${
           pathname.startsWith("/lab") ? "text-gray-900 font-bold" : "text-gray-500 hover:text-gray-900"
         }`}
       >
         LAB
+        <svg className="inline-block ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+        </svg>
+        {pathname.startsWith("/lab") && (
+          <span className="absolute bottom-[-8px] left-0 right-0 h-0.5 bg-gray-900 rounded-full" />
+        )}
       </button>
 
       {/* dropdown */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md">
+        <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden">
           <Link
             href="/lab/hil"
             onClick={onLinkClick}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
           >
             Health Innovation Lab
           </Link>
           <Link
             href="/lab/hiwg"
             onClick={onLinkClick}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
           >
             HIWG Seminar
           </Link>

@@ -28,3 +28,22 @@ html, body {
   overflow-x: hidden;
   width: 100vw;
 }
+
+/* Global link styles with smooth transitions */
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Focus visible styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Remove default focus outline, keep focus-visible */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}

@@ -135,12 +135,20 @@ export default function Research() {
     return (
       <div className="py-4 border-b border-gray-200 last:border-b-0">
         <div
-          className={`flex items-start gap-2 ${hasExpandableContent ? "cursor-pointer" : ""}`}
+          className={`flex items-start gap-2 ${hasExpandableContent ? "cursor-pointer group" : ""}`}
           onClick={() => hasExpandableContent && togglePaper(paper.id)}
+          role={hasExpandableContent ? "button" : undefined}
+          tabIndex={hasExpandableContent ? 0 : undefined}
+          onKeyDown={(e) => {
+            if (hasExpandableContent && (e.key === "Enter" || e.key === " ")) {
+              e.preventDefault();
+              togglePaper(paper.id);
+            }
+          }}
         >
           {hasExpandableContent && (
             <span
-              className="text-gray-400 mt-1 transition-transform duration-200 select-none"
+              className="text-gray-400 mt-1 transition-all duration-200 select-none group-hover:text-gray-600"
               style={{ transform: isExpanded ? "rotate(90deg)" : "rotate(0deg)" }}
             >
               ▸
@@ -148,7 +156,7 @@ export default function Research() {
           )}
           {!hasExpandableContent && <span className="w-4" />}
           <div className="flex-1">
-            <h3 className="font-semibold text-gray-900">{paper.title}</h3>
+            <h3 className={`font-semibold text-gray-900 ${hasExpandableContent ? "group-hover:text-gray-700 transition-colors duration-200" : ""}`}>{paper.title}</h3>
             <p className="text-sm text-gray-600 mt-1">
               {paper.venue && <span className="italic">{paper.venue}</span>}
               {paper.venue && paper.year && <span> · </span>}
@@ -165,7 +173,7 @@ export default function Research() {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
+                      className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
                       onClick={(e) => e.stopPropagation()}
                     >
                       [{link.label}]
@@ -214,7 +222,7 @@ export default function Research() {
             <Link
               href="/Sukhun-Kang-CV.pdf"
               target="_blank"
-              className="text-blue-600 hover:underline"
+              className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
             >
               CV can be viewed here [PDF]
             </Link>.

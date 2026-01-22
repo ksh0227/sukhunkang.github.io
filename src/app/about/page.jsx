@@ -17,14 +17,14 @@ export default function About() {
                 of California, Santa Barbara
               </strong>
               . I co-direct the{" "}
-              <Link href="/lab/hil" className="underline">
+              <Link href="/lab/hil" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">
                 Health Innovation Lab
               </Link>{" "}
               with{" "}
               <Link
                 href="https://www.barbosu.com/"
                 target="_blank"
-                className="underline"
+                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Sandra Barbosu
               </Link>{" "}
@@ -32,12 +32,12 @@ export default function About() {
               <Link
                 href="https://www.sungyongchang.com/"
                 target="_blank"
-                className="underline"
+                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Sungyong Chang
               </Link>
               , and organize the{" "}
-              <Link href="/lab/hiwg" className="underline">
+              <Link href="/lab/hiwg" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">
                 Health Innovation Working Group Seminar
               </Link>
               . I serve on the{" "}
@@ -79,7 +79,7 @@ export default function About() {
               <Link
                 href="https://med.nyu.edu/centers-programs/medical-ethics/access-programs"
                 target="_blank"
-                className="underline"
+                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Working Group on Compassionate Use & Preapproval Access (CUPA)
               </Link>{" "}
@@ -97,14 +97,14 @@ export default function About() {
 
             <p>
               I can be reached at{" "}
-              <Link href="mailto:sukhunkang@ucsb.edu" className="underline">
+              <Link href="mailto:sukhunkang@ucsb.edu" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">
                 sukhunkang@ucsb.edu
               </Link>
               . You can also find me on{" "}
               <Link
                 href="https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ"
                 target="_blank"
-                className="underline"
+                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 Google Scholar
               </Link>
@@ -112,7 +112,7 @@ export default function About() {
               <Link
                 href="https://www.linkedin.com/in/sukhunkang/"
                 target="_blank"
-                className="underline"
+                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 LinkedIn
               </Link>
@@ -120,7 +120,7 @@ export default function About() {
               <Link
                 href="https://x.com/sukhunkang"
                 target="_blank"
-                className="underline"
+                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
               >
                 X/Twitter
               </Link>
@@ -150,7 +150,7 @@ export default function About() {
                 <Link
                   href="https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/"
                   target="_blank"
-                  className="underline"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
                 >
                   "Measuring Biopharmaceutical Innovation in the Modern Era"
                 </Link>
@@ -160,7 +160,7 @@ export default function About() {
                 <Link
                   href="https://www.youtube.com/watch?v=XoXJaQyXbKU"
                   target="_blank"
-                  className="underline"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
                 >
                   "Conversation with Sukhun Kang on access to medicines"
                 </Link>
@@ -170,7 +170,7 @@ export default function About() {
                 <Link
                   href="https://www.london.edu/think/why-should-collaboration-enhance-oncology-drug-innovation"
                   target="_blank"
-                  className="underline"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
                 >
                   "Why should collaboration enhance oncology drug innovation?"
                 </Link>
