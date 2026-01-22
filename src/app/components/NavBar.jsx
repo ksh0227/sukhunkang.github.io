@@ -96,7 +96,7 @@ const Navbar = () => {
 };
 
 const NavItem = ({ href, pathname, children, onClick }) => {
-  const isActive = pathname === href || (pathname === "/" && href === "/about");
+  const isActive = pathname === href;
   return (
     <Link
       href={href}
