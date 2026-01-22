@@ -73,7 +73,9 @@ export default function Research() {
       coauthors: "with Jennifer Kao",
       hook: "We examine how data privacy regulation impacts innovative process in pharmaceutical R&D.",
       abstract: "We investigate how data privacy regulations shape research and development. While such regulations aim to increase stakeholder privacy and data security, they can also introduce costs in settings where collecting, analyzing, and sharing sensitive data is central to innovation. We examine this tension in the context of the pharmaceutical industry and the European Union’s (EU) General Data Protection Regulation (GDPR), the most comprehensive data privacy regulation to date. Leveraging firm-level variation in exposure to the GDPR, we find that the regulation lowers clinical trials by 18 percent. Firms also shift the types of projects they pursue: trials are less likely to include sites in the EU, be conducted across multiple countries, and target a narrower set of diseases. Research collaborations decline overall and shift away from new partners towards established relationships. When looking at project outcomes, we observe that trials take longer to complete, are less likely to succeed, and report results with greater delay. The decline in clinical trial activity is greatest among young firms. These findings reveal how data privacy regulations shape not only the rate of innovation, but also the process by which it is pursued and its outcomes.",
-      links: [],
+      links: [
+        { label: "PDF", url: "/papers/Kang_Kao_GDPR.pdf" },
+      ],
     },
       {
       id: "wp-3",
