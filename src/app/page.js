@@ -10,8 +10,6 @@ export default function Home() {
     "Biopharma",
     "Strategy",
     "Technology Policy",
-    "Venture Capital",
-    "Expanded Access",
   ];
 
   return (
