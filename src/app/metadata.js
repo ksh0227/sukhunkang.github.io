@@ -7,11 +7,19 @@ const defaultImage = {
   alt: "Sukhun Kang - Assistant Professor at UC Santa Barbara",
 };
 
+const defaultAuthor = {
+  name: "Sukhun Kang",
+  url: baseUrl,
+};
+
 export const rootMetadata = {
   metadataBase: new URL(baseUrl),
   title: "Sukhun Kang | UC Santa Barbara",
   description:
     "Sukhun Kang is an Assistant Professor of Technology Management at UC Santa Barbara, researching innovation, entrepreneurship, strategy, venture capital, expanded access, and artificial intelligence in biopharmaceutical and high-tech industries.",
+  authors: [defaultAuthor],
+  creator: "Sukhun Kang",
+  publisher: "Sukhun Kang",
   openGraph: {
     title: "Sukhun Kang | UC Santa Barbara",
     description:
@@ -38,6 +46,7 @@ export const aboutMetadata = {
   title: "About | Sukhun Kang",
   description:
     "Sukhun Kang is an Assistant Professor of Technology Management at UC Santa Barbara. His research focuses on innovation, entrepreneurship, and the biopharmaceutical industry. PhD from London Business School.",
+  authors: [defaultAuthor],
   openGraph: {
     title: "About | Sukhun Kang",
     description:
@@ -59,6 +68,7 @@ export const researchMetadata = {
   title: "Research | Sukhun Kang",
   description:
     "Publications and working papers by Sukhun Kang on innovation, entrepreneurship, biopharmaceutical strategy, expanded access, GDPR, The Cancer Genome Atlas, venture capital, 21st Century Cures Act, artificial intelligence, and biomedical research.",
+  authors: [defaultAuthor],
   openGraph: {
     title: "Research | Sukhun Kang",
     description:
@@ -80,6 +90,7 @@ export const teachingMetadata = {
   title: "Teaching | Sukhun Kang",
   description:
     "Teaching activities by Sukhun Kang at UC Santa Barbara, including case studies published with Harvard Business Publishing and courses in business strategy. Highly rated by students.",
+  authors: [defaultAuthor],
   openGraph: {
     title: "Teaching | Sukhun Kang",
     description:
@@ -101,6 +112,7 @@ export const resourcesMetadata = {
   title: "Resources | Sukhun Kang",
   description:
     "Resources on FDA expanded access, expedited drug programs, and pharmaceutical regulation. Includes doctoral consortia listings and information on consulting and speaking engagements.",
+  authors: [defaultAuthor],
   openGraph: {
     title: "Resources | Sukhun Kang",
     description:
@@ -122,6 +134,7 @@ export const hilMetadata = {
   title: "Health Innovation Lab | Sukhun Kang",
   description:
     "The Health Innovation Lab at UC Santa Barbara, co-directed by Dr. Sukhun Kang, Dr. Sandra Barbosu, and Dr. Sungyong Chang. Research on pharmaceutical innovation, drug development, and health policy.",
+  authors: [defaultAuthor],
   openGraph: {
     title: "Health Innovation Lab | Sukhun Kang",
     description:
@@ -143,6 +156,7 @@ export const hiwgMetadata = {
   title: "Health Innovation Working Group Seminar | Sukhun Kang",
   description:
     "The HIWG Seminar Series is a virtual workshop for PhD students and junior faculty presenting research on pharmaceuticals, healthcare, strategy, and health policy. Contact sukhunkang@ucsb.edu to present.",
+  authors: [defaultAuthor],
   openGraph: {
     title: "Health Innovation Working Group Seminar | Sukhun Kang",
     description:
