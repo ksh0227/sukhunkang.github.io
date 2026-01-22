@@ -47,6 +47,14 @@ export default function RootLayout({ children }) {
       "Technology Management",
       "Biopharmaceutical Industry",
       "Strategic Management",
+      "Expanded Access",
+      "GDPR",
+      "The Cancer Genome Atlas",
+      "Corporate Venture Capital",
+      "Venture Capital",
+      "21st Century Cures Act",
+      "Artificial Intelligence",
+      "Biomedical Research",
     ],
   };
 
@@ -87,6 +95,12 @@ export default function RootLayout({ children }) {
       "Technology Adoption",
       "Drug Development",
       "Health Policy",
+      "Expanded Access",
+      "GDPR",
+      "The Cancer Genome Atlas",
+      "21st Century Cures Act",
+      "Artificial Intelligence",
+      "Biomedical Research",
     ],
   };
 

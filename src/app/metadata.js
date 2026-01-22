@@ -4,11 +4,11 @@ export const rootMetadata = {
   metadataBase: new URL(baseUrl),
   title: "Sukhun Kang | UC Santa Barbara",
   description:
-    "Sukhun Kang is an Assistant Professor of Technology Management at UC Santa Barbara, researching innovation, entrepreneurship, and strategy in biopharmaceutical and high-tech industries.",
+    "Sukhun Kang is an Assistant Professor of Technology Management at UC Santa Barbara, researching innovation, entrepreneurship, strategy, venture capital, expanded access, and artificial intelligence in biopharmaceutical and high-tech industries.",
   openGraph: {
     title: "Sukhun Kang | UC Santa Barbara",
     description:
-      "Assistant Professor of Technology Management researching innovation, entrepreneurship, and biopharmaceutical strategy.",
+      "Assistant Professor of Technology Management researching innovation, entrepreneurship, venture capital, and biopharmaceutical strategy.",
     url: baseUrl,
     siteName: "Sukhun Kang",
     locale: "en_US",
@@ -47,11 +47,11 @@ export const aboutMetadata = {
 export const researchMetadata = {
   title: "Research | Sukhun Kang",
   description:
-    "Publications and working papers by Sukhun Kang on innovation, entrepreneurship, biopharmaceutical strategy, and expanded access policy. Includes work in Strategic Management Journal and Clinical Pharmacology & Therapeutics.",
+    "Publications and working papers by Sukhun Kang on innovation, entrepreneurship, biopharmaceutical strategy, expanded access, GDPR, The Cancer Genome Atlas, venture capital, 21st Century Cures Act, artificial intelligence, and biomedical research.",
   openGraph: {
     title: "Research | Sukhun Kang",
     description:
-      "Academic publications and working papers on innovation, entrepreneurship, and biopharmaceutical industry strategy.",
+      "Academic publications on innovation, entrepreneurship, expanded access, GDPR, venture capital, and biopharmaceutical strategy.",
     url: `${baseUrl}/research`,
     type: "website",
   },
@@ -59,7 +59,7 @@ export const researchMetadata = {
     card: "summary",
     title: "Research | Sukhun Kang",
     description:
-      "Publications on innovation, entrepreneurship, and biopharmaceutical strategy.",
+      "Publications on innovation, expanded access, GDPR, venture capital, and biopharmaceutical strategy.",
   },
 };
 
