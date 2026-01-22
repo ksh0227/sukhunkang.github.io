@@ -1,0 +1,91 @@
+# Sukhun Kang
+
+> Assistant Professor of Technology Management at UC Santa Barbara
+
+## Overview
+
+Sukhun Kang is an Assistant Professor of Technology Management in the Robert Mehrabian College of Engineering at the University of California, Santa Barbara (UCSB). His research explores how technology influences innovation, focusing on the drivers and obstacles to technology adoption and its effects on individuals, firms, and society.
+
+## Research Interests
+
+- Innovation and Entrepreneurship
+- Biopharmaceutical Industry and Drug Development
+- Strategic Management
+- Technology Policy and Regulation
+- Expanded Access and Compassionate Use
+- GDPR and Data Privacy Regulation
+- The Cancer Genome Atlas (TCGA)
+- Corporate Venture Capital
+- Venture Capital
+- 21st Century Cures Act
+- Artificial Intelligence in Healthcare
+- Biomedical Research
+- Healthcare Innovation
+- Pharmaceutical Strategy
+
+## Academic Background
+
+- PhD: London Business School
+- Master's: Computer Engineering, University of Southern California
+- Bachelor's: Computer Engineering, University of Illinois at Urbana-Champaign
+
+## Professional Background
+
+Before academia, Sukhun Kang was a semiconductor engineer at Samsung and founded an Internet startup.
+
+## Selected Publications
+
+### Published Work
+
+1. "Entrepreneurship, Innovation, and Political Competition: How the Public Sector Helps the Sharing Economy Create Value" (Strategic Management Journal, 2019)
+   - Co-authors: Yongwook Paik, Robert Seamans
+   - Topic: Political competition and ridesharing platform regulation
+
+2. "Implementation of 21st Century Cures Act Expanded Access Policies Requirement" (Clinical Pharmacology & Therapeutics, 2021)
+   - Co-authors: Sungyong Chang, Joseph Ross, Jennifer Miller
+   - Topic: Biopharmaceutical companies' compliance with expanded access policy requirements
+
+### Working Papers
+
+1. "Revealed Relatedness: How New Mapping Criteria Reshape Organizational Search"
+   - Topic: How The Cancer Genome Atlas changed pharmaceutical firms' search behavior
+   - Awards: 2023 AOM Best Paper Proceedings, Runner-up for ISA Giarrantani Rising Star Award
+
+2. "When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990-2020"
+   - Co-author: Sungyong Chang
+   - Topic: Firm-level determinants of expanded access in oncology
+
+3. "Data Privacy Regulation and Innovation"
+   - Co-author: Jennifer Kao
+   - Topic: Impact of GDPR on pharmaceutical clinical trials and R&D
+
+4. "How Do Investors Shape Startups' Response to New Market Opportunities?"
+   - Co-authors: Sarath Balachandran, Sungyong Chang
+   - Topic: Venture capital portfolio effects on startup market entry
+   - Awards: 2025 AOM Best Paper Proceedings, 2025 Sumantra Ghoshal Research and Practice Award, 2025 AOM STR's Distinguished Best Paper Award
+
+5. "Do Biomedical Researchers Study Topics Related to Their Own Ethnicities? Evidence from NIH"
+   - Co-authors: Wesley Greenblatt, Young Hou
+   - Topic: Scientists' ethnic backgrounds and disease research choices
+
+6. "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance"
+   - Co-author: Gary Dushnitsky
+   - Topic: Corporate venture capital and startup ecosystems
+
+## Research Lab
+
+Co-Director of the Health Innovation Lab (HIL) at UC Santa Barbara, alongside Dr. Sandra Barbosu and Dr. Sungyong Chang. The lab focuses on pharmaceutical innovation, drug development, and health policy research.
+
+## Contact
+
+- Website: https://sukhunkang.com
+- Email: sukhunkang@ucsb.edu
+- Google Scholar: https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ
+- LinkedIn: https://www.linkedin.com/in/sukhunkang/
+- X/Twitter: https://x.com/sukhunkang
+- SSRN: https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2596230
+
+## Citation
+
+When citing Sukhun Kang's work, please use the following format:
+Kang, Sukhun. [Year]. "[Paper Title]." [Journal/Venue].
