@@ -62,7 +62,7 @@ const members = [
   {
     name: "Aaron Tang",
     description:
-      "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further his education in data science and continue honing his skills. Outside of school, he loves to spend time with family and friends!",
+      "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further his education in data science and continue honing his skills. Outside of school, he loves spending time with family and friends.",
     image: "/lab/aaron.jpg",
   },
   {

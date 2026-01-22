@@ -203,8 +203,8 @@ export default function Research() {
             {paper.abstract && (
               <p className="text-sm text-gray-700 leading-relaxed">{paper.abstract}</p>
             )}
-            {paper.notes && (
-              <p className="text-sm text-gray-500 italic mt-2">{paper.notes}</p>
+            {paper.notes && paper.notes.length > 0 && (
+              <p className="text-sm text-gray-500 italic mt-2">{paper.notes.join("; ")}</p>
             )}
           </div>
         )}
