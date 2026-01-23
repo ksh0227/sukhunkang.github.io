@@ -134,31 +134,21 @@ export default function Research() {
 
     return (
       <article id={paper.id} className="py-4 border-b border-gray-200 last:border-b-0 scroll-mt-20">
-        <div
-          className={`flex items-start gap-2 ${hasExpandableContent ? "cursor-pointer group" : ""}`}
-          onClick={() => hasExpandableContent && togglePaper(paper.id)}
-          role={hasExpandableContent ? "button" : undefined}
-          tabIndex={hasExpandableContent ? 0 : undefined}
-          aria-expanded={hasExpandableContent ? isExpanded : undefined}
-          onKeyDown={(e) => {
-            if (hasExpandableContent && (e.key === "Enter" || e.key === " ")) {
-              e.preventDefault();
-              togglePaper(paper.id);
-            }
-          }}
-        >
+        <div className="flex items-start gap-2">
           {hasExpandableContent && (
-            <span
-              className="text-gray-400 mt-1 transition-all duration-200 select-none group-hover:text-gray-600"
+            <button
+              onClick={() => togglePaper(paper.id)}
+              className="text-gray-400 mt-1 transition-all duration-200 select-none hover:text-gray-600 p-1 -m-1"
               style={{ transform: isExpanded ? "rotate(90deg)" : "rotate(0deg)" }}
-              aria-hidden="true"
+              aria-expanded={isExpanded}
+              aria-label={isExpanded ? `Collapse ${paper.title}` : `Expand ${paper.title}`}
             >
               ▸
-            </span>
+            </button>
           )}
           {!hasExpandableContent && <span className="w-4" aria-hidden="true" />}
           <div className="flex-1">
-            <h3 className={`font-semibold text-gray-900 ${hasExpandableContent ? "group-hover:text-gray-700 transition-colors duration-200" : ""}`}>{paper.title}</h3>
+            <h3 className="font-semibold text-gray-900">{paper.title}</h3>
             <p className="text-sm text-gray-600 mt-1">
               {paper.venue && <span className="italic">{paper.venue}</span>}
               {paper.venue && paper.year && <span> · </span>}
