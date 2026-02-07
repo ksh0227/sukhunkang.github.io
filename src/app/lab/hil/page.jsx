@@ -101,7 +101,7 @@ export default function Lab() {
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 I am usually looking for research assistants to help me on ongoing research projects, 
-                especially those with data analytics skills (e.g., Stata, R, Python). Econometric training 
+                especially those with data analytics skills (e.g., Stata, R, Python) and those who are highly capable of using AI agents (e.g., Claude Code, Codex, Antigravity, Cursor). Econometric training
                 including exposure to quasi-experimental research designs is also preferred.
               </li>
               <li>
