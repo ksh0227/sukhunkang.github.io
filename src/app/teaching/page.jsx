@@ -193,6 +193,21 @@ export default function Teaching() {
               alt="Students presenting case study analysis in class"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
+            <img
+              src="/class6.jpg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
+            <img
+              src="/class7.jpg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
+            <img
+              src="/class8.jpg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
           </div>
         </section>
       </main>
