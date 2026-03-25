@@ -24,26 +24,34 @@ const Members = () => {
           <section className="mt-8">
             <h2 className="text-2xl font-semibold">Past HIWG Presenters</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
-            <li>Sandip Bisui (Colorado / Purdue)</li>
               <li>Sandra Barbosa (NYU)</li>
+              <li>Sandip Bisui (Colorado / Purdue)</li>
               <li>Gabriel Cavalli (Toronto)</li>
               <li>Furkan Cetin (Northwestern)</li>
+              <li>Kevin Chandra (BU)</li>
               <li>Alex Everhart (Harvard / WashU)</li>
               <li>Wesley Greenblatt (MIT / Harvard)</li>
               <li>Charu Gupta (UCLA)</li>
               <li>Martin Hetu (Toronto / UC3M)</li>
               <li>Sukhun Kang (LBS / UCSB)</li>
+              <li>Sina Khoshsokhan (Colorado)</li>
+              <li>Jenny Kuan (CSU Monterey)</li>
+              <li>Xinyu Liang (INSEAD)</li>
+              <li>Najoung Lim (Melbourne)</li>
+              <li>Ivan Lin (UCSB)</li>
+              <li>Giacomo Marchesini (CBS)</li>
               <li>Caroline Marra (HBS)</li>
               <li>Farnam Mohebi (UC Berkeley)</li>
               <li>Christina Nguyen (MIT)</li>
               <li>Leonardo Ortega (Georgia Tech)</li>
+              <li>BJ Park</li>
               <li>Grace Park (U of Pennsylvania)</li>
-              <li>Hanu Tyagi (U of Minnesota / UIUC)</li>
+              <li>Felix Poege (Bocconi)</li>
               <li>Matteo Tranchero (UC Berkeley / UPenn Wharton)</li>
+              <li>Hanu Tyagi (U of Minnesota / UIUC)</li>
               <li>Shruthi Venkatesh (Carnegie Mellon University)</li>
-              <li>Ivan Lin (UCSB)</li>
-              <li>Xinyu Liang (INSEAD)</li>
-              <li>Giacomo Marchesini (CBS)</li>
+              <li>YiYu Xing (UCLA)</li>
+              <li>Olivia Zhao</li>
             </ul>
           </section>
         </main>

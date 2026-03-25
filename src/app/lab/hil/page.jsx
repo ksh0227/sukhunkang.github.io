@@ -36,12 +36,6 @@ const members = [
     image: "/lab/ivan.jpg",
   },
   {
-    name: "Isabella Pepich",
-    description:
-      "Isabella Pepich is a fourth-year student at the University of California, Santa Barbara, pursuing a bachelor’s degree in Statistics and Data Science and a Technology Management Certificate. Her academic interests include biostatistics and business. She enjoys conducting research to uncover insights and help solve real-world problems, and plans to pursue graduate studies in biostatistics, business data analytics, or a related data-driven field. In her free time, she enjoys weightlifting and exploring new matcha cafés.",
-    image: "/lab/isabella.jpeg",
-  },
-  {
     name: "Divya Subramonian",
     description:
       "Divya is a third-year undergraduate at the University of California, Santa Barbara pursuing a bachelor’s degree in Computer Science. Her interests lie in machine learning and human-computer interaction, and she hopes leverage her skills to contribute to AI for healthcare or content discovery and recommendation systems research. Upon graduating, she aims to pursue a Master’s degree and expand her expertise in machine learning. In her free time, she loves to dance, bake, and go on hikes with friends and family!",
