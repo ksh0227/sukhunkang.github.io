@@ -44,14 +44,13 @@ const Members = () => {
               <li>Farnam Mohebi (UC Berkeley)</li>
               <li>Christina Nguyen (MIT)</li>
               <li>Leonardo Ortega (Georgia Tech)</li>
-              <li>BJ Park</li>
               <li>Grace Park (U of Pennsylvania)</li>
               <li>Felix Poege (Bocconi)</li>
               <li>Matteo Tranchero (UC Berkeley / UPenn Wharton)</li>
               <li>Hanu Tyagi (U of Minnesota / UIUC)</li>
               <li>Shruthi Venkatesh (Carnegie Mellon University)</li>
               <li>YiYu Xing (UCLA)</li>
-              <li>Olivia Zhao</li>
+              <li>Olivia Zhao (Wharton)</li>
             </ul>
           </section>
         </main>
