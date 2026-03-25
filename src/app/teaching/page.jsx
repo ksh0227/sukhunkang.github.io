@@ -169,32 +169,7 @@ export default function Teaching() {
           <h2 className="text-2xl font-semibold mb-3">In the Classroom</h2>
           <div className="flex overflow-x-scroll snap-x snap-mandatory space-x-4 pb-4">
             <img
-              src="/class1.jpg"
-              alt="Professor Kang teaching strategy concepts to students in classroom"
-              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
-            />
-            <img
-              src="/class2.jpg"
-              alt="Students engaged in case discussion during business strategy class"
-              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
-            />
-            <img
-              src="/class3.jpeg"
-              alt="Interactive lecture session on technology management"
-              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
-            />
-            <img
-              src="/class4.jpeg"
-              alt="Group discussion during entrepreneurship course"
-              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
-            />
-            <img
-              src="/class5.jpeg"
-              alt="Students presenting case study analysis in class"
-              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
-            />
-            <img
-              src="/class6.jpg"
+              src="/class8.jpg"
               alt=""
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
@@ -204,7 +179,32 @@ export default function Teaching() {
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
-              src="/class8.jpg"
+              src="/class6.jpg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
+            <img
+              src="/class5.jpeg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
+            <img
+              src="/class4.jpeg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
+            <img
+              src="/class3.jpeg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
+            <img
+              src="/class2.jpg"
+              alt=""
+              className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
+            />
+            <img
+              src="/class1.jpg"
               alt=""
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
