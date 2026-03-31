@@ -159,8 +159,14 @@ export default function Teaching() {
               supportive and inspirational."
             </blockquote>
             <blockquote className="border-l-2 border-gray-300 pl-4 text-gray-700 italic">
-              "I learned more in this course about businesses and the way they
-              succeed than in my entire life."
+              "I can confidently say that Sukhun Kang has been the best
+              professor I have had in my four years of college education...
+              From guest lecturers to case studies to frameworks, every single
+              lecture he taught was super engaging."
+            </blockquote>
+            <blockquote className="border-l-2 border-gray-300 pl-4 text-gray-700 italic">
+              "Professor Kang is very approachable and enjoys challenging
+              students' critical thinking skills."
             </blockquote>
           </div>
         </section>
