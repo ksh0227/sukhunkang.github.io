@@ -154,7 +154,7 @@ export default function RootLayout({ children }) {
       {
         "@type": "ListItem",
         position: 7,
-        name: "HIWG Seminar",
+        name: "HIWG Research Chat",
         item: "https://sukhunkang.com/lab/hiwg",
       },
     ],
@@ -428,10 +428,10 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "Question",
-        name: "What is the HIWG Seminar?",
+        name: "What is the HIWG Research Chat?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "The Health Innovation Working Group (HIWG) Seminar is a virtual workshop series for PhD students and junior faculty presenting research on pharmaceuticals, healthcare strategy, and health policy. It is organized by Dr. Sukhun Kang, Dr. Sandra Barbosu, and Dr. Sungyong Chang. Interested presenters can contact sukhunkang@ucsb.edu.",
+          text: "The Health Innovation Working Group (HIWG) Research Chat is a virtual workshop series for PhD students and junior faculty presenting research on pharmaceuticals, healthcare strategy, and health policy. It is organized by Dr. Sukhun Kang, Dr. Sandra Barbosu, and Dr. Sungyong Chang. Interested presenters can contact sukhunkang@ucsb.edu.",
         },
       },
       {

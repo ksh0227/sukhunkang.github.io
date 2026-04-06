@@ -158,22 +158,22 @@ export const hilMetadata = {
 };
 
 export const hiwgMetadata = {
-  title: "Health Innovation Working Group Seminar | Sukhun Kang",
+  title: "Health Innovation Working Group Research Chat | Sukhun Kang",
   description:
-    "The HIWG Seminar Series is a virtual workshop for PhD students and junior faculty presenting research on pharmaceuticals, healthcare, strategy, and health policy. Contact sukhunkang@ucsb.edu to present.",
+    "The HIWG Research Chat is a virtual workshop for PhD students and junior faculty presenting research on pharmaceuticals, healthcare, strategy, and health policy. Contact sukhunkang@ucsb.edu to present.",
   authors: [defaultAuthor],
   alternates: { canonical: `${baseUrl}/lab/hiwg` },
   openGraph: {
-    title: "Health Innovation Working Group Seminar | Sukhun Kang",
+    title: "Health Innovation Working Group Research Chat | Sukhun Kang",
     description:
-      "Virtual seminar series for PhD students and faculty researching pharmaceuticals and healthcare strategy.",
+      "Virtual research chat for PhD students and faculty researching pharmaceuticals and healthcare strategy.",
     url: `${baseUrl}/lab/hiwg`,
     type: "website",
     images: [defaultImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HIWG Seminar | Sukhun Kang",
+    title: "HIWG Research Chat | Sukhun Kang",
     description:
       "Virtual workshop series for research on pharmaceuticals, healthcare, and health policy.",
     images: [defaultImage.url],

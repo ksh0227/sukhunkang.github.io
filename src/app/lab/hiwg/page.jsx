@@ -8,14 +8,14 @@ const Members = () => {
             <h1 className="text-3xl font-bold mb-4">Health Innovation Working Group (HIWG)</h1>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
-                Health Innovation Working Group (HIWG) Seminar Series is a virtual workshop series that focuses on social 
-                science research related to the pharmaceutical industry and the healthcare sector. Our goal is to 
-                provide a platform for PhD students and junior faculty members in disciplines such as strategy, 
-                economics, health policy, entrepreneurship, and innovation (or related fields) to present their 
+                Health Innovation Working Group (HIWG) Research Chat is a virtual workshop series that focuses on social
+                science research related to the pharmaceutical industry and the healthcare sector. Our goal is to
+                provide a platform for PhD students and junior faculty members in disciplines such as strategy,
+                economics, health policy, entrepreneurship, and innovation (or related fields) to present their
                 working papers and receive feedback from a friendly crowd.
               </li>
               <li>
-                If you have a working paper that you would like to present at our seminar series, please don’t 
+                If you have a working paper that you would like to present at our research chat, please don’t 
                 hesitate to reach out to me at 
                 <a href="mailto:sukhunkang@ucsb.edu" className="text-blue-600 hover:text-blue-800 transition-colors duration-200"> sukhunkang@ucsb.edu</a>.
               </li>

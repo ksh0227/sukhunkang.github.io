@@ -79,7 +79,7 @@ const Navbar = () => {
                 LAB
               </NavItem>
               <NavItem href="/lab/hiwg" pathname={pathname} onClick={handleLinkClick}>
-                HIWG Seminar
+                HIWG Research Chat
               </NavItem>
               <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
                 TEACHING
@@ -169,7 +169,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
             onClick={onLinkClick}
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
           >
-            HIWG Seminar
+            HIWG Research Chat
           </Link>
         </div>
       )}
