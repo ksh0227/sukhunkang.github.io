@@ -15,17 +15,14 @@ export default function Research() {
 
   const publications = [
     {
-      id: "pub-1",
-      title: "Entrepreneurship, Innovation, and Political Competition: How the Public Sector Helps the Sharing Economy Create Value",
-      venue: "Strategic Management Journal",
-      year: "2019",
-      volume: "40: 503-532",
-      coauthors: "with Yongwook Paik & Robert Seamans",
-      hook: "Political competition can explain whether cities accommodate or ban ridesharing platforms.",
-      abstract: "With the recent growth of the sharing economy, regulators must frequently strike the right balance between private and public interests to maximize value creation. In this article, we argue that political competition is a critical ingredient that explains whether cities accommodate or ban ridesharing platforms and that this relationship is moderated in more populous cities and in cities with higher unemployment rates. We test our arguments using archival data covering ridesharing bans in various U.S. cities during the 2011–2015 period. We supplement these data with semistructured interviews. We find broad support for our arguments while mitigating potential endogeneity concerns. Our study has important implications for nonmarket strategy, entrepreneurship and innovation, and public-private partnership literatures. In addition, our findings inform policy debates on the sharing economy.",
-      links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077" },
-      ],
+      id: "pub-3",
+      title: "Uncovering Seeding Trials: Examining Non-Scientific Purposes in Clinical Trials",
+      venue: "BMJ Evidence-Based Medicine",
+      year: "(Forthcoming)",
+      coauthors: "with Ivan Lin & Sungyong Chang",
+      hook: "Seeding trials remain a systemic problem requiring proactive transparency mandates and coordinated oversight.",
+      abstract: "",
+      links: [],
     },
     {
       id: "pub-2",
@@ -41,14 +38,17 @@ export default function Research() {
       ],
     },
     {
-      id: "pub-3",
-      title: "Uncovering Seeding Trials: Examining Non-Scientific Purposes in Clinical Trials",
-      venue: "BMJ Evidence-Based Medicine",
-      year: "(Forthcoming)",
-      coauthors: "with Ivan Lin & Sungyong Chang",
-      hook: "Seeding trials remain a systemic problem requiring proactive transparency mandates and coordinated oversight.",
-      abstract: "",
-      links: [],
+      id: "pub-1",
+      title: "Entrepreneurship, Innovation, and Political Competition: How the Public Sector Helps the Sharing Economy Create Value",
+      venue: "Strategic Management Journal",
+      year: "2019",
+      volume: "40: 503-532",
+      coauthors: "with Yongwook Paik & Robert Seamans",
+      hook: "Political competition can explain whether cities accommodate or ban ridesharing platforms.",
+      abstract: "With the recent growth of the sharing economy, regulators must frequently strike the right balance between private and public interests to maximize value creation. In this article, we argue that political competition is a critical ingredient that explains whether cities accommodate or ban ridesharing platforms and that this relationship is moderated in more populous cities and in cities with higher unemployment rates. We test our arguments using archival data covering ridesharing bans in various U.S. cities during the 2011–2015 period. We supplement these data with semistructured interviews. We find broad support for our arguments while mitigating potential endogeneity concerns. Our study has important implications for nonmarket strategy, entrepreneurship and innovation, and public-private partnership literatures. In addition, our findings inform policy debates on the sharing economy.",
+      links: [
+        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077" },
+      ],
     },
   ];
 
