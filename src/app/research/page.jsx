@@ -115,7 +115,7 @@ export default function Research() {
     },
     {
       id: "wp-5",
-      title: "Shattering Ceilings While Opening Doors: The Symbolic Effect of the First Female Political Leader on the Mobility Outcomes of Female Employees",
+      title: "Breaking the Institutional Mold: Symbolic Effects of the First Female President on Women's Organizational Advancement",
       coauthors: "with Olenka Kacperczyk & Yongwook Paik",
       hook: "We examine how female political leadership impacts female employee's mobility.",
       abstract: "",
