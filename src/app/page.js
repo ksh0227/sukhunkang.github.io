@@ -128,6 +128,14 @@ export default function Home() {
             Before academia, I was a semiconductor engineer at Samsung and
             founded an Internet startup. I hold a PhD from London Business
             School and Bachelor's and Master's degrees in Computer Engineering from UIUC and USC.
+            For more details, see my{" "}
+            <Link
+              href="/about"
+              className="underline hover:text-blue-600 transition-colors duration-200"
+            >
+              about page
+            </Link>
+            .
           </p>
         </div>
 

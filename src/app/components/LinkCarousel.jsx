@@ -57,14 +57,6 @@ const LinkCarousel = () => {
     scheduleNext();
   }, [scheduleNext]);
 
-  const prev = () => {
-    goTo((indexRef.current - 1 + links.length) % links.length);
-  };
-
-  const next = () => {
-    goTo((indexRef.current + 1) % links.length);
-  };
-
   const handleMouseEnter = () => {
     setPaused(true);
     clearTimer();
@@ -98,17 +90,7 @@ const LinkCarousel = () => {
         aria-label="Announcements"
         aria-roledescription="carousel"
       >
-        <div className="flex justify-center items-center gap-2">
-          <span className="text-lg leading-none" aria-hidden="true">📢</span>
-
-          <button
-            onClick={prev}
-            aria-label="Previous announcement"
-            className="leading-none text-base text-gray-500 hover:text-gray-900 transition px-1"
-          >
-            ‹
-          </button>
-
+        <div className="flex justify-center items-center">
           <div
             className="overflow-hidden w-[260px] sm:w-[360px] md:w-[420px] lg:w-[480px] h-5"
             aria-live="polite"
@@ -124,14 +106,6 @@ const LinkCarousel = () => {
               {links[index].label}
             </a>
           </div>
-
-          <button
-            onClick={next}
-            aria-label="Next announcement"
-            className="leading-none text-base text-gray-500 hover:text-gray-900 transition px-1"
-          >
-            ›
-          </button>
         </div>
 
         {/* Position indicators */}
