@@ -13,8 +13,8 @@ const LinkCarousel = () => {
       href: 'https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077',
     },
     {
-      label: 'EIP Virtual Seminar: Data Privacy Regulation and Innovation',
-      href: 'https://uconn-edu.zoom.us/meeting/register/2MTYxVAySYaPjqk_AQlGxw#/registration',
+      label: 'SMS Webinar on Agentic AI Research Methods',
+      href: 'https://www.strategicmanagement.net/event/agentic-ai-in-strategic-management-research-methods-promises-and-pitfalls',
     },
   ];
 
