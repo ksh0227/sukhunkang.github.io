@@ -22,7 +22,9 @@ export default function Research() {
       coauthors: "with Ivan Lin & Sungyong Chang",
       hook: "Seeding trials remain a systemic problem requiring proactive transparency mandates and coordinated oversight.",
       abstract: "",
-      links: [],
+      links: [
+        { label: "Link", url: "https://ebm.bmj.com/content/early/2026/04/08/bmjebm-2025-114242.full" },
+      ],
     },
     {
       id: "pub-2",
@@ -34,7 +36,7 @@ export default function Research() {
       hook: "Most drug companies do not publicly disclose their expanded access policies despite the Cures Act.",
       abstract: "The US Food and Drug Administration (FDA) expanded access pathway allows patients with life-threatening or serious conditions to access investigational drugs outside of trials, under certain conditions. The 21st Century Cures Act ('Cures Act') requires certain drug companies to publicly disclose their expanded access policies. We characterized the proportion of applicable US biopharmaceutical companies, with an oncology related drug, implementing Cures Act requirements for expanded access policies and whether available policies contain the information described in the Act. We found about one-third of applicable biopharmaceutical companies (32%, 140/423) implemented the Cures Act requirement to have a public expanded access policy. Less than one-third of public policies contained all described information (31%, 44/140). Larger companies and those with at least one drug receiving an FDA expedited designation (59% vs. 21%; P < 0.001), or at least one FDA-approved drug (57% vs. 28%; P < 0.001) were more likely to have a public policy. Our results suggest the Cures Act may be having a limited impact on its goals of supporting timely medical decisions and closing informational gaps for patients and doctors around expanded access to investigational oncology therapies, especially for products sponsored by smaller and newer companies.",
       links: [
-        { label: "PDF", url: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401" },
+        { label: "Link", url: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401" },
       ],
     },
     {
@@ -47,7 +49,7 @@ export default function Research() {
       hook: "Political competition can explain whether cities accommodate or ban ridesharing platforms.",
       abstract: "With the recent growth of the sharing economy, regulators must frequently strike the right balance between private and public interests to maximize value creation. In this article, we argue that political competition is a critical ingredient that explains whether cities accommodate or ban ridesharing platforms and that this relationship is moderated in more populous cities and in cities with higher unemployment rates. We test our arguments using archival data covering ridesharing bans in various U.S. cities during the 2011–2015 period. We supplement these data with semistructured interviews. We find broad support for our arguments while mitigating potential endogeneity concerns. Our study has important implications for nonmarket strategy, entrepreneurship and innovation, and public-private partnership literatures. In addition, our findings inform policy debates on the sharing economy.",
       links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077" },
+        { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077" },
       ],
     },
   ];
@@ -74,7 +76,7 @@ export default function Research() {
       hook: "We examine firm-level determinants of providing expanded access in the oncology market.",
       abstract: "One of the grand challenges in healthcare is the limited availability of life-saving drugs and therapies. While providing early access to investigational drugs is seen as a potential solution to this issue, our understanding of what deters or facilitates firms from granting early access remains limited. We examine when firms provide early access to investigational oncology drugs from 1990 to 2020. Our study finds that while entrepreneurial firms are known as engines for developing novel drugs, they are less likely to provide early access due to uncertainties from thinner product pipelines and concerns over equity values. Regulatory certification significantly reduces such uncertainties, encouraging firms to provide early access, but its benefits are more pronounced for established firms. We discuss the intricacies involved in improving early access, highlighting the complex interaction between company incentives and industry structure.",
       links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005" },
+        { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005" },
       ],
     },
         {
@@ -87,7 +89,7 @@ export default function Research() {
         "2026 AOM Best Paper Proceedings",
       ],
       links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6104788" },
+        { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6104788" },
       ],
     },
       {
@@ -102,7 +104,7 @@ export default function Research() {
         "2025 AOM STR's Distinguished Best Paper Award",
       ],
       links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926" },
+        { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926" },
       ],
     },
      {
