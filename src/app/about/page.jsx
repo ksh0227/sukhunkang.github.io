@@ -138,6 +138,8 @@ export default function About() {
         <section className="mt-10">
             <h2 className="text-xl font-semibold mb-4">Selected Awards</h2>
             <ul className="space-y-2 text-gray-700">
+              <li>Babbage International Policy Forum Industrial Innovation Policy Award, Runner-up, ISA, 2026</li>
+              <li>Best Paper in Innovation and Entrepreneurship Award, ISA, 2026</li>
               <li>Sumantra Ghoshal Research and Practice Award, AOM, 2025</li>
               <li>STR Distinguished Paper Award in Corporate and International Strategy, AOM, 2025</li>
               <li>ISA Giarrantani Rising Star Award, Runner-up, 2024</li>
