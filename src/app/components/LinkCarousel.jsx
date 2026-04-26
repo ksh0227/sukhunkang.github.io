@@ -5,16 +5,16 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 const LinkCarousel = () => {
   const links = [
     {
+      label: 'New Research Article on Seeding Trials',
+      href: 'https://ebm.bmj.com/content/early/2026/04/08/bmjebm-2025-114242.full',
+    },
+    {
       label: 'Measuring Biopharmaceutical Innovation in the Modern Era',
       href: 'https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/',
-     },
+    },
     {
       label: 'New Teaching Case on the "Baby Shark" company',
       href: 'https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077',
-    },
-    {
-      label: 'AOM PDW on Organizational Search',
-      href: 'https://forms.gle/SJyejKHqfGdxnJRn7',
     },
   ];
 
