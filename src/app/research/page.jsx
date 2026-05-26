@@ -117,14 +117,6 @@ export default function Research() {
       links: [],
     },
     {
-      id: "wp-5",
-      title: "Breaking the Institutional Mold: Symbolic Effects of the First Female President on Women's Organizational Advancement",
-      coauthors: "with Olenka Kacperczyk & Yongwook Paik",
-      hook: "We examine how female political leadership impacts female employee's mobility.",
-      abstract: "",
-      links: [],
-    },
-    {
       id: "wp-6",
       title: "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-post Actions and Orchestrator's Performance",
       coauthors: "with Gary Dushnitsky",
