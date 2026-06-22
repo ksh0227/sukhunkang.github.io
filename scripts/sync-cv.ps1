@@ -44,8 +44,43 @@ git add "public/Sukhun-Kang-CV.pdf"
 git commit -m "Update CV from local Dropbox"
 git push origin main
 
-if ($LASTEXITCODE -eq 0) {
-    Add-Content $logFile "$timestamp | Pushed to GitHub"
-} else {
+if ($LASTEXITCODE -ne 0) {
     Add-Content $logFile "$timestamp | ERROR: git push failed (exit code $LASTEXITCODE)"
+    exit 1
+}
+Add-Content $logFile "$timestamp | Pushed to GitHub"
+
+# Verify the GitHub Pages deploy actually published the new CV.
+# A successful push does NOT mean the Pages deploy succeeded; the build+deploy
+# workflow runs afterward and can fail silently. Poll the live URL until its
+# hash matches the source, or log an error if it never does.
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$liveUrl     = "https://sukhunkang.com/Sukhun-Kang-CV.pdf"
+$liveTmp     = Join-Path $env:TEMP "sync-cv-live-check.pdf"
+$maxWaitSec  = 600
+$pollSec     = 30
+$elapsed     = 0
+$verified    = $false
+
+while ($elapsed -lt $maxWaitSec) {
+    Start-Sleep -Seconds $pollSec
+    $elapsed += $pollSec
+    $bust = [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()  # cache-bust the CDN
+    try {
+        Invoke-WebRequest -Uri "$liveUrl`?v=$bust" -OutFile $liveTmp -UseBasicParsing -TimeoutSec 30
+        $liveHash = (Get-FileHash $liveTmp -Algorithm SHA256).Hash
+        if ($liveHash -eq $sourceHash) {
+            $verified = $true
+            break
+        }
+    } catch {
+        # transient network/deploy-in-progress error; keep polling
+    }
+}
+
+$verifyTime = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+if ($verified) {
+    Add-Content $logFile "$verifyTime | Verified live ($elapsed s)"
+} else {
+    Add-Content $logFile "$verifyTime | ERROR: live CV not updated after $maxWaitSec s; Pages deploy likely failed. Re-trigger with: git commit --allow-empty -m 'Re-trigger Pages deploy'; git push origin main"
 }
