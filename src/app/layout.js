@@ -1,7 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
+import AITrafficTracker from "./components/AITrafficTracker";
 import Script from "next/script";
 import { rootMetadata } from "./metadata";
 
@@ -500,6 +502,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Navbar />
+        <Suspense fallback={null}>
+          <AITrafficTracker />
+        </Suspense>
         <main className="flex-1 pt-16">{children}</main>
         <Footer />
       </body>
