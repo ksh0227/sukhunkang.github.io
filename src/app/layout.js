@@ -1,4 +1,3 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import { Suspense } from "react";
 import "./globals.css";
 import Navbar from "./components/NavBar";
@@ -7,16 +6,6 @@ import AITrafficTracker from "./components/AITrafficTracker";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { rootMetadata } from "./metadata";
 import { publications, workingPapers, paperToSchema } from "./data/papers";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = rootMetadata;
 
