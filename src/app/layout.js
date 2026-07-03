@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import AITrafficTracker from "./components/AITrafficTracker";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { rootMetadata } from "./metadata";
 import { publications, workingPapers, paperToSchema } from "./data/papers";
 
@@ -351,18 +351,6 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
-        <Script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}
-        ></Script>
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-5XRGPSLYNT');
-          `}
-        </Script>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body>
@@ -378,6 +366,7 @@ export default function RootLayout({ children }) {
         </Suspense>
         <div id="main-content" className="flex-1 pt-16">{children}</div>
         <Footer />
+        <GoogleAnalytics gaId="G-5XRGPSLYNT" />
       </body>
     </html>
   );

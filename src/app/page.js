@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Script from "next/script";
 import Link from "next/link";
 import LinkCarousel from "./components/LinkCarousel";
 
@@ -14,19 +13,6 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-12 xl:px-48 py-10">
-      <Script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=G-5XRGPSLYNT`}
-      ></Script>
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-5XRGPSLYNT');
-        `}
-      </Script>
-
       <div className="max-w-3xl mx-auto">
         {/* Announcements */}
         <div className="mb-8">
