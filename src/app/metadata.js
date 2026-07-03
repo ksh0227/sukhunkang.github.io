@@ -2,8 +2,8 @@ const baseUrl = "https://sukhunkang.com";
 
 const defaultImage = {
   url: `${baseUrl}/sukhun.jpg`,
-  width: 1200,
-  height: 1500,
+  width: 600,
+  height: 822,
   alt: "Sukhun Kang - Assistant Professor at UC Santa Barbara",
 };
 

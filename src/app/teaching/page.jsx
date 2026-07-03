@@ -177,41 +177,73 @@ export default function Teaching() {
             <img
               src="/class8.jpg"
               alt=""
+              width={1280}
+              height={734}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
               src="/class7.jpg"
               alt=""
+              width={1280}
+              height={651}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
               src="/class6.jpg"
               alt=""
+              width={1280}
+              height={635}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
               src="/class5.jpeg"
               alt=""
+              width={1280}
+              height={960}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
               src="/class4.jpeg"
               alt=""
+              width={1280}
+              height={960}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
               src="/class3.jpeg"
               alt=""
+              width={1280}
+              height={960}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
               src="/class2.jpg"
               alt=""
+              width={1280}
+              height={960}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
             <img
               src="/class1.jpg"
               alt=""
+              width={1280}
+              height={960}
+              loading="lazy"
+              decoding="async"
               className="w-full max-w-lg flex-shrink-0 snap-center shadow-md"
             />
           </div>

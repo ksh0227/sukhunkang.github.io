@@ -7,6 +7,10 @@ const ProfileCard = ({ name, description, image }) => {
         <img
           src={image}
           alt={name}
+          width={192}
+          height={192}
+          loading="lazy"
+          decoding="async"
           className="w-48 h-48 aspect-square object-cover shadow-md"
         />
       </div>
