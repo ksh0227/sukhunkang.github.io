@@ -47,12 +47,12 @@ export const aboutMetadata = {
   description:
     "Sukhun Kang is an Assistant Professor of Technology Management at UC Santa Barbara. His research focuses on innovation, entrepreneurship, and the biopharmaceutical industry. PhD from London Business School.",
   authors: [defaultAuthor],
-  alternates: { canonical: `${baseUrl}/about` },
+  alternates: { canonical: `${baseUrl}/about/` },
   openGraph: {
     title: "About | Sukhun Kang",
     description:
       "Assistant Professor of Technology Management at UC Santa Barbara, researching innovation and entrepreneurship in biopharmaceutical and high-tech industries.",
-    url: `${baseUrl}/about`,
+    url: `${baseUrl}/about/`,
     type: "profile",
     images: [defaultImage],
   },
@@ -70,12 +70,12 @@ export const researchMetadata = {
   description:
     "Publications and working papers by Sukhun Kang on innovation, entrepreneurship, biopharmaceutical strategy, expanded access, GDPR, The Cancer Genome Atlas, venture capital, 21st Century Cures Act, artificial intelligence, and biomedical research.",
   authors: [defaultAuthor],
-  alternates: { canonical: `${baseUrl}/research` },
+  alternates: { canonical: `${baseUrl}/research/` },
   openGraph: {
     title: "Research | Sukhun Kang",
     description:
       "Academic publications on innovation, entrepreneurship, expanded access, GDPR, venture capital, and biopharmaceutical strategy.",
-    url: `${baseUrl}/research`,
+    url: `${baseUrl}/research/`,
     type: "website",
     images: [defaultImage],
   },
@@ -93,12 +93,12 @@ export const teachingMetadata = {
   description:
     "Teaching activities by Sukhun Kang at UC Santa Barbara, including case studies published with Harvard Business Publishing and courses in business strategy. Highly rated by students.",
   authors: [defaultAuthor],
-  alternates: { canonical: `${baseUrl}/teaching` },
+  alternates: { canonical: `${baseUrl}/teaching/` },
   openGraph: {
     title: "Teaching | Sukhun Kang",
     description:
       "Case studies and courses in business strategy at UC Santa Barbara. Includes Harvard Business Publishing cases.",
-    url: `${baseUrl}/teaching`,
+    url: `${baseUrl}/teaching/`,
     type: "website",
     images: [defaultImage],
   },
@@ -116,12 +116,12 @@ export const resourcesMetadata = {
   description:
     "Resources on FDA expanded access, expedited drug programs, and pharmaceutical regulation. Includes doctoral consortia listings and information on consulting and speaking engagements.",
   authors: [defaultAuthor],
-  alternates: { canonical: `${baseUrl}/resources` },
+  alternates: { canonical: `${baseUrl}/resources/` },
   openGraph: {
     title: "Resources | Sukhun Kang",
     description:
       "Educational resources on FDA programs, pharmaceutical regulation, and doctoral research opportunities.",
-    url: `${baseUrl}/resources`,
+    url: `${baseUrl}/resources/`,
     type: "website",
     images: [defaultImage],
   },
@@ -139,12 +139,12 @@ export const hilMetadata = {
   description:
     "The Health Innovation Lab at UC Santa Barbara, co-directed by Dr. Sukhun Kang, Dr. Sandra Barbosu, and Dr. Sungyong Chang. Research on pharmaceutical innovation, drug development, and health policy.",
   authors: [defaultAuthor],
-  alternates: { canonical: `${baseUrl}/lab/hil` },
+  alternates: { canonical: `${baseUrl}/lab/hil/` },
   openGraph: {
     title: "Health Innovation Lab | Sukhun Kang",
     description:
       "Research lab at UC Santa Barbara focused on pharmaceutical innovation and health policy.",
-    url: `${baseUrl}/lab/hil`,
+    url: `${baseUrl}/lab/hil/`,
     type: "website",
     images: [defaultImage],
   },
@@ -162,12 +162,12 @@ export const hiwgMetadata = {
   description:
     "The HIWG Research Chat is a virtual workshop for PhD students and junior faculty presenting research on pharmaceuticals, healthcare, strategy, and health policy. Contact sukhunkang@ucsb.edu to present.",
   authors: [defaultAuthor],
-  alternates: { canonical: `${baseUrl}/lab/hiwg` },
+  alternates: { canonical: `${baseUrl}/lab/hiwg/` },
   openGraph: {
     title: "Health Innovation Working Group Research Chat | Sukhun Kang",
     description:
       "Virtual research chat for PhD students and faculty researching pharmaceuticals and healthcare strategy.",
-    url: `${baseUrl}/lab/hiwg`,
+    url: `${baseUrl}/lab/hiwg/`,
     type: "website",
     images: [defaultImage],
   },
