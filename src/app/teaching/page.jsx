@@ -176,7 +176,7 @@ export default function Teaching() {
           <div className="flex overflow-x-scroll snap-x snap-mandatory space-x-4 pb-4">
             <img
               src="/class8.jpg"
-              alt=""
+              alt="Group photo of students in Professor Kang's Technology Management class in a UC Santa Barbara lecture hall"
               width={1280}
               height={734}
               loading="lazy"
@@ -185,7 +185,7 @@ export default function Teaching() {
             />
             <img
               src="/class7.jpg"
-              alt=""
+              alt="Professor Kang's Technology Management students gathered in a UC Santa Barbara lecture hall"
               width={1280}
               height={651}
               loading="lazy"
@@ -194,7 +194,7 @@ export default function Teaching() {
             />
             <img
               src="/class6.jpg"
-              alt=""
+              alt="A large group of students in Professor Kang's Technology Management class in a tiered UC Santa Barbara lecture hall"
               width={1280}
               height={635}
               loading="lazy"
@@ -203,7 +203,7 @@ export default function Teaching() {
             />
             <img
               src="/class5.jpeg"
-              alt=""
+              alt="Professor Kang's class posing at the end of the quarter beside a 'Thank you for an amazing quarter' slide"
               width={1280}
               height={960}
               loading="lazy"
@@ -212,7 +212,7 @@ export default function Teaching() {
             />
             <img
               src="/class4.jpeg"
-              alt=""
+              alt="Students in Professor Kang's Technology Management class standing in a UC Santa Barbara lecture hall"
               width={1280}
               height={960}
               loading="lazy"
@@ -221,7 +221,7 @@ export default function Teaching() {
             />
             <img
               src="/class3.jpeg"
-              alt=""
+              alt="Group photo of Professor Kang's Technology Management class, with students standing and kneeling in front"
               width={1280}
               height={960}
               loading="lazy"
@@ -230,7 +230,7 @@ export default function Teaching() {
             />
             <img
               src="/class2.jpg"
-              alt=""
+              alt="Professor Kang's Technology Management class gathered in a UC Santa Barbara classroom"
               width={1280}
               height={960}
               loading="lazy"
@@ -239,7 +239,7 @@ export default function Teaching() {
             />
             <img
               src="/class1.jpg"
-              alt=""
+              alt="Group photo of students in Professor Kang's Technology Management class at UC Santa Barbara"
               width={1280}
               height={960}
               loading="lazy"

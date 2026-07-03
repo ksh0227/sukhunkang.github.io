@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -46,7 +46,10 @@ const Navbar = () => {
           <div className="md:hidden flex items-center ml-auto">
             <button
               onClick={toggleMobileMenu}
-              className="text-gray-500 hover:text-gray-900 focus:outline-none ml-4"
+              aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="mobile-menu"
+              className="text-gray-500 hover:text-gray-900 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ml-4"
             >
               <svg
                 className="h-6 w-6"
@@ -54,6 +57,7 @@ const Navbar = () => {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"
@@ -67,7 +71,7 @@ const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden">
+          <div id="mobile-menu" className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <NavItem href="/about" pathname={pathname} onClick={handleLinkClick}>
                 ABOUT
@@ -118,6 +122,7 @@ const NavItem = ({ href, pathname, children, onClick }) => {
 const LabDropdown = ({ pathname, onLinkClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [closeTimeout, setCloseTimeout] = useState(null);
+  const wrapperRef = useRef(null);
 
   const handleMouseEnter = () => {
     if (closeTimeout) {
@@ -134,19 +139,47 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
     setCloseTimeout(timeout);
   };
 
+  // Escape closes and returns focus to the trigger button.
+  const handleKeyDown = (e) => {
+    if (e.key === "Escape" && isOpen) {
+      setIsOpen(false);
+      wrapperRef.current?.querySelector("button")?.focus();
+    }
+  };
+
+  // Close when keyboard focus leaves the dropdown entirely.
+  const handleBlur = (e) => {
+    if (wrapperRef.current && !wrapperRef.current.contains(e.relatedTarget)) {
+      setIsOpen(false);
+    }
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen(false);
+    onLinkClick?.();
+  };
+
   return (
     <div
+      ref={wrapperRef}
       className="relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onKeyDown={handleKeyDown}
+      onBlur={handleBlur}
     >
       <button
-        className={`relative text-base font-medium transition-colors duration-200 ${
+        type="button"
+        onClick={() => setIsOpen((v) => !v)}
+        aria-haspopup="true"
+        aria-expanded={isOpen}
+        aria-controls="lab-menu"
+        className={`relative text-base font-medium transition-colors duration-200 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
           pathname.startsWith("/lab") ? "text-gray-900 font-bold" : "text-gray-500 hover:text-gray-900"
         }`}
       >
         LAB
-        <svg className="inline-block ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg aria-hidden="true" className="inline-block ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
         </svg>
         {pathname.startsWith("/lab") && (
@@ -156,17 +189,20 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
 
       {/* dropdown */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden">
+        <div
+          id="lab-menu"
+          className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden"
+        >
           <Link
             href="/lab/hil"
-            onClick={onLinkClick}
+            onClick={handleLinkClick}
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
           >
             Health Innovation Lab
           </Link>
           <Link
             href="/lab/hiwg"
-            onClick={onLinkClick}
+            onClick={handleLinkClick}
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
           >
             HIWG Research Chat

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const LinkCarousel = () => {
   const links = [
@@ -20,77 +20,57 @@ const LinkCarousel = () => {
 
   const [index, setIndex] = useState(0);
   const [animKey, setAnimKey] = useState(0);
-  const [paused, setPaused] = useState(false);
-  const timeoutRef = useRef(null);
-  const indexRef = useRef(index);
-  const pausedRef = useRef(paused);
+  const [userPaused, setUserPaused] = useState(false); // explicit Pause button
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const [reducedMotion, setReducedMotion] = useState(false);
+
+  // Auto-rotate only when nothing is pausing it. Pausing on focus is what
+  // keeps the link from remounting (and stealing focus) while a keyboard user
+  // is on it.
+  const active = !userPaused && !hovered && !focused && !reducedMotion;
 
   useEffect(() => {
-    indexRef.current = index;
-  }, [index]);
-
-  useEffect(() => {
-    pausedRef.current = paused;
-  }, [paused]);
-
-  const clearTimer = useCallback(() => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setReducedMotion(mq.matches);
+    const handler = (e) => setReducedMotion(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
   }, []);
 
-  const scheduleNext = useCallback(() => {
-    clearTimer();
-    if (pausedRef.current) return;
-    timeoutRef.current = setTimeout(() => {
-      const nextIndex = (indexRef.current + 1) % links.length;
-      setIndex(nextIndex);
-      setAnimKey(k => k + 1);
-      scheduleNext();
+  // Advance 5s after each slide, but only while active. Re-runs when `active`
+  // or `index` changes, clearing the pending timer on pause.
+  useEffect(() => {
+    if (!active) return;
+    const t = setTimeout(() => {
+      setIndex((i) => (i + 1) % links.length);
+      setAnimKey((k) => k + 1);
     }, 5000);
-  }, [clearTimer, links.length]);
+    return () => clearTimeout(t);
+  }, [active, index, links.length]);
 
-  const goTo = useCallback((newIndex) => {
+  const goTo = (newIndex) => {
     setIndex(newIndex);
-    setAnimKey(k => k + 1);
-    scheduleNext();
-  }, [scheduleNext]);
-
-  const handleMouseEnter = () => {
-    setPaused(true);
-    clearTimer();
+    setAnimKey((k) => k + 1);
   };
 
-  const handleMouseLeave = () => {
-    setPaused(false);
+  const handleRegionBlur = (e) => {
+    if (!e.currentTarget.contains(e.relatedTarget)) setFocused(false);
   };
-
-  // Resume auto-rotation when unpaused
-  useEffect(() => {
-    if (!paused) {
-      scheduleNext();
-    }
-    return clearTimer;
-  }, [paused, scheduleNext, clearTimer]);
-
-  // Initial auto-rotation
-  useEffect(() => {
-    scheduleNext();
-    return clearTimer;
-  }, []);
 
   return (
     <>
       <div
         className="flex flex-col items-center gap-1.5 text-sm text-black mt-2 mb-10"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        onFocus={() => setFocused(true)}
+        onBlur={handleRegionBlur}
         role="region"
         aria-label="Announcements"
         aria-roledescription="carousel"
       >
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center gap-2">
           <div
             className="overflow-hidden w-[260px] sm:w-[360px] md:w-[420px] lg:w-[480px] h-5"
             aria-live="polite"
@@ -101,29 +81,49 @@ const LinkCarousel = () => {
               href={links[index].href}
               target="_blank"
               rel="noopener"
-              className={`block w-full text-center underline ${paused ? '' : 'animate-scroll'}`}
+              className={`block w-full text-center underline ${active ? 'animate-scroll' : ''}`}
             >
               {links[index].label}
             </a>
           </div>
         </div>
 
-        {/* Position indicators */}
-        <div className="flex gap-1.5" role="tablist" aria-label="Announcement slides">
-          {links.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goTo(i)}
-              role="tab"
-              aria-selected={i === index}
-              aria-label={`Announcement ${i + 1} of ${links.length}`}
-              className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                i === index
-                  ? 'bg-gray-700 scale-110'
-                  : 'bg-gray-300 hover:bg-gray-400'
-              }`}
-            />
-          ))}
+        <div className="flex items-center gap-2">
+          {/* Pause / play control (WCAG 2.2.2) */}
+          <button
+            type="button"
+            onClick={() => setUserPaused((p) => !p)}
+            aria-label={userPaused ? 'Play announcement rotation' : 'Pause announcement rotation'}
+            className="text-gray-400 hover:text-gray-700 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+          >
+            {userPaused ? (
+              <svg aria-hidden="true" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            ) : (
+              <svg aria-hidden="true" className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6 5h4v14H6zM14 5h4v14h-4z" />
+              </svg>
+            )}
+          </button>
+
+          {/* Position indicators */}
+          <div className="flex gap-1.5" role="tablist" aria-label="Announcement slides">
+            {links.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => goTo(i)}
+                role="tab"
+                aria-selected={i === index}
+                aria-label={`Announcement ${i + 1} of ${links.length}`}
+                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
+                  i === index
+                    ? 'bg-gray-700 scale-110'
+                    : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
