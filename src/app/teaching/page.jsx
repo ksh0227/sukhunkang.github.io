@@ -34,7 +34,7 @@ export default function Teaching() {
               Company, and What's Next
             </h3>
             <p className="text-sm text-gray-600 mt-1">
-              Harvard Business Publishing · 2024
+              UC Berkeley Haas Case · 2025 · with Abhishek Nagaraj
             </p>
             <p className="text-gray-700 mt-2 text-sm leading-relaxed">
               How did The Pinkfong Company transform a viral video into a global

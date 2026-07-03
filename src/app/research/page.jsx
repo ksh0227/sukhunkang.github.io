@@ -61,17 +61,17 @@ export default function Research() {
       title: "Revealed Relatedness: How New Mapping Criteria Reshape Organizational Search",
       coauthors: "",
       hook: "Search for innovation depends on the criteria firms use to assess the distance",
-      abstract: "Research on organizational search assumes that the criteria for assessing domain relatedness remain stable. I examine what happens when new mapping criteria reveal that domains share causal mechanisms despite appearing unrelated under existing criteria—a phenomenon I term revealed relatedness. I argue that revealed relatedness increases entry likelihood through capability redeployment and that portfolio concentration reduces initial responsiveness due to cognitive inertia. Analyzing pharmaceutical firms’ responses to The Cancer Genome Atlas, I find that firms enter revealed domains primarily by redeploying existing drugs. Highly concentrated firms are slower to respond initially, but those that enter become more likely to identify additional related domains before external mapping confirms the connections. Because proactive entry precedes external revelation, this pattern suggests an internalization of mapping principles. These findings reveal how changing mapping criteria reshape organizational search.",
+      abstract: "Research on organizational search assumes that the criteria for assessing domain relatedness remain stable. I examine what happens when new mapping criteria reveal that domains share causal mechanisms despite appearing unrelated under existing criteria, a phenomenon I term revealed relatedness. I argue that revealed relatedness increases entry likelihood through capability redeployment and that portfolio concentration reduces initial responsiveness due to cognitive inertia. Analyzing pharmaceutical firms’ responses to The Cancer Genome Atlas, I find that firms enter revealed domains primarily by redeploying existing drugs. Highly concentrated firms are slower to respond initially, but those that enter become more likely to identify additional related domains before external mapping confirms the connections. Because proactive entry precedes external revelation, this pattern suggests an internalization of mapping principles. These findings reveal how changing mapping criteria reshape organizational search.",
       awards: [
         "2023 AOM Best Paper Proceedings",
-        "Runner-up for ISA Giarrantani Rising Star Award",
+        "Runner-up for ISA Giarratani Rising Star Award",
       ],
       links: [],
       notes: ["Previous titles: “Objects may be closer than they appear: The impact of public scientific map on organizational search”"],
     },
     {
       id: "wp-2",
-      title: "When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990-2020",
+      title: "When Do Firms Provide Early Access Prior to Commercialization? Evidence from Expanded Access Programs in the Oncology Drug Market",
       coauthors: "with Sungyong Chang",
       hook: "We examine firm-level determinants of providing expanded access in the oncology market.",
       abstract: "One of the grand challenges in healthcare is the limited availability of life-saving drugs and therapies. While providing early access to investigational drugs is seen as a potential solution to this issue, our understanding of what deters or facilitates firms from granting early access remains limited. We examine when firms provide early access to investigational oncology drugs from 1990 to 2020. Our study finds that while entrepreneurial firms are known as engines for developing novel drugs, they are less likely to provide early access due to uncertainties from thinner product pipelines and concerns over equity values. Regulatory certification significantly reduces such uncertainties, encouraging firms to provide early access, but its benefits are more pronounced for established firms. We discuss the intricacies involved in improving early access, highlighting the complex interaction between company incentives and industry structure.",
@@ -114,6 +114,17 @@ export default function Research() {
       coauthors: "with Wesley Greenblatt & Young Hou",
       hook: "Scientists' ethnic backgrounds shape what diseases they choose to study.",
       abstract: "",
+      links: [],
+    },
+    {
+      id: "wp-8",
+      title: "Attention Triage in Sequential Innovation",
+      coauthors: "with Sandra Barbosu & Sungyong Chang",
+      hook: "How firms allocate limited attention across opportunities in sequential innovation.",
+      abstract: "",
+      awards: [
+        "2026 ISA Best Paper in Innovation and Entrepreneurship Award",
+      ],
       links: [],
     },
     {

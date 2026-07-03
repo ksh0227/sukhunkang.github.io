@@ -24,7 +24,7 @@ const Members = () => {
           <section className="mt-8">
             <h2 className="text-2xl font-semibold">Past HIWG Presenters</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
-              <li>Sandra Barbosa (NYU)</li>
+              <li>Sandra Barbosu (NYU)</li>
               <li>Sandip Bisui (Colorado / Purdue)</li>
               <li>Gabriel Cavalli (Toronto)</li>
               <li>Furkan Cetin (Northwestern)</li>

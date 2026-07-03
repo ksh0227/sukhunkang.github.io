@@ -24,12 +24,6 @@ const members = [
     image: "/lab/seongho.jpg",
   },
   {
-    name: "Janice Jiang",
-    description:
-      "Janice Jiang is a fourth-year Actuarial Science with a minor in Applied Psychology student at University of California, Santa Barbara. Her research interests are in biostatistics, biomarkers, and spatiotemporal analysis. After graduation, she aims to pursue Ph.D in biostatistics, further studying longitudinal modeling of biomarkers for precision medicine. During the free time, she likes playing with her two cats!",
-    image: "/lab/janice.jpg",
-  },
-  {
     name: "Ivan Lin",
     description:
       "Ivan is a fourth-year Economics undergraduate at the University of California of Santa Barbara. He holds a strong interest in the fields of Technology and Business and will continue to pursue his goals through the Masters of Technology Management program at UCSB. His current goal is to eventually take his research work and knowledge to start up a successful business in the digital entertainment industry.",
@@ -48,29 +42,11 @@ const members = [
     image: "/lab/masoom.jpg",
   },
   {
-    name: "Sean Wang",
-    description:
-      "Sean is a third-year Statistics and Data Science major at the University of California, Santa Barbara with significant hands-on experience in the realms of software development, data analytics, and machine learning. He enjoys exploring complex systems and developing strategic solutions for a variety of applications and hobbies. His intended career trajectory lies at the intersection of finance and technology, which he aims to further throughout his undergraduate and graduate studies.",
-    image: "/lab/sean.jpg",
-  },
-  {
     name: "Aaron Tang",
     description:
       "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further his education in data science and continue honing his skills. Outside of school, he loves spending time with family and friends.",
     image: "/lab/aaron.jpg",
   },
-  {
-    name: "Fan Ye",
-    description:
-      "Fan Ye is a fourth-year Actuarial Science and Economics student at the University of California, Santa Barbara. His research interest focuses on the intersection of drug development, public policy, and health insurance. Upon graduating, he hopes to pursue further education in economics, specializing in insurance economics.",
-    image: "/lab/fan.jpg",
-  },
-  // {
-  //   name: "Sean Wang",
-  //   description:
-  //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
-  //   image: "/test.jpg",
-  // },
 ];
 
 export default function Lab() {
@@ -119,6 +95,9 @@ export default function Lab() {
           <section className="mt-8">
             <h2 className="text-2xl text-center my-12 font-semibold">Lab Alumni</h2>
             <ul className="list-disc list-outside pl-6">
+              <li>Fan Ye (UCSB, Actuarial Science and Economics), Research Assistant, Harvard Medical School</li>
+              <li>Janice Jiang (UCSB, Actuarial Science), MS in Biostatistics, Harvard University</li>
+              <li>Sean Wang (UCSB, Statistics and Data Science), Data Scientist, Applied Materials</li>
               <li>Kuan-I (Brian) Lu (UCSB, Actuarial Science, 2025), Research Associate, MIT MS in Business Analytics</li>
               <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), Americorps Forest Corps</li>
               <li>Carter Kulm (UCSB, Data Science, 2025), UT Austin MS in Data Science</li>

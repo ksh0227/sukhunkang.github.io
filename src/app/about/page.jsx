@@ -52,8 +52,8 @@ export default function About() {
                 PhD in Strategy and Entrepreneurship from London Business School
               </strong>.{" "}
               My research has been recognized by ISA Babbage International Policy Forum Industrial Innovation Policy Award Runner-up (2026), ISA Best Paper in Innovation and Entrepreneurship Award (2026),
-              AOM Sumantra Goshal Research and Practice Award (2025), AOM STR Distinguished Paper Award in Corporate and International Strategy (2025),
-              the AOM STR/TIM Outstanding Dissertation Award Finalists (2024), ISA Giarrantani Rising Star Award Runner-up (2024), Sir James Ball PhD Award by London Business School (2024), and the
+              AOM Sumantra Ghoshal Research and Practice Award (2025), AOM STR Distinguished Paper Award in Corporate and International Strategy (2025),
+              the AOM STR/TIM Outstanding Dissertation Award Finalists (2024), ISA Giarratani Rising Star Award Runner-up (2024), Sir James Ball PhD Award by London Business School (2022), and the
               Organization Science/INFORMS Dissertation Proposal Competition (2022).
             </p>
 
@@ -79,7 +79,7 @@ export default function About() {
             <p>
               I am a member of the{" "}
               <Link
-                href="https://med.nyu.edu/centers-programs/medical-ethics/access-programs"
+                href="https://med.nyu.edu/departments-institutes/population-health/divisions-sections-centers/medical-ethics/research/working-group-compassionate-use-preapproval-access"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
@@ -139,11 +139,14 @@ export default function About() {
         <section className="mt-10">
             <h2 className="text-xl font-semibold mb-4">Selected Awards</h2>
             <ul className="space-y-2 text-gray-700">
+              <li>Swildens Family Faculty Fellowship, UCSB, 2026–2029</li>
+              <li>TIM Best Conference Paper Award, Finalist, AOM, 2026</li>
               <li>Babbage International Policy Forum Industrial Innovation Policy Award, Runner-up, ISA, 2026</li>
               <li>Best Paper in Innovation and Entrepreneurship Award, ISA, 2026</li>
               <li>Sumantra Ghoshal Research and Practice Award, AOM, 2025</li>
               <li>STR Distinguished Paper Award in Corporate and International Strategy, AOM, 2025</li>
-              <li>ISA Giarrantani Rising Star Award, Runner-up, 2024</li>
+              <li>University of California Regents' Junior Faculty Fellowship, 2025</li>
+              <li>ISA Giarratani Rising Star Award, Runner-up, 2024</li>
               <li>TIM Dissertation Award, Finalist, AOM, 2024</li>
               <li>STR Dissertation Award, Finalist, AOM, 2024</li>
               <li>Sir James Ball PhD Award, London Business School, 2022</li>
@@ -155,6 +158,17 @@ export default function About() {
         <section className="mt-10">
             <h2 className="text-xl font-semibold mb-4">Media & Outreach</h2>
             <ul className="space-y-2 text-gray-700">
+              <li>
+                <Link
+                  href="https://theconversation.com/clinical-trials-that-are-actually-marketing-ploys-targeting-doctors-how-seeding-trials-put-profit-over-patients-280398"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+                >
+                  "Clinical Trials That Are Actually Marketing Ploys Targeting Doctors: How Seeding Trials Put Profit over Patients"
+                </Link>
+                , The Conversation, 2026
+              </li>
               <li>
                 <Link
                   href="https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/"
