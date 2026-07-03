@@ -19,12 +19,6 @@ const members = [
     image: "/lab/seongho.jpg",
   },
   {
-    name: "Ivan Lin",
-    description:
-      "Ivan is a fourth-year Economics undergraduate at the University of California of Santa Barbara. He holds a strong interest in the fields of Technology and Business and will continue to pursue his goals through the Masters of Technology Management program at UCSB. His current goal is to eventually take his research work and knowledge to start up a successful business in the digital entertainment industry.",
-    image: "/lab/ivan.jpg",
-  },
-  {
     name: "Divya Subramonian",
     description:
       "Divya is a third-year undergraduate at the University of California, Santa Barbara pursuing a bachelor’s degree in Computer Science. Her interests lie in machine learning and human-computer interaction, and she hopes leverage her skills to contribute to AI for healthcare or content discovery and recommendation systems research. Upon graduating, she aims to pursue a Master’s degree and expand her expertise in machine learning. In her free time, she loves to dance, bake, and go on hikes with friends and family!",
@@ -93,6 +87,7 @@ export default function Lab() {
               <li>Fan Ye (UCSB, Actuarial Science and Economics, 2026), Research Assistant, Harvard Medical School</li>
               <li>Janice Jiang (UCSB, Actuarial Science, 2026), MS in Biostatistics, Harvard University</li>
               <li>Sean Wang (UCSB, Statistics and Data Science, 2026), Data Scientist, Applied Materials</li>
+              <li>Ivan Lin (UCSB, Economics, 2026), Project Engineer, Leed Electric Inc.</li>
               <li>Kuan-I (Brian) Lu (UCSB, Actuarial Science, 2025), Research Associate, MIT MS in Business Analytics</li>
               <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), NYU Tandon School of Engineering MS in Applied Urban Sciences & Informatics</li>
               <li>Carter Kulm (UCSB, Data Science, 2025), UT Austin MS in Data Science</li>
