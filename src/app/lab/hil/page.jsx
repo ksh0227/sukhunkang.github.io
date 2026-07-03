@@ -9,11 +9,6 @@ const members = [
     image: "/lab/sandra.jpeg",
   },
   {
-    name: "Lucy Cao",
-    description: "Lucy Cao is a fourth-year Economics and Statistics & Data Science student at the University of California, Santa Barbara. Her research interests focus on sustainable finance, agricultural economics, and environmental economics. After graduation, she hopes to pursue a Ph.D. in environmental economics. In her free time, she enjoys playing piano and exploring new restaurants.",
-    image: "/lab/lucy.jpeg",
-  },
-  {
     name: "Sungyong Chang, PhD",
     description: "Dr. Sungyong Chang is an assistant professor of Management and Organizations at SC Johnson Graduate School of Management – Cornell University. He earned a Ph.D. in Management from Columbia University. His research interests lie in the areas of entrepreneurship and strategy, grand challenges, and computational social science. He examines how technology shapes industries, influences firm strategy, and creates opportunities for innovation. In the healthcare sector, he examines how technological advancements help entrepreneurial firms address critical challenges, improve patient outcomes, and expand access to life-saving treatments. In cultural industries, he studies how technology transforms creative markets, enabling individuals to develop their talents, reach broader audiences, and navigate industry complexities.",
     image: "/lab/sungyong.webp",
@@ -95,11 +90,11 @@ export default function Lab() {
           <section className="mt-8">
             <h2 className="text-2xl text-center my-12 font-semibold">Lab Alumni</h2>
             <ul className="list-disc list-outside pl-6">
-              <li>Fan Ye (UCSB, Actuarial Science and Economics), Research Assistant, Harvard Medical School</li>
-              <li>Janice Jiang (UCSB, Actuarial Science), MS in Biostatistics, Harvard University</li>
-              <li>Sean Wang (UCSB, Statistics and Data Science), Data Scientist, Applied Materials</li>
+              <li>Fan Ye (UCSB, Actuarial Science and Economics, 2026), Research Assistant, Harvard Medical School</li>
+              <li>Janice Jiang (UCSB, Actuarial Science, 2026), MS in Biostatistics, Harvard University</li>
+              <li>Sean Wang (UCSB, Statistics and Data Science, 2026), Data Scientist, Applied Materials</li>
               <li>Kuan-I (Brian) Lu (UCSB, Actuarial Science, 2025), Research Associate, MIT MS in Business Analytics</li>
-              <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), Americorps Forest Corps</li>
+              <li>Pramukh Shankar (UCSB, Data Science and Economics, 2025), NYU Tandon School of Engineering MS in Applied Urban Sciences & Informatics</li>
               <li>Carter Kulm (UCSB, Data Science, 2025), UT Austin MS in Data Science</li>
               <li>Amy Ji (UCSB, Data Science and Economics, 2025), IQVIA</li>
               <li>Pranav Hegde (UCSB, Mathematics, 2025), Capital Group</li>
