@@ -86,10 +86,37 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      # First non-empty page_url across attempts (skipped steps yield "").
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_2.outputs.page_url || steps.deployment_3.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      # The Pages publish step (actions/deploy-pages) intermittently returns
+      # "Deployment failed, try again later" from the GitHub Pages backend even
+      # when the build and artifact upload succeed. Retry up to three times with
+      # backoff so the workflow self-heals instead of needing a manual
+      # empty-commit re-trigger. Only the final attempt is unguarded, so a true
+      # three-in-a-row failure still surfaces as a failed run.
+      - name: Deploy to GitHub Pages (attempt 1)
         id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Backoff before attempt 2
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 60
+
+      - name: Deploy to GitHub Pages (attempt 2)
+        id: deployment_2
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Backoff before attempt 3
+        if: steps.deployment.outcome == 'failure' && steps.deployment_2.outcome == 'failure'
+        run: sleep 120
+
+      - name: Deploy to GitHub Pages (attempt 3)
+        id: deployment_3
+        if: steps.deployment.outcome == 'failure' && steps.deployment_2.outcome == 'failure'
         uses: actions/deploy-pages@v4
