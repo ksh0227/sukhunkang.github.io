@@ -10,12 +10,12 @@ export const publications = [
     title:
       "Uncovering Seeding Trials: Examining Non-Scientific Purposes in Clinical Trials",
     venue: "BMJ Evidence-Based Medicine",
-    year: "(Forthcoming)",
+    year: "2026",
     authors: ["Sukhun Kang", "Ivan Lin", "Sungyong Chang"],
     hook: "Seeding trials remain a systemic problem requiring proactive transparency mandates and coordinated oversight.",
     abstract: "",
     links: [
-      { label: "Link", url: "https://ebm.bmj.com/content/early/2026/04/08/bmjebm-2025-114242.full" },
+      { label: "Link", url: "https://doi.org/10.1136/bmjebm-2025-114242" },
     ],
   },
   {

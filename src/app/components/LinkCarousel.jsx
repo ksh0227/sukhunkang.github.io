@@ -10,7 +10,7 @@ const LinkCarousel = () => {
     },
     {
       label: 'New Research Article on Seeding Trials',
-      href: 'https://ebm.bmj.com/content/early/2026/04/08/bmjebm-2025-114242.full',
+      href: 'https://doi.org/10.1136/bmjebm-2025-114242',
     },
     {
       label: 'Measuring Biopharmaceutical Innovation in the Modern Era',
