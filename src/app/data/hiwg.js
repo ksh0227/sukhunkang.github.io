@@ -30,7 +30,7 @@ export const seriesInfo = {
   // the whole series and registrants pick the occurrence, so setting it here
   // gives every upcoming session a Register button. A session's own
   // `registerUrl` overrides this when a date gets its own link.
-  registerUrl: "",
+  registerUrl: "https://ucsb.zoom.us/meeting/register/-97-TVINTneXJRWnQugU8Q",
 };
 
 // Chronological ascending. number = sheet position + 29.
