@@ -37,7 +37,11 @@ function formatDate(iso) {
 const linkClass =
   "text-blue-600 hover:text-blue-800 transition-colors duration-200";
 
-function SessionEntry({ session, showRegister }) {
+// Registration links deliberately do NOT appear here. Following EIP, the
+// schedule is informational and the Zoom registration link is distributed in
+// the Mailchimp announcement email only. seriesInfo.registerUrl holds the
+// canonical link for those emails.
+function SessionEntry({ session }) {
   const {
     number,
     date,
@@ -52,10 +56,6 @@ function SessionEntry({ session, showRegister }) {
     note,
     links,
   } = session;
-
-  // A session-specific link wins; otherwise fall back to the series-wide Zoom
-  // registration URL, since Zoom issues one link for a recurring meeting.
-  const registerUrl = session.registerUrl || seriesInfo.registerUrl;
 
   return (
     <li className="border-l-2 border-gray-200 pl-4 py-1">
@@ -100,32 +100,21 @@ function SessionEntry({ session, showRegister }) {
         <p className="mt-2 text-sm text-gray-700 leading-relaxed">{abstract}</p>
       )}
 
-      {(links && links.length > 0) || (showRegister && registerUrl) ? (
+      {links && links.length > 0 && (
         <p className="mt-2 space-x-4 text-sm">
-          {showRegister && registerUrl && (
+          {links.map((link) => (
             <a
-              href={registerUrl}
+              key={link.url}
+              href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-blue-600 hover:text-blue-800 transition-colors duration-200"
+              className={linkClass}
             >
-              Register
+              {link.label}
             </a>
-          )}
-          {links &&
-            links.map((link) => (
-              <a
-                key={link.url}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={linkClass}
-              >
-                {link.label}
-              </a>
-            ))}
+          ))}
         </p>
-      ) : null}
+      )}
     </li>
   );
 }
@@ -180,11 +169,7 @@ const HIWGPreview = () => {
             <h2 className="text-2xl font-semibold mb-4">Upcoming Chats</h2>
             <ul className="space-y-6">
               {upcoming.map((session) => (
-                <SessionEntry
-                  key={session.number}
-                  session={session}
-                  showRegister
-                />
+                <SessionEntry key={session.number} session={session} />
               ))}
             </ul>
           </section>

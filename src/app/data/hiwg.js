@@ -26,10 +26,10 @@ export const seriesInfo = {
   // until the page is published; the mailing-list block hides when blank.
   mailingListUrl:
     "https://mailchi.mp/e6c9a19eea87/health-innovation-working-group-hiwg-virtual-research-chat-series",
-  // Zoom registration URL for the recurring meeting. Zoom issues ONE link for
-  // the whole series and registrants pick the occurrence, so setting it here
-  // gives every upcoming session a Register button. A session's own
-  // `registerUrl` overrides this when a date gets its own link.
+  // Zoom registration URL for the recurring meeting. NOT rendered on the page:
+  // following EIP, the schedule is informational and this link goes out in the
+  // Mailchimp announcement email only. Recorded here so there is one canonical
+  // copy to paste into each campaign.
   registerUrl: "https://ucsb.zoom.us/meeting/register/-97-TVINTneXJRWnQugU8Q",
 };
 
