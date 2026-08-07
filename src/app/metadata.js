@@ -157,6 +157,18 @@ export const hilMetadata = {
   },
 };
 
+// Unlinked staging route for the reworked HIWG series page. Kept out of search
+// results while it is being reviewed. When it replaces /lab/hiwg, delete this
+// export and drop the robots block.
+export const hiwgPreviewMetadata = {
+  title: "HIWG Research Chat (preview) | Sukhun Kang",
+  description:
+    "Preview of the HIWG Research Chat series page: upcoming and past sessions with speakers, affiliations, and topics.",
+  authors: [defaultAuthor],
+  robots: { index: false, follow: false },
+  alternates: { canonical: `${baseUrl}/lab/hiwg-preview/` },
+};
+
 export const hiwgMetadata = {
   title: "Health Innovation Working Group Research Chat | Sukhun Kang",
   description:
