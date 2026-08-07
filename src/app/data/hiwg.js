@@ -541,10 +541,7 @@ export const sessions = [
     date: "2027-05-11",
     time: "11:00 AM - 12:00 PM PT",
     speaker: "Sandip Bisui",
-    // Affiliation deliberately blank: the sign-up sheet has no school for this
-    // row, and the presenter list records "Colorado / Purdue" without saying
-    // which is current. Fill in rather than guess.
-    affiliation: "",
+    affiliation: "Purdue",
     profileUrl: "",
     title: "",
     topic: "",
