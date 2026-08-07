@@ -1,5 +1,5 @@
 // Single source of truth for the HIWG Research Chat series.
-// The /lab/hiwg-preview page is derived entirely from the arrays below.
+// The /lab/hiwg page is derived entirely from the arrays below.
 // Transcribed from the sign-up sheet (three tabs, 7/23/2024 to 6/8/2027).
 //
 // FIELD NOTES
