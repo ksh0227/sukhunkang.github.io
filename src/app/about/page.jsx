@@ -42,8 +42,10 @@ export default function About() {
                 Health Innovation Working Group Seminar
               </Link>
               . I serve on the{" "}
-              <strong>Editorial Review Board of Organization Science</strong>{" "}
-              and on research committees for AOM's STR Division and as the Rep-at-Large at Innovation & Knowledge and Research Methods Community at SMS.
+              <strong>Editorial Review Board of Organization Science</strong>,
+              on the Research Committee of AOM's STR Division, and as
+              Rep-at-Large for the Knowledge and Innovation Interest Group and
+              the Research Methods Community at SMS.
             </p>
 
             <p>
@@ -51,9 +53,10 @@ export default function About() {
               <strong>
                 PhD in Strategy and Entrepreneurship from London Business School
               </strong>.{" "}
-              My research has been recognized by ISA Babbage International Policy Forum Industrial Innovation Policy Award Runner-up (2026), ISA Best Paper in Innovation and Entrepreneurship Award (2026),
+              My research has been recognized by the Sebastian Hoenen Research Prize from the SEI Consortium (2026),
+              ISA Babbage Best Paper in Industrial Innovation Policy Award Runner-up (2026), ISA Best Paper in Innovation and Entrepreneurship Award (2026),
               AOM Sumantra Ghoshal Research and Practice Award (2025), AOM STR Distinguished Paper Award in Corporate and International Strategy (2025),
-              the AOM STR/TIM Outstanding Dissertation Award Finalists (2024), ISA Giarratani Rising Star Award Runner-up (2024), Sir James Ball PhD Award by London Business School (2022), and the
+              the AOM STR/TIM Outstanding Dissertation Award Finalists (2024), ISA Giarratani Rising Star Award Runner-up (2024), Sir James Ball PhD Prize by London Business School (2022), and the
               Organization Science/INFORMS Dissertation Proposal Competition (2022).
             </p>
 
@@ -87,8 +90,10 @@ export default function About() {
                 Working Group on Compassionate Use & Preapproval Access (CUPA)
               </Link>{" "}
               at NYU and have served on the International Rare Diseases Research
-              Consortium (IRDiRC) Task Force on Funding Models. I mentor
-              startups through the CancerX Accelerator.
+              Consortium (IRDiRC) Task Force on Funding Models. I mentored
+              startups through the CancerX Accelerator, and I mentor researchers
+              through AOM's STR Dissertation Consortium and UCSB's McNair
+              Scholars Program.
             </p>
 
             <p>
@@ -139,9 +144,10 @@ export default function About() {
         <section className="mt-10">
             <h2 className="text-xl font-semibold mb-4">Selected Awards</h2>
             <ul className="space-y-2 text-gray-700">
+              <li>Sebastian Hoenen Research Prize, SEI Consortium, 2026</li>
               <li>Swildens Family Faculty Fellowship, UCSB, 2026–2029</li>
               <li>TIM Best Conference Paper Award, Finalist, AOM, 2026</li>
-              <li>Babbage International Policy Forum Industrial Innovation Policy Award, Runner-up, ISA, 2026</li>
+              <li>Babbage Best Paper in Industrial Innovation Policy Award, Runner-up, ISA, 2026</li>
               <li>Best Paper in Innovation and Entrepreneurship Award, ISA, 2026</li>
               <li>Sumantra Ghoshal Research and Practice Award, AOM, 2025</li>
               <li>STR Distinguished Paper Award in Corporate and International Strategy, AOM, 2025</li>
@@ -149,7 +155,7 @@ export default function About() {
               <li>ISA Giarratani Rising Star Award, Runner-up, 2024</li>
               <li>TIM Dissertation Award, Finalist, AOM, 2024</li>
               <li>STR Dissertation Award, Finalist, AOM, 2024</li>
-              <li>Sir James Ball PhD Award, London Business School, 2022</li>
+              <li>Sir James Ball PhD Prize, London Business School, 2022</li>
               <li>Organization Science/INFORMS Dissertation Proposal Competition, Finalist, 2022</li>
             </ul>
         </section>
