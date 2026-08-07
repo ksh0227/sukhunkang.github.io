@@ -22,9 +22,14 @@ export const seriesInfo = {
   description:
     "The Health Innovation Working Group (HIWG) Research Chat is a virtual workshop series that focuses on social science research related to the pharmaceutical industry and the healthcare sector. Our goal is to provide a platform for PhD students and junior faculty members in disciplines such as strategy, economics, health policy, entrepreneurship, and innovation (or related fields) to present their working papers and receive feedback from a friendly crowd.",
   contactEmail: "sukhunkang@ucsb.edu",
-  // Mailchimp hosted signup page. Leave empty until the audience exists; the
-  // page hides the mailing-list block when this is blank.
+  // Mailchimp landing page URL (mailchi.mp/<identifier>/<slug>). Leave empty
+  // until the page is published; the mailing-list block hides when blank.
   mailingListUrl: "",
+  // Zoom registration URL for the recurring meeting. Zoom issues ONE link for
+  // the whole series and registrants pick the occurrence, so setting it here
+  // gives every upcoming session a Register button. A session's own
+  // `registerUrl` overrides this when a date gets its own link.
+  registerUrl: "",
 };
 
 // Chronological ascending. number = sheet position + 29.

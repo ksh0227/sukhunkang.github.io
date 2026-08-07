@@ -50,9 +50,12 @@ function SessionEntry({ session, showRegister }) {
     coauthors,
     abstract,
     note,
-    registerUrl,
     links,
   } = session;
+
+  // A session-specific link wins; otherwise fall back to the series-wide Zoom
+  // registration URL, since Zoom issues one link for a recurring meeting.
+  const registerUrl = session.registerUrl || seriesInfo.registerUrl;
 
   return (
     <li className="border-l-2 border-gray-200 pl-4 py-1">
