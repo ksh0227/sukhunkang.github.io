@@ -24,7 +24,8 @@ export const seriesInfo = {
   contactEmail: "sukhunkang@ucsb.edu",
   // Mailchimp landing page URL (mailchi.mp/<identifier>/<slug>). Leave empty
   // until the page is published; the mailing-list block hides when blank.
-  mailingListUrl: "",
+  mailingListUrl:
+    "https://mailchi.mp/e6c9a19eea87/health-innovation-working-group-hiwg-virtual-research-chat-series",
   // Zoom registration URL for the recurring meeting. Zoom issues ONE link for
   // the whole series and registrants pick the occurrence, so setting it here
   // gives every upcoming session a Register button. A session's own
