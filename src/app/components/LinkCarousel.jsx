@@ -5,10 +5,6 @@ import React, { useState, useEffect } from 'react';
 const LinkCarousel = () => {
   const links = [
     {
-      label: 'Application Open: Student Assistant in the Health Innovation Lab',
-      href: 'https://forms.gle/zyPZJYx93Qh3CJmL6',
-    },
-    {
       label: 'New Research Article on Seeding Trials',
       href: 'https://doi.org/10.1136/bmjebm-2025-114242',
     },

@@ -468,7 +468,7 @@ export const sessions = [
     speaker: "Sukhun Kang",
     affiliation: "UCSB",
     profileUrl: "",
-    title: "",
+    title: "Saving Acquisitions",
     topic: "",
     coauthors: [],
     abstract: "",
