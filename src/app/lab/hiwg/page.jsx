@@ -37,10 +37,12 @@ function formatDate(iso) {
 const linkClass =
   "text-blue-600 hover:text-blue-800 transition-colors duration-200";
 
-// Registration links deliberately do NOT appear here. Following EIP, the
-// schedule is informational and the Zoom registration link is distributed in
-// the Mailchimp announcement email only. seriesInfo.registerUrl holds the
-// canonical link for those emails.
+// Zoom join links deliberately do NOT appear here, and are not stored in this
+// repo at all: it is public and the meeting's join URL does not expire, so a
+// committed copy would be a standing way into the room. The schedule stays
+// informational (EIP parity); the join link travels only in the calendar
+// invitation. seriesInfo.registerUrl is retained but empty, since every
+// session object carries the same field name.
 function SessionEntry({ session }) {
   const {
     number,
@@ -142,16 +144,29 @@ const HIWG = () => {
           </p>
 
           {seriesInfo.mailingListUrl && (
-            <p className="mt-4">
-              <a
-                href={seriesInfo.mailingListUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block border border-blue-600 px-4 py-2 font-medium text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-200"
-              >
-                Join the mailing list
-              </a>
-            </p>
+            <>
+              <p className="mt-4">
+                <a
+                  href={seriesInfo.mailingListUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border border-blue-600 px-4 py-2 font-medium text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-200"
+                >
+                  Get calendar invitations
+                </a>
+              </p>
+              <p className="mt-2 text-sm text-gray-600">
+                This opens the HIWG Google Group. Some institutions block access
+                to Google Groups; if you see an error, email{" "}
+                <a
+                  href={`mailto:${seriesInfo.contactEmail}`}
+                  className={linkClass}
+                >
+                  {seriesInfo.contactEmail}
+                </a>{" "}
+                and I will add you.
+              </p>
+            </>
           )}
 
           <p className="mt-4 text-gray-800">

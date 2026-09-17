@@ -22,15 +22,20 @@ export const seriesInfo = {
   description:
     "The Health Innovation Working Group (HIWG) Research Chat is a virtual workshop series that focuses on social science research related to the pharmaceutical industry and the healthcare sector. Our goal is to provide a platform for PhD students and junior faculty members in disciplines such as strategy, economics, health policy, entrepreneurship, and innovation (or related fields) to present their working papers and receive feedback from a friendly crowd.",
   contactEmail: "sukhunkang@ucsb.edu",
-  // Mailchimp landing page URL (mailchi.mp/<identifier>/<slug>). Leave empty
-  // until the page is published; the mailing-list block hides when blank.
-  mailingListUrl:
-    "https://mailchi.mp/e6c9a19eea87/health-innovation-working-group-hiwg-virtual-research-chat-series",
-  // Zoom registration URL for the recurring meeting. NOT rendered on the page:
-  // following EIP, the schedule is informational and this link goes out in the
-  // Mailchimp announcement email only. Recorded here so there is one canonical
-  // copy to paste into each campaign.
-  registerUrl: "https://ucsb.zoom.us/meeting/register/-97-TVINTneXJRWnQugU8Q",
+  // Sign-up destination for the "Get calendar invitations" button. Points at
+  // the public Google Group, whose membership IS the guest list on every
+  // future session's calendar event, so joining the group is the whole
+  // sign-up. Mailchimp retired 2026-09-17. Button hides when this is blank.
+  // Some institutions (Purdue, confirmed 2026-09-14) disable Google Groups and
+  // serve an error page here, which is why the page prints an email fallback
+  // beneath the button. Do not remove that fallback.
+  mailingListUrl: "https://groups.google.com/g/hiwg-seminar",
+  // Deliberately empty. The Zoom join link is NOT stored in this repo: the
+  // repo is public and the meeting's join URL does not expire, so a committed
+  // copy is a standing way into the room. The link travels only in the
+  // calendar invitation sent from the @ucsb.edu calendar. Kept as a key
+  // because every session object below carries the same field name.
+  registerUrl: "",
 };
 
 // Chronological ascending. number = sheet position + 29.
