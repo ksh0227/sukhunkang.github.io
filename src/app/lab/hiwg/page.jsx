@@ -155,7 +155,7 @@ const HIWG = () => {
                   Get calendar invitations
                 </a>
               </p>
-              <p className="mt-2 text-sm text-gray-600">
+              <p className="mt-4 text-gray-800">
                 This opens the HIWG Google Group. Some institutions block access
                 to Google Groups; if you see an error, email{" "}
                 <a
