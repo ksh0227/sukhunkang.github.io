@@ -41,3 +41,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+
+# internal notes and logs (public repo: never publish these)
+/quality_reports/
+scripts/sync-cv.log
