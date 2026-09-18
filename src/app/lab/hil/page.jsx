@@ -25,6 +25,12 @@ const members = [
     image: "/lab/masoom.jpg",
   },
   {
+    name: "Minji (MJ) Lee",
+    description:
+      "MJ Lee is a PhD student in the Management and Organizations department at the SC Johnson Graduate School of Management, Cornell University. She holds a Bachelor’s degree in Business Administration from Chungnam National University and a Master’s degree in Strategy and International Management from Seoul National University. Her research focuses on the diffusion of new technologies and business practices, primarily in the pharmaceutical industry.",
+    image: "/lab/minji.jpg",
+  },
+  {
     name: "Aaron Tang",
     description:
       "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further his education in data science and continue honing his skills. Outside of school, he loves spending time with family and friends.",
