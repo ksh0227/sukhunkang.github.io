@@ -36,6 +36,12 @@ const members = [
       "Aaron is a third-year Statistics and Data Science student. His research interest is mainly focused on machine learning, but he is also really interested in leveraging data to inform the entertainment industry. After graduation, he hopes to further his education in data science and continue honing his skills. Outside of school, he loves spending time with family and friends.",
     image: "/lab/aaron.jpg",
   },
+  {
+    name: "Anishkumar (Anish) Senthil",
+    description:
+      "Anish is a fourth-year student double majoring in Statistics and Data Science and Applied Mathematics. His research interests center on machine learning and predictive modeling, and he hopes to explore their applications in healthcare and biotechnology. After graduating, he plans to pursue a related master’s degree and explore a career in machine learning.",
+    image: "/lab/anish.jpg",
+  },
 ];
 
 export default function Lab() {
