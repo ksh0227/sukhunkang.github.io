@@ -42,6 +42,12 @@ const members = [
       "Anish is a fourth-year student double majoring in Statistics and Data Science and Applied Mathematics. His research interests center on machine learning and predictive modeling, and he hopes to explore their applications in healthcare and biotechnology. After graduating, he plans to pursue a related master’s degree and explore a career in machine learning.",
     image: "/lab/anish.jpg",
   },
+  {
+    name: "Yuhao (Rex) Li",
+    description:
+      "Rex is a third-year student at UCSB studying Statistics and Data Science alongside Economics. His research interests include machine learning and its applications in finance and healthcare, particularly how predictive models can support better decision-making. After graduation, he hopes to pursue graduate studies in artificial intelligence and machine learning. Outside of school, he enjoys soccer and spending time with family and friends.",
+    image: "/lab/rex.jpg",
+  },
 ];
 
 export default function Lab() {
