@@ -48,6 +48,12 @@ const members = [
       "Rex is a third-year student at UCSB studying Statistics and Data Science alongside Economics. His research interests include machine learning and its applications in finance and healthcare, particularly how predictive models can support better decision-making. After graduation, he hopes to pursue graduate studies in artificial intelligence and machine learning. Outside of school, he enjoys soccer and spending time with family and friends.",
     image: "/lab/rex.jpg",
   },
+  {
+    name: "Nicole Zar",
+    description:
+      "Nicole is a fourth-year student at UC Santa Barbara studying Biopsychology and Technology Management. Her research interests include healthcare innovation, biotechnology, technology adoption, and the commercialization of new medical technologies. She is particularly interested in how early-stage research evolves into technologies and treatments with real-world impact, as well as the business and strategic decisions that shape which innovations successfully reach patients. After graduation, she hopes to pursue a career at the intersection of science and business, particularly in biotechnology or health technology.",
+    image: "/lab/nicole.jpg",
+  },
 ];
 
 export default function Lab() {
