@@ -1,6 +1,52 @@
-"use client";
-
 import Link from "next/link";
+
+const inlineLink =
+  "text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200";
+
+// Year first, laid out like the News list on the home page.
+const awards = [
+  { year: "2026", text: "Sebastian Hoenen Research Prize, SEI Consortium" },
+  { year: "2026–2029", text: "Swildens Family Faculty Fellowship, UCSB" },
+  { year: "2026", text: "TIM Best Conference Paper Award, Finalist, AOM" },
+  { year: "2026", text: "Babbage Best Paper in Industrial Innovation Policy Award, Runner-up, ISA" },
+  { year: "2026", text: "Best Paper in Innovation and Entrepreneurship Award, ISA" },
+  { year: "2025", text: "Sumantra Ghoshal Research and Practice Award, AOM" },
+  { year: "2025", text: "STR Distinguished Paper Award in Corporate and International Strategy, AOM" },
+  { year: "2025", text: "University of California Regents' Junior Faculty Fellowship" },
+  { year: "2024", text: "Giarratani Rising Star Award, Runner-up, ISA" },
+];
+
+const media = [
+  {
+    year: "2026",
+    title:
+      "Clinical Trials That Are Actually Marketing Ploys Targeting Doctors: How Seeding Trials Put Profit over Patients",
+    outlet: "The Conversation",
+    url: "https://theconversation.com/clinical-trials-that-are-actually-marketing-ploys-targeting-doctors-how-seeding-trials-put-profit-over-patients-280398",
+  },
+  {
+    year: "2025",
+    title: "Measuring Biopharmaceutical Innovation in the Modern Era",
+    outlet: "The Incidental Economist",
+    url: "https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/",
+  },
+  {
+    year: "2025",
+    title: "Conversation with Sukhun Kang on access to medicines",
+    outlet: "PI-Squared Initiative Podcast (Northeastern University)",
+    url: "https://www.youtube.com/watch?v=XoXJaQyXbKU",
+  },
+  {
+    year: "2023",
+    title: "Why should collaboration enhance oncology drug innovation?",
+    outlet: "Think at London Business School (The Why Podcast)",
+    url: "https://www.london.edu/think/why-should-collaboration-enhance-oncology-drug-innovation",
+  },
+];
+
+const rowClass = "py-3 flex flex-col sm:flex-row gap-1 sm:gap-6";
+const yearClass = "sm:w-24 flex-shrink-0 text-sm text-gray-500 tabular-nums sm:pt-0.5";
+const headingClass = "text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-3";
 
 export default function About() {
   return (
@@ -10,13 +56,9 @@ export default function About() {
           <h1 className="text-3xl font-bold mb-4">About</h1>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              I am an{" "}
-              <strong>
-                Assistant Professor of Technology Management at the University
-                of California, Santa Barbara
-              </strong>
-              . I co-direct the{" "}
-              <Link href="/lab/hil" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">
+              I am an Assistant Professor of Technology Management at the
+              University of California, Santa Barbara. I co-direct the{" "}
+              <Link href="/lab/hil" className={inlineLink}>
                 Health Innovation Lab
               </Link>{" "}
               with{" "}
@@ -24,7 +66,7 @@ export default function About() {
                 href="https://www.barbosu.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+                className={inlineLink}
               >
                 Sandra Barbosu
               </Link>{" "}
@@ -33,47 +75,38 @@ export default function About() {
                 href="https://www.sungyongchang.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+                className={inlineLink}
               >
                 Sungyong Chang
               </Link>
               , and organize the{" "}
-              <Link href="/lab/hiwg" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">
-                Health Innovation Working Group Seminar
+              <Link href="/lab/hiwg" className={inlineLink}>
+                Health Innovation Working Group (HIWG) Research Chat
               </Link>
-              . I serve on the{" "}
-              <strong>Editorial Review Board of Organization Science</strong>,
+              . I serve on the Editorial Review Board of Organization Science,
               on the Research Committee of AOM's STR Division, and as
               Rep-at-Large for the Knowledge and Innovation Interest Group and
               the Research Methods Community at SMS.
             </p>
 
             <p>
-              I hold a{" "}
-              <strong>
-                PhD in Strategy and Entrepreneurship from London Business School
-              </strong>.{" "}
-              My research has been recognized by the Sebastian Hoenen Research Prize from the SEI Consortium (2026),
-              ISA Babbage Best Paper in Industrial Innovation Policy Award Runner-up (2026), ISA Best Paper in Innovation and Entrepreneurship Award (2026),
-              AOM Sumantra Ghoshal Research and Practice Award (2025), AOM STR Distinguished Paper Award in Corporate and International Strategy (2025),
-              the AOM STR/TIM Outstanding Dissertation Award Finalists (2024), ISA Giarratani Rising Star Award Runner-up (2024), Sir James Ball PhD Prize by London Business School (2022), and the
-              Organization Science/INFORMS Dissertation Proposal Competition (2022).
+              I study how technology shapes innovation and firm strategy,
+              especially in the biopharmaceutical industry. I am interested in
+              what drives and what holds back the adoption of new technologies,
+              and in how they change the way firms compete and make decisions.
+              Much of my work looks at the forces around innovation, such as
+              regulation, science, and capital, and at how they shape which
+              ideas firms pursue and how quickly those ideas reach patients. My
+              goal is to understand how technology can be used to foster
+              innovation that benefits firms and society.
             </p>
 
             <p>
-              My research explores the intricate ways in which{" "}
-              <strong>
-                technology influences innovation, aiming to identify the key drivers and obstacles to technology adoption and its effects on individuals, firms, and our society
-              </strong>
-              . My research also investigates the broader implications of technology and innovation, with an emphasis on how technology alters firm strategy and behavior. My goal is to deepen our understanding of how to effectively use technology to foster innovation within a business context.
-            </p>
-
-            <p>
-              Before academia, I was a{" "}
-              <strong>semiconductor engineer at Samsung Electronics</strong>{" "}
-              and a research engineer at I&C Technology. In 2010, I
-              founded an Internet startup in Seoul. I
-              hold a BS in Computer Engineering from the University of Illinois
+              Before academia, I was a semiconductor engineer at Samsung
+              Electronics and a research engineer at I&C Technology. In 2010, I
+              founded an Internet startup in Seoul. I hold a PhD in Strategy and
+              Entrepreneurship from London Business School, a BS in Computer
+              Engineering from the University of Illinois,
               and Master's degrees from USC in Computer Engineering and
               Entrepreneurship & Innovation. These experiences inform my
               research on how firms innovate and commercialize new technologies.
@@ -85,7 +118,7 @@ export default function About() {
                 href="https://med.nyu.edu/departments-institutes/population-health/divisions-sections-centers/medical-ethics/research/working-group-compassionate-use-preapproval-access"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+                className={inlineLink}
               >
                 Working Group on Compassionate Use & Preapproval Access (CUPA)
               </Link>{" "}
@@ -97,118 +130,45 @@ export default function About() {
             </p>
 
             <p>
-              I engage in a variety of consulting, advising, and speaking activities.
-              This includes advising startups on entrepreneurial strategy, consulting with firms on their
-              strategy, and speaking to a variety of audiences on topics around
-              strategy, innovation, and entrepreneurship.
-            </p>
-
-            <p>
-              I can be reached at{" "}
-              <Link href="mailto:sukhunkang@ucsb.edu" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">
-                sukhunkang@ucsb.edu
-              </Link>
-              . You can also find me on{" "}
-              <Link
-                href="https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-              >
-                Google Scholar
-              </Link>
-              ,{" "}
-              <Link
-                href="https://www.linkedin.com/in/sukhunkang/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-              >
-                LinkedIn
-              </Link>
-              , and{" "}
-              <Link
-                href="https://x.com/sukhunkang"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-              >
-                X/Twitter
-              </Link>
-              .
+              I also advise startups on entrepreneurial strategy, consult with
+              firms on their strategy, and speak on strategy, innovation, and
+              entrepreneurship.
             </p>
           </div>
         </section>
 
-        {/* Awards Section */}
-        <section className="mt-10">
-            <h2 className="text-xl font-semibold mb-4">Selected Awards</h2>
-            <ul className="space-y-2 text-gray-700">
-              <li>Sebastian Hoenen Research Prize, SEI Consortium, 2026</li>
-              <li>Swildens Family Faculty Fellowship, UCSB, 2026–2029</li>
-              <li>TIM Best Conference Paper Award, Finalist, AOM, 2026</li>
-              <li>Babbage Best Paper in Industrial Innovation Policy Award, Runner-up, ISA, 2026</li>
-              <li>Best Paper in Innovation and Entrepreneurship Award, ISA, 2026</li>
-              <li>Sumantra Ghoshal Research and Practice Award, AOM, 2025</li>
-              <li>STR Distinguished Paper Award in Corporate and International Strategy, AOM, 2025</li>
-              <li>University of California Regents' Junior Faculty Fellowship, 2025</li>
-              <li>ISA Giarratani Rising Star Award, Runner-up, 2024</li>
-              <li>TIM Dissertation Award, Finalist, AOM, 2024</li>
-              <li>STR Dissertation Award, Finalist, AOM, 2024</li>
-              <li>Sir James Ball PhD Prize, London Business School, 2022</li>
-              <li>Organization Science/INFORMS Dissertation Proposal Competition, Finalist, 2022</li>
-            </ul>
+        <section className="mt-12">
+          <h2 className={headingClass}>Selected Awards</h2>
+          <ul className="divide-y divide-gray-100">
+            {awards.map((award) => (
+              <li key={award.text} className={rowClass}>
+                <span className={yearClass}>{award.year}</span>
+                <span className="text-gray-800">{award.text}</span>
+              </li>
+            ))}
+          </ul>
         </section>
 
-        {/* Media & Outreach */}
-        <section className="mt-10">
-            <h2 className="text-xl font-semibold mb-4">Media & Outreach</h2>
-            <ul className="space-y-2 text-gray-700">
-              <li>
-                <Link
-                  href="https://theconversation.com/clinical-trials-that-are-actually-marketing-ploys-targeting-doctors-how-seeding-trials-put-profit-over-patients-280398"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-                >
-                  "Clinical Trials That Are Actually Marketing Ploys Targeting Doctors: How Seeding Trials Put Profit over Patients"
-                </Link>
-                , The Conversation, 2026
+        <section className="mt-12">
+          <h2 className={headingClass}>Media & Outreach</h2>
+          <ul className="divide-y divide-gray-100">
+            {media.map((item) => (
+              <li key={item.url} className={rowClass}>
+                <span className={yearClass}>{item.year}</span>
+                <span className="text-gray-800">
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-gray-300 underline-offset-4 hover:text-accent hover:decoration-accent transition-colors duration-200"
+                  >
+                    “{item.title}”
+                  </a>
+                  , {item.outlet}
+                </span>
               </li>
-              <li>
-                <Link
-                  href="https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-                >
-                  "Measuring Biopharmaceutical Innovation in the Modern Era"
-                </Link>
-                , The Incidental Economist, 2025
-              </li>
-              <li>
-                <Link
-                  href="https://www.youtube.com/watch?v=XoXJaQyXbKU"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-                >
-                  "Conversation with Sukhun Kang on access to medicines"
-                </Link>
-                , PI-Squared Initiative Podcast (Northeastern University), 2025
-              </li>
-              <li>
-                <Link
-                  href="https://www.london.edu/think/why-should-collaboration-enhance-oncology-drug-innovation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-                >
-                  "Why should collaboration enhance oncology drug innovation?"
-                </Link>
-                , Think at London Business School (The Why Podcast), 2023
-              </li>
-            </ul>
+            ))}
+          </ul>
         </section>
       </main>
     </div>
