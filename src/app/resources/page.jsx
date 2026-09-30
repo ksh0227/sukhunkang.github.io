@@ -18,7 +18,7 @@ export default function Resources() {
                   Overview of FDA's expanded access (compassionate use) program, including eligibility criteria, application processes, and key considerations for patients and sponsors.
                 </p>
                 <p className="text-sm mt-2">
-                  <Link href="/resources/Introduction-to-Expanded-Access.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">[PDF]</Link>
+                  <Link href="/resources/Introduction-to-Expanded-Access.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[PDF]</Link>
                 </p>
               </div>
               <div className="border-l-2 border-gray-200 pl-4">
@@ -27,7 +27,7 @@ export default function Resources() {
                   Guide to FDA's four expedited pathways: Fast Track, Breakthrough Therapy, Accelerated Approval, and Priority Review. Covers eligibility, benefits, and strategic considerations.
                 </p>
                 <p className="text-sm mt-2">
-                  <Link href="/resources/Introduction-to-FDA-Expedited-Programs.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">[PDF]</Link>
+                  <Link href="/resources/Introduction-to-FDA-Expedited-Programs.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[PDF]</Link>
                 </p>
               </div>
               <div className="border-l-2 border-gray-200 pl-4">
@@ -36,7 +36,7 @@ export default function Resources() {
                   Overview of the U.S. regulatory framework for pharmaceuticals, including the FDA's role, drug approval process, and key legislation shaping the industry.
                 </p>
                 <p className="text-sm mt-2">
-                  <Link href="/resources/Introduction-to-Pharmaceutical-Regulations.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200">[PDF]</Link>
+                  <Link href="/resources/Introduction-to-Pharmaceutical-Regulations.pdf" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[PDF]</Link>
                 </p>
               </div>
             </div>
@@ -50,15 +50,15 @@ export default function Resources() {
               </li>
               <li>
                 Strategy and Innovation in Biopharmaceutical Industry, AOM2022{" "}
-                <Link href="https://journals.aom.org/doi/10.5465/AMBPP.2022.10823symposium" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[abstract]</Link>
+                <Link href="https://journals.aom.org/doi/10.5465/AMBPP.2022.10823symposium" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[abstract]</Link>
               </li>
               <li>
                 Science and Firm Strategy, AOM2021{" "}
-                <Link href="https://journals.aom.org/doi/abs/10.5465/AMBPP.2021.12682symposium" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[abstract]</Link>
+                <Link href="https://journals.aom.org/doi/abs/10.5465/AMBPP.2021.12682symposium" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[abstract]</Link>
               </li>
               <li>
                 Where do Ecosystems Come From? The Origins of Ecosystem Structure and Performance, AOM2021{" "}
-                <Link href="https://journals.aom.org/doi/abs/10.5465/AMBPP.2021.13345symposium" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[abstract]</Link>
+                <Link href="https://journals.aom.org/doi/abs/10.5465/AMBPP.2021.13345symposium" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[abstract]</Link>
               </li>
             </ul>
           </section>
@@ -68,19 +68,19 @@ export default function Resources() {
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 Trans-Atlantic Doctoral Conference{" "}
-                <Link href="https://www.tadclbs.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[link]</Link>
+                <Link href="https://www.tadclbs.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[link]</Link>
               </li>
               <li>
                 West Coast Research Symposium{" "}
-                <Link href="https://thewcrs.wordpress.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[link]</Link>
+                <Link href="https://thewcrs.wordpress.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[link]</Link>
               </li>
               <li>
                 Wharton Innovation Doctoral Symposium{" "}
-                <Link href="https://mackinstitute.wharton.upenn.edu/events-and-programs/wharton-innovation-doctoral-symposium/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[link]</Link>
+                <Link href="https://mackinstitute.wharton.upenn.edu/events-and-programs/wharton-innovation-doctoral-symposium/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[link]</Link>
               </li>
               <li>
                 East Coast Doctoral Conference{" "}
-                <Link href="https://www.eastcoastdoctoralconference.com/home" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[link]</Link>
+                <Link href="https://www.eastcoastdoctoralconference.com/home" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline underline-offset-2 transition-colors duration-200">[link]</Link>
               </li>
             </ul>
           </section>

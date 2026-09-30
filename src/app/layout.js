@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -8,6 +9,9 @@ import { rootMetadata } from "./metadata";
 import { publications, workingPapers, paperToSchema } from "./data/papers";
 
 export const metadata = rootMetadata;
+
+// Self-hosted at build time by next/font: no request to Google at runtime.
+const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 
 export default function RootLayout({ children }) {
   const personSchema = {
@@ -310,7 +314,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={sans.variable}>
       <head>
         <script
           type="application/ld+json"

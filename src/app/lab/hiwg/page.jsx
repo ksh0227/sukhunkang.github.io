@@ -35,7 +35,7 @@ function formatDate(iso) {
 }
 
 const linkClass =
-  "text-blue-600 hover:text-blue-800 transition-colors duration-200";
+  "text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200";
 
 // Zoom join links deliberately do NOT appear here, and are not stored in this
 // repo at all: it is public and the meeting's join URL does not expire, so a
@@ -150,7 +150,7 @@ const HIWG = () => {
                   href={seriesInfo.mailingListUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block border border-blue-600 px-4 py-2 font-medium text-blue-600 hover:bg-blue-600 hover:text-white transition-colors duration-200"
+                  className="inline-block border border-accent px-4 py-2 font-medium text-accent hover:bg-accent hover:text-white transition-colors duration-200"
                 >
                   Get calendar invitations
                 </a>

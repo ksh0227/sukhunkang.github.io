@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow max-w-4xl mx-auto px-6 py-24 text-center">
-        <p className="text-sm font-semibold text-blue-600">404</p>
+        <p className="text-sm font-semibold text-accent">404</p>
         <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-4">
           Page not found
         </h1>
@@ -17,7 +17,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+          className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200"
         >
           Return to the homepage
         </Link>

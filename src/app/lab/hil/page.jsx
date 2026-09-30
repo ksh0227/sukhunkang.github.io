@@ -65,7 +65,7 @@ export default function Lab() {
              <h2 className="text-lg font-semibold mt-4">About</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
-               Health Innovation Lab is co-directed by Dr. Sukhun Kang, <a href="https://www.barbosu.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sandra Barbosu</a>, and <a href="https://sungyongchang.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">Dr. Sungyong Chang</a>.
+               Health Innovation Lab is co-directed by Dr. Sukhun Kang, <a href="https://www.barbosu.com/" target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200">Dr. Sandra Barbosu</a>, and <a href="https://sungyongchang.com/" target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200">Dr. Sungyong Chang</a>.
               </li>
               <li>
                 The Health Innovation Lab serves as an integrated environment for research in the area of strategy and management with focus on the healthcare sectors. 
@@ -83,7 +83,7 @@ export default function Lab() {
               </li>
               <li>
                 If you are interested, please email me at 
-                <a href="mailto:sukhunkang@ucsb.edu" className="text-blue-600 hover:text-blue-800 transition-colors duration-200"> sukhunkang@ucsb.edu </a> 
+                <a href="mailto:sukhunkang@ucsb.edu" className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200"> sukhunkang@ucsb.edu </a> 
                 with a short introduction and attach your resume/CV with an indication of your proficiency 
                 with the tools mentioned above.
               </li>

@@ -10,6 +10,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // UCSB navy, the site's one accent color.
+        accent: { DEFAULT: "#003660", dark: "#00264a" },
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", "Arial", "Helvetica", "sans-serif"],
       },
     },
   },
