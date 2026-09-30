@@ -100,15 +100,18 @@ const Navbar = () => {
 };
 
 const NavItem = ({ href, pathname, children, onClick }) => {
-  const isActive = pathname === href;
+  // Pages are served with a trailing slash (trailingSlash: true); hrefs are not.
+  const isActive = pathname.replace(/\/$/, "") === href;
+  // Desktop keeps medium weight so the centered nav doesn't shift between
+  // pages; the mobile menu has no underline bar, so it marks the page in semibold.
   return (
     <Link
       href={href}
       onClick={onClick}
-      className={`relative block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+      className={`relative block px-3 py-2 text-base transition-colors duration-200 ${
         isActive
-          ? "text-gray-900 font-bold"
-          : "text-gray-500 hover:text-gray-900"
+          ? "text-gray-900 font-semibold md:font-medium"
+          : "text-gray-500 font-medium hover:text-gray-900"
       }`}
     >
       {children}
@@ -175,7 +178,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
         aria-expanded={isOpen}
         aria-controls="lab-menu"
         className={`relative text-base font-medium transition-colors duration-200 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
-          pathname.startsWith("/lab") ? "text-gray-900 font-bold" : "text-gray-500 hover:text-gray-900"
+          pathname.startsWith("/lab") ? "text-gray-900" : "text-gray-500 hover:text-gray-900"
         }`}
       >
         LAB

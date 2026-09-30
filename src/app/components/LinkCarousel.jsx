@@ -71,8 +71,9 @@ const LinkCarousel = () => {
         aria-roledescription="carousel"
       >
         <div className="flex justify-center items-center gap-2">
+          {/* Two lines below md: the longest label wraps at 260 and 360 px. */}
           <div
-            className="overflow-hidden w-[260px] sm:w-[360px] md:w-[420px] lg:w-[480px] h-5"
+            className="overflow-hidden w-[260px] sm:w-[360px] md:w-[420px] lg:w-[480px] h-10 md:h-5 flex items-center"
             aria-live="polite"
             aria-atomic="true"
           >
