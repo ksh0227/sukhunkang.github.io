@@ -25,17 +25,21 @@ src/app/
 ├── globals.css         # Global styles
 ├── metadata.js         # Centralized SEO metadata for all pages
 ├── components/
-│   ├── NavBar.jsx      # Navigation with responsive mobile menu
-│   ├── Footer.jsx      # Social links & contact
-│   ├── LinkCarousel.jsx # Announcement carousel
+│   ├── NavBar.jsx      # Navigation (menu button below 1024 px), CV link
+│   ├── Footer.jsx      # Copyright line & profile icons
+│   ├── icons.jsx       # Footer profile icons (matching tiles)
 │   └── ProfileCard.jsx  # Lab member cards
-├── about/page.jsx      # Biography and awards
+├── data/
+│   ├── papers.js       # All papers: Research page, JSON-LD, llms.txt
+│   ├── news.js         # Home-page News list
+│   └── hiwg.js         # HIWG Research Chat schedule
+├── about/page.jsx      # Biography, awards, media
 ├── research/page.jsx   # Publications and working papers
 ├── teaching/page.jsx   # Courses, cases, testimonials
 ├── resources/page.jsx  # Educational materials
 └── lab/
     ├── hil/page.jsx    # Health Innovation Lab
-    └── hiwg/page.jsx   # HIWG Seminar
+    └── hiwg/page.jsx   # HIWG Research Chat
 ```
 
 ## Key Files Reference
@@ -43,9 +47,10 @@ src/app/
 | Task | File to Edit |
 |------|--------------|
 | Update CV | Replace `/public/Sukhun-Kang-CV.pdf` |
-| Add publication | `src/app/research/page.jsx` |
+| Add publication | `src/app/data/papers.js` |
 | Update bio/awards | `src/app/about/page.jsx` |
-| Modify announcements | `src/app/components/LinkCarousel.jsx` |
+| Update home-page news | `src/app/data/news.js` |
+| Change featured papers | `FEATURED` in `src/app/page.js` |
 | Add lab member | `src/app/lab/hil/page.jsx` |
 | Update courses | `src/app/teaching/page.jsx` |
 | Change navigation | `src/app/components/NavBar.jsx` |
@@ -56,22 +61,20 @@ src/app/
 
 ### Adding a New Publication
 
-Edit `src/app/research/page.jsx`. Publications are stored inline as JSX. Add new entries in the publications section following the existing pattern:
+Add an entry to `publications` or `workingPapers` in `src/app/data/papers.js`. The Research page, the JSON-LD in `layout.js`, and `llms.txt` are all derived from it. Link labels name the destination (`"Journal"`, `"SSRN"`):
 
-```jsx
-<li className="mb-6">
-  <button onClick={() => togglePaper('paper-id')} ...>
-    <span className="font-medium">Paper Title</span>
-    <span className="italic">Journal Name</span>
-    <span>Year</span>
-  </button>
-  {expandedPapers['paper-id'] && (
-    <div className="mt-2 ...">
-      <p>Abstract text...</p>
-      <a href="link-to-pdf">PDF</a>
-    </div>
-  )}
-</li>
+```js
+{
+  id: "wp-9",
+  title: "Paper Title",
+  venue: "Journal Name",          // omit for working papers
+  year: "2026",
+  authors: ["Sukhun Kang", "Coauthor"],
+  hook: "One-sentence summary.",
+  abstract: "...",
+  awards: ["2026 Award Name"],
+  links: [{ label: "SSRN", url: "https://..." }],
+},
 ```
 
 ### Adding a Lab Member
@@ -88,14 +91,14 @@ Edit `src/app/lab/hil/page.jsx`. Add member photo to `/public/lab/` and create a
 />
 ```
 
-### Updating Announcements
+### Updating Home-Page News
 
-Edit `src/app/components/LinkCarousel.jsx`. The `links` array contains announcement items:
+Edit `src/app/data/news.js`. Items are newest first; `date` is `"YYYY-MM"` and displays as "Oct 2026". Take dates from the source, not memory:
 
-```jsx
-const links = [
-  { text: 'Announcement text', url: '/path' },
-  // Add new announcements here
+```js
+export const news = [
+  { date: "2026-10", text: "News item text.", url: "/path-or-https-url" },
+  // ...
 ];
 ```
 
@@ -130,13 +133,17 @@ npm run lint
 
 These files use `"use client"` directive for interactivity:
 - `NavBar.jsx` - Mobile menu toggle, dropdown
-- `LinkCarousel.jsx` - Auto-rotating carousel
-- `research/page.jsx` - Expandable paper abstracts
-- `about/page.jsx` - Interactive links
+- `AITrafficTracker.jsx` - AI-referral analytics
+
+Everything else is a server component; the Research page's abstracts use native `<details>`.
 
 ## Styling Conventions
 
 - Tailwind CSS utility classes (no custom CSS beyond globals.css)
+- Font: Inter everywhere, loaded through `next/font` in `layout.js` (self-hosted at build)
+- One accent color, `accent` (UCSB navy `#003660`, in `tailwind.config.mjs`), for every link:
+  - Links inside sentences: `text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent`
+  - Standalone bracketed links (`[SSRN]`, `[PDF]`): `text-accent hover:underline underline-offset-2`
 - Responsive breakpoints: `sm:`, `md:`, `lg:`, `xl:`
 - Common patterns:
   - Container: `max-w-4xl mx-auto px-4`
