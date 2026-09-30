@@ -15,7 +15,7 @@ export const publications = [
     hook: "Seeding trials remain a systemic problem requiring proactive transparency mandates and coordinated oversight.",
     abstract: "",
     links: [
-      { label: "Link", url: "https://doi.org/10.1136/bmjebm-2025-114242" },
+      { label: "Journal", url: "https://doi.org/10.1136/bmjebm-2025-114242" },
     ],
   },
   {
@@ -30,7 +30,7 @@ export const publications = [
     abstract:
       "The US Food and Drug Administration (FDA) expanded access pathway allows patients with life-threatening or serious conditions to access investigational drugs outside of trials, under certain conditions. The 21st Century Cures Act ('Cures Act') requires certain drug companies to publicly disclose their expanded access policies. We characterized the proportion of applicable US biopharmaceutical companies, with an oncology related drug, implementing Cures Act requirements for expanded access policies and whether available policies contain the information described in the Act. We found about one-third of applicable biopharmaceutical companies (32%, 140/423) implemented the Cures Act requirement to have a public expanded access policy. Less than one-third of public policies contained all described information (31%, 44/140). Larger companies and those with at least one drug receiving an FDA expedited designation (59% vs. 21%; P < 0.001), or at least one FDA-approved drug (57% vs. 28%; P < 0.001) were more likely to have a public policy. Our results suggest the Cures Act may be having a limited impact on its goals of supporting timely medical decisions and closing informational gaps for patients and doctors around expanded access to investigational oncology therapies, especially for products sponsored by smaller and newer companies.",
     links: [
-      { label: "Link", url: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401" },
+      { label: "Journal", url: "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401" },
     ],
   },
   {
@@ -45,7 +45,7 @@ export const publications = [
     abstract:
       "With the recent growth of the sharing economy, regulators must frequently strike the right balance between private and public interests to maximize value creation. In this article, we argue that political competition is a critical ingredient that explains whether cities accommodate or ban ridesharing platforms and that this relationship is moderated in more populous cities and in cities with higher unemployment rates. We test our arguments using archival data covering ridesharing bans in various U.S. cities during the 2011–2015 period. We supplement these data with semistructured interviews. We find broad support for our arguments while mitigating potential endogeneity concerns. Our study has important implications for nonmarket strategy, entrepreneurship and innovation, and public-private partnership literatures. In addition, our findings inform policy debates on the sharing economy.",
     links: [
-      { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077" },
+      { label: "SSRN", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2925077" },
     ],
   },
 ];
@@ -76,7 +76,7 @@ export const workingPapers = [
     abstract:
       "One of the grand challenges in healthcare is the limited availability of life-saving drugs and therapies. While providing early access to investigational drugs is seen as a potential solution to this issue, our understanding of what deters or facilitates firms from granting early access remains limited. We examine when firms provide early access to investigational oncology drugs from 1990 to 2020. Our study finds that while entrepreneurial firms are known as engines for developing novel drugs, they are less likely to provide early access due to uncertainties from thinner product pipelines and concerns over equity values. Regulatory certification significantly reduces such uncertainties, encouraging firms to provide early access, but its benefits are more pronounced for established firms. We discuss the intricacies involved in improving early access, highlighting the complex interaction between company incentives and industry structure.",
     links: [
-      { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005" },
+      { label: "SSRN", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005" },
     ],
   },
   {
@@ -91,7 +91,7 @@ export const workingPapers = [
       "2026 Runner-up for ISA Babbage International Policy Forum Industrial Innovation Policy Award",
     ],
     links: [
-      { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6104788" },
+      { label: "SSRN", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6104788" },
     ],
   },
   {
@@ -107,7 +107,7 @@ export const workingPapers = [
       "2025 AOM STR's Distinguished Best Paper Award",
     ],
     links: [
-      { label: "Link", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926" },
+      { label: "SSRN", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926" },
     ],
   },
   {
