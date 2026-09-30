@@ -90,8 +90,9 @@ export default function About() {
             </p>
 
             <p>
-              I study how technology shapes innovation and firm strategy,
-              especially in the biopharmaceutical industry. I am interested in
+              I study how technology shapes innovation, entrepreneurship, and
+              firm strategy, especially in the biopharmaceutical and high-tech
+              industries. I am interested in
               what drives and what holds back the adoption of new technologies,
               and in how they change the way firms compete and make decisions.
               Much of my work looks at the forces around innovation, such as
