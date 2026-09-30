@@ -1,14 +1,9 @@
 // Home-page news, newest first. `date` is "YYYY-MM" and displays as "Oct 2026".
 // Dates come from the source: Crossref for the BMJ EBM article, the article
-// pages for The Conversation and The Incidental Economist, the HBP store page
-// for the case, and data/hiwg.js for the seminar.
+// pages for The Conversation and The Incidental Economist, and the HBP store
+// page for the case.
 
 export const news = [
-  {
-    date: "2026-10",
-    text: "Hanu Tyagi (UIUC) presents at the HIWG Research Chat on October 6.",
-    url: "/lab/hiwg/",
-  },
   {
     date: "2026-05",
     text: "“Clinical Trials That Are Actually Marketing Ploys Targeting Doctors” in The Conversation.",
