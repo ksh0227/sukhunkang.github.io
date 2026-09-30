@@ -1,131 +1,174 @@
 import Image from "next/image";
 import Link from "next/link";
-import LinkCarousel from "./components/LinkCarousel";
+import { publications, workingPapers, formatCoauthors } from "./data/papers";
+import { news, formatNewsDate } from "./data/news";
+
+// Papers featured on the home page, by id from data/papers.js.
+const FEATURED = ["wp-3", "wp-4", "pub-3"];
+
+const profileLinks = [
+  { label: "Email", href: "mailto:sukhunkang@ucsb.edu" },
+  { label: "CV", href: "/Sukhun-Kang-CV.pdf" },
+  {
+    label: "Google Scholar",
+    href: "https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ",
+  },
+  {
+    label: "SSRN",
+    href: "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2596230",
+  },
+];
+
+const quietLink =
+  "hover:text-accent hover:underline underline-offset-2 transition-colors duration-200";
+const accentLink =
+  "text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200";
+
+// Opens off-site links (and the CV PDF) in a new tab; mailto and site pages stay put.
+const newTab = (href) =>
+  href.startsWith("http") || href.endsWith(".pdf")
+    ? { target: "_blank", rel: "noopener noreferrer" }
+    : {};
 
 export default function Home() {
-  const keywords = [
-    "Innovation",
-    "Entrepreneurship",
-    "Biopharma",
-    "Strategy",
-    "Technology Policy",
-  ];
+  const papers = [...publications, ...workingPapers];
+  const featured = FEATURED.map((id) => papers.find((p) => p.id === id)).filter(Boolean);
 
   return (
-    <main className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-12 lg:px-12 xl:px-48 py-10">
-      <div className="max-w-3xl mx-auto">
-        {/* Announcements */}
-        <div className="mb-8">
-          <LinkCarousel />
+    <main className="max-w-4xl mx-auto px-6 pt-10 pb-8 sm:pt-16">
+      {/* Hero. Below lg: photo beside the name, text full width below.
+          lg and up: photo in its own column, stretched from the top of the
+          name to the bottom of the links. */}
+      <section className="grid grid-cols-[6rem_1fr] sm:grid-cols-[8rem_1fr] lg:grid-cols-[18rem_1fr] items-center lg:items-stretch gap-x-5 sm:gap-x-8 lg:gap-x-12 gap-y-6">
+        <div className="relative aspect-[3/4] lg:aspect-auto overflow-hidden rounded-lg shadow-md lg:row-span-2">
+          <Image
+            src="/sukhun.jpg"
+            alt="Sukhun Kang"
+            fill
+            sizes="(min-width: 1024px) 288px, (min-width: 640px) 128px, 96px"
+            className="object-cover"
+            priority
+          />
         </div>
-
-        {/* Centered Header */}
-        <div className="text-center mb-8">
-          <div className="w-44 h-44 relative rounded-full mx-auto mb-5 overflow-hidden shadow-lg">
-            <Image
-              src="/sukhun.jpg"
-              alt="Sukhun Kang"
-              fill
-              style={{ objectFit: "cover" }}
-              priority
-            />
-          </div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-1">Sukhun Kang</h1>
-         <p className="text-gray-600 mb-4">
-  Assistant Professor of{" "}
-  <Link
-    href="https://tmp.ucsb.edu/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:underline hover:text-blue-600 transition-colors duration-200"
-  >
-    Technology Management
-  </Link>
-  <br />
-  <Link
-    href="https://engineering.ucsb.edu/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:underline hover:text-blue-600 transition-colors duration-200"
-  >
-    Robert Mehrabian College of Engineering
-  </Link>
-  <br />
-  <Link
-    href="https://www.ucsb.edu"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:underline hover:text-blue-600 transition-colors duration-200"
-  >
-    University of California Santa Barbara
-  </Link>
-</p>
-
-          {/* Keyword Tags */}
-          <div className="flex flex-wrap justify-center gap-2 mb-5">
-            {keywords.map((keyword) => (
-              <span
-                key={keyword}
-                className="px-3 py-1 text-sm bg-gray-100 text-gray-700 rounded-full"
-              >
-                {keyword}
-              </span>
+        <div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-gray-900">
+            Sukhun Kang
+          </h1>
+          <p className="mt-2 lg:mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
+            Assistant Professor of{" "}
+            <Link href="https://tmp.ucsb.edu/" target="_blank" rel="noopener noreferrer" className={quietLink}>
+              Technology Management
+            </Link>
+            <br />
+            <Link href="https://engineering.ucsb.edu/" target="_blank" rel="noopener noreferrer" className={quietLink}>
+              Robert Mehrabian College of Engineering
+            </Link>
+            ,{" "}
+            <Link href="https://www.ucsb.edu" target="_blank" rel="noopener noreferrer" className={quietLink}>
+              UC Santa Barbara
+            </Link>
+          </p>
+        </div>
+        <div className="col-span-2 lg:col-span-1 lg:col-start-2">
+          <p className="sm:text-lg leading-relaxed text-gray-800">
+            I study how technology shapes innovation and firm strategy, especially in the
+            biopharmaceutical industry.
+          </p>
+          <p className="mt-4 sm:text-lg leading-relaxed text-gray-800">
+            Before academia, I was a semiconductor engineer at Samsung and founded an Internet
+            startup. I hold a PhD from London Business School and degrees in computer engineering
+            from UIUC and USC.{" "}
+            <Link href="/about" className={accentLink}>
+              More about me
+            </Link>
+          </p>
+          <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium">
+            {profileLinks.map(({ label, href }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  {...newTab(href)}
+                  className="text-accent underline decoration-accent/30 underline-offset-4 hover:decoration-accent transition-colors duration-200"
+                >
+                  {label}
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
+        </div>
+      </section>
 
-          {/* CV Button */}
+      {/* Selected research */}
+      <section className="mt-16">
+        <div className="flex items-baseline justify-between gap-4 border-b border-gray-200 pb-3">
+          <h2 className="text-2xl font-semibold text-gray-900">Selected research</h2>
           <Link
-            href="/Sukhun-Kang-CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Download Curriculum Vitae (PDF)"
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50 hover:border-gray-400 hover:shadow-sm active:scale-[0.98] transition-all duration-200"
+            href="/research"
+            className="text-sm font-medium text-accent hover:underline underline-offset-4"
           >
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            Curriculum Vitae
+            All research →
           </Link>
         </div>
+        <ul className="divide-y divide-gray-100">
+          {featured.map((paper) => {
+            const coauthors = formatCoauthors(paper.authors);
+            const meta = [
+              paper.venue ? `${paper.venue}, ${paper.year}` : "Working paper",
+              coauthors,
+            ].filter(Boolean);
+            return (
+              <li key={paper.id} className="py-6">
+                <h3 className="text-lg font-semibold leading-snug text-gray-900">
+                  <Link
+                    href={`/research#${paper.id}`}
+                    className="hover:text-accent transition-colors duration-200"
+                  >
+                    {paper.title}
+                  </Link>
+                </h3>
+                <p className="mt-1 text-sm text-gray-600">{meta.join(" · ")}</p>
+                {paper.awards && paper.awards.length > 0 && (
+                  <div className="mt-2" role="list" aria-label="Awards">
+                    {paper.awards.map((award, i) => (
+                      <p key={i} className="flex gap-1.5 text-sm text-gray-700" role="listitem">
+                        <span aria-hidden="true">🏆</span>
+                        <span>{award}</span>
+                      </p>
+                    ))}
+                  </div>
+                )}
+                {paper.hook && <p className="mt-2 text-gray-700">{paper.hook}</p>}
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
-        {/* Bio */}
-        <div className="space-y-4 text-gray-700 leading-relaxed">
-          <p>
-          My research explores the intricate ways in which technology influences innovation, 
-          aiming to identify the key drivers and obstacles to technology adoption and its 
-          effects on individuals, firms, and our society.
-          
-          My research also investigates the broader implications of technology and innovation, 
-          with an emphasis on how technology alters firm strategy and behavior. 
-          My goal is to deepen our understanding of how to effectively use technology to foster 
-            innovation within a business context.
-          </p>
-          <p>
-            Before academia, I was a semiconductor engineer at Samsung and
-            founded an Internet startup. I hold a PhD from London Business
-            School and Bachelor's and Master's degrees in Computer Engineering from UIUC and USC.
-            For more details, see my{" "}
-            <Link
-              href="/about"
-              className="underline hover:text-blue-600 transition-colors duration-200"
-            >
-              about page
-            </Link>
-            .
-          </p>
-        </div>
-
-      </div>
+      {/* News */}
+      <section className="mt-16">
+        <h2 className="text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-3">
+          News
+        </h2>
+        <ul className="divide-y divide-gray-100">
+          {news.map((item) => (
+            <li key={item.text} className="py-4 flex flex-col sm:flex-row gap-1 sm:gap-6">
+              <time
+                dateTime={item.date}
+                className="sm:w-24 flex-shrink-0 text-sm text-gray-500 tabular-nums sm:pt-0.5"
+              >
+                {formatNewsDate(item.date)}
+              </time>
+              <a
+                href={item.url}
+                {...newTab(item.url)}
+                className="text-gray-800 underline decoration-gray-300 underline-offset-4 hover:text-accent hover:decoration-accent transition-colors duration-200"
+              >
+                {item.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
     </main>
   );
 }
