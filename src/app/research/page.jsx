@@ -36,7 +36,7 @@ function PaperItem({ paper }) {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-600 hover:text-blue-800 hover:underline whitespace-nowrap transition-colors duration-200"
+                className="text-sm text-accent hover:underline underline-offset-2 whitespace-nowrap transition-colors duration-200"
                 aria-label={`${link.label} for ${paper.title}`}
               >
                 [{link.label}]
@@ -67,7 +67,7 @@ function PaperItem({ paper }) {
 
       {hasExpandable && (
         <details className="mt-2">
-          <summary className="text-sm text-blue-600 hover:text-blue-800 cursor-pointer select-none w-fit">
+          <summary className="text-sm text-accent hover:underline underline-offset-2 cursor-pointer select-none w-fit">
             {summaryLabel}
           </summary>
           <div className="mt-3 pl-4 border-l-2 border-gray-200">
@@ -103,16 +103,7 @@ export default function Research() {
             . My work explores the intricate ways in which technology influences
             innovation, aiming to identify the key drivers and obstacles to
             technology adoption and its effects on individuals, firms, and our
-            society. My{" "}
-            <Link
-              href="/Sukhun-Kang-CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800 hover:underline transition-colors duration-200"
-            >
-              CV can be viewed here [PDF]
-            </Link>
-            .
+            society.
           </p>
         </section>
 
