@@ -83,7 +83,7 @@ const Navbar = () => {
                 LAB
               </NavItem>
               <NavItem href="/lab/hiwg" pathname={pathname} onClick={handleLinkClick}>
-                HIWG Research Chat
+                HIWG RESEARCH CHAT
               </NavItem>
               <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
                 TEACHING

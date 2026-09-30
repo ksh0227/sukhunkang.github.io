@@ -46,8 +46,7 @@ export default function Resources() {
             <h2 className="text-2xl font-semibold">Conference Organization</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
                <li>
-                Rethinking Strategy & Innovation in Biopharmaceutical and Healthcare Industries, SMS2025{" "}
-                <Link href="https://www.strategicmanagement.net/event/rethinking-strategy-innovation-in-biopharmaceutical-and-healthcare-industries/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200">[registration]</Link>
+                Rethinking Strategy & Innovation in Biopharmaceutical and Healthcare Industries, SMS2025
               </li>
               <li>
                 Strategy and Innovation in Biopharmaceutical Industry, AOM2022{" "}
