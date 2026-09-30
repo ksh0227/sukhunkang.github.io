@@ -24,8 +24,8 @@ const Navbar = () => {
             <Link href="/" onClick={handleLinkClick} className="text-xl font-semibold text-gray-900 hover:text-gray-600 transition-colors duration-200">
               SUKHUN KANG
             </Link>
-            <div className="h-6 w-px bg-gray-400 hidden md:block"></div>
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="h-6 w-px bg-gray-400 hidden lg:block"></div>
+            <div className="hidden lg:flex items-center space-x-8">
               <NavItem href="/about" pathname={pathname} onClick={handleLinkClick}>
                 ABOUT
               </NavItem>
@@ -39,11 +39,12 @@ const Navbar = () => {
               <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
                 RESOURCES
               </NavItem>
+              <CvLink />
             </div>
           </div>
 
-          {/* mobile only */}
-          <div className="md:hidden flex items-center ml-auto">
+          {/* below lg: menu button (six items do not fit on one line at tablet widths) */}
+          <div className="lg:hidden flex items-center ml-auto">
             <button
               onClick={toggleMobileMenu}
               aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -71,7 +72,7 @@ const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div id="mobile-menu" className="md:hidden">
+          <div id="mobile-menu" className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <NavItem href="/about" pathname={pathname} onClick={handleLinkClick}>
                 ABOUT
@@ -91,6 +92,7 @@ const Navbar = () => {
               <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
                 RESOURCES
               </NavItem>
+              <CvLink onClick={handleLinkClick} />
             </div>
           </div>
         )}
@@ -98,6 +100,19 @@ const Navbar = () => {
     </nav>
   );
 };
+
+// The CV is a PDF, not a page, so it opens in a new tab and is never "active".
+const CvLink = ({ onClick }) => (
+  <a
+    href="/Sukhun-Kang-CV.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={onClick}
+    className="relative block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 transition-colors duration-200"
+  >
+    CV
+  </a>
+);
 
 const NavItem = ({ href, pathname, children, onClick }) => {
   // Pages are served with a trailing slash (trailingSlash: true); hrefs are not.
@@ -110,13 +125,13 @@ const NavItem = ({ href, pathname, children, onClick }) => {
       onClick={onClick}
       className={`relative block px-3 py-2 text-base transition-colors duration-200 ${
         isActive
-          ? "text-gray-900 font-semibold md:font-medium"
+          ? "text-accent font-semibold lg:font-medium"
           : "text-gray-500 font-medium hover:text-gray-900"
       }`}
     >
       {children}
       {isActive && (
-        <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-gray-900 rounded-full hidden md:block" />
+        <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-accent rounded-full hidden lg:block" />
       )}
     </Link>
   );
@@ -178,7 +193,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
         aria-expanded={isOpen}
         aria-controls="lab-menu"
         className={`relative text-base font-medium transition-colors duration-200 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
-          pathname.startsWith("/lab") ? "text-gray-900" : "text-gray-500 hover:text-gray-900"
+          pathname.startsWith("/lab") ? "text-accent" : "text-gray-500 hover:text-gray-900"
         }`}
       >
         LAB
@@ -186,7 +201,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
         </svg>
         {pathname.startsWith("/lab") && (
-          <span className="absolute bottom-[-8px] left-0 right-0 h-0.5 bg-gray-900 rounded-full" />
+          <span className="absolute bottom-[-8px] left-0 right-0 h-0.5 bg-accent rounded-full" />
         )}
       </button>
 
