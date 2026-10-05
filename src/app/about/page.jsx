@@ -83,8 +83,9 @@ export default function About() {
               <Link href="/lab/hiwg" className={inlineLink}>
                 Health Innovation Working Group (HIWG) Research Chat
               </Link>
-              . I serve on the Editorial Review Board of Organization Science,
-              on the Research Committee of AOM's STR Division, and as
+              . I serve on the Editorial Review Boards of Organization Science
+              and Strategic Entrepreneurship Journal, on the Research Committee
+              of AOM's STR Division, and as
               Rep-at-Large for the Knowledge and Innovation Interest Group and
               the Research Methods Community at SMS.
             </p>
