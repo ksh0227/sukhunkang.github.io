@@ -61,11 +61,11 @@ export default function Lab() {
       <div className="flex flex-col min-h-screen">
         <main className="flex-grow max-w-5xl mx-auto px-6 py-8">
           <section className="mt-8">
-            <h1 className="text-3xl font-bold mb-4">Health Innovation Lab (HIL)</h1>
-             <h2 className="text-lg font-semibold mt-4">About</h2>
+            <h1 className="text-[2.4rem] leading-tight font-normal mb-4">Health Innovation Lab (HIL)</h1>
+             <h2 className="text-lg font-medium mt-4">About</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
-               Health Innovation Lab is co-directed by Dr. Sukhun Kang, <a href="https://www.barbosu.com/" target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200">Dr. Sandra Barbosu</a>, and <a href="https://sungyongchang.com/" target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200">Dr. Sungyong Chang</a>.
+               Health Innovation Lab is co-directed by Dr. Sukhun Kang, <a href="https://www.barbosu.com/" target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-accent underline-offset-2 hover:decoration-2 transition-colors duration-200">Dr. Sandra Barbosu</a>, and <a href="https://sungyongchang.com/" target="_blank" rel="noopener noreferrer" className="text-accent underline decoration-accent underline-offset-2 hover:decoration-2 transition-colors duration-200">Dr. Sungyong Chang</a>.
               </li>
               <li>
                 The Health Innovation Lab serves as an integrated environment for research in the area of strategy and management with focus on the healthcare sectors. 
@@ -74,7 +74,7 @@ export default function Lab() {
               </li>
             </ul>
             
-            <h2 className="text-lg font-semibold mt-4">What I Look For</h2>
+            <h2 className="text-lg font-medium mt-4">What I Look For</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 I am usually looking for research assistants to help me on ongoing research projects, 
@@ -83,7 +83,7 @@ export default function Lab() {
               </li>
               <li>
                 If you are interested, please email me at 
-                <a href="mailto:sukhunkang@ucsb.edu" className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200"> sukhunkang@ucsb.edu </a> 
+                <a href="mailto:sukhunkang@ucsb.edu" className="text-accent underline decoration-accent underline-offset-2 hover:decoration-2 transition-colors duration-200"> sukhunkang@ucsb.edu </a> 
                 with a short introduction and attach your resume/CV with an indication of your proficiency 
                 with the tools mentioned above.
               </li>
@@ -91,7 +91,7 @@ export default function Lab() {
 
           </section>
           <section className="mt-8">
-            <h2 className="text-2xl text-center my-12 font-semibold">Current Members</h2>
+            <h2 className="text-2xl text-center my-12 font-medium">Current Members</h2>
             <div>
               {members.map((member, index) => (
                 <ProfileCard key={index} {...member} />
@@ -100,7 +100,7 @@ export default function Lab() {
           </section>
 
           <section className="mt-8">
-            <h2 className="text-2xl text-center my-12 font-semibold">Lab Alumni</h2>
+            <h2 className="text-2xl text-center my-12 font-medium">Lab Alumni</h2>
             <ul className="list-disc list-outside pl-6">
               <li>Fan Ye (UCSB, Actuarial Science and Economics, 2026), Research Assistant, Harvard Medical School</li>
               <li>Janice Jiang (UCSB, Actuarial Science, 2026), MS in Biostatistics, Harvard University</li>

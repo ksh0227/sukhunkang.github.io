@@ -4,6 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useRef } from "react";
 
+// In the page flow (not fixed): name on the left, links on the right, aligned
+// with the page content. The current page carries a gold underline.
+const itemClass =
+  "inline-block border-b-2 pb-0.5 transition-colors duration-200";
+const activeClass = "border-gold text-gray-900";
+const idleClass = "border-transparent text-gray-900 hover:border-gray-300";
+
 const Navbar = () => {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,40 +24,41 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-center h-16 items-center">
-          <div className="flex items-center space-x-8">
-            <Link href="/" onClick={handleLinkClick} className="text-xl font-semibold text-gray-900 hover:text-gray-600 transition-colors duration-200">
-              SUKHUN KANG
-            </Link>
-            <div className="h-6 w-px bg-gray-400 hidden lg:block"></div>
-            <div className="hidden lg:flex items-center space-x-8">
-              <NavItem href="/about" pathname={pathname} onClick={handleLinkClick}>
-                ABOUT
-              </NavItem>
-              <NavItem href="/research" pathname={pathname} onClick={handleLinkClick}>
-                RESEARCH
-              </NavItem>
-              <LabDropdown pathname={pathname} onLinkClick={handleLinkClick} />
-              <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
-                TEACHING
-              </NavItem>
-              <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
-                RESOURCES
-              </NavItem>
-              <CvLink />
-            </div>
+    <nav className="bg-white">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="flex justify-between items-center pt-6 pb-5">
+          <Link
+            href="/"
+            onClick={handleLinkClick}
+            className="text-[1.1rem] text-gray-900 hover:text-gray-600 transition-colors duration-200"
+          >
+            Sukhun Kang
+          </Link>
+          <div className="hidden lg:flex items-center gap-x-7 text-[0.95rem]">
+            <NavItem href="/about" pathname={pathname} onClick={handleLinkClick}>
+              About
+            </NavItem>
+            <NavItem href="/research" pathname={pathname} onClick={handleLinkClick}>
+              Research
+            </NavItem>
+            <LabDropdown pathname={pathname} onLinkClick={handleLinkClick} />
+            <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
+              Teaching
+            </NavItem>
+            <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
+              Resources
+            </NavItem>
+            <CvLink />
           </div>
 
-          {/* below lg: menu button (six items do not fit on one line at tablet widths) */}
+          {/* below lg: menu button */}
           <div className="lg:hidden flex items-center ml-auto">
             <button
               onClick={toggleMobileMenu}
               aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
               aria-expanded={isMobileMenuOpen}
               aria-controls="mobile-menu"
-              className="text-gray-500 hover:text-gray-900 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ml-4"
+              className="text-gray-600 hover:text-gray-900 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ml-4"
             >
               <svg
                 className="h-6 w-6"
@@ -63,7 +71,7 @@ const Navbar = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth="2"
+                  strokeWidth="1.5"
                   d="M4 6h16M4 12h16m-7 6h7"
                 ></path>
               </svg>
@@ -72,28 +80,26 @@ const Navbar = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div id="mobile-menu" className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <NavItem href="/about" pathname={pathname} onClick={handleLinkClick}>
-                ABOUT
-              </NavItem>
-              <NavItem href="/research" pathname={pathname} onClick={handleLinkClick}>
-                RESEARCH
-              </NavItem>
-              <NavItem href="/lab/hil" pathname={pathname} onClick={handleLinkClick}>
-                LAB
-              </NavItem>
-              <NavItem href="/lab/hiwg" pathname={pathname} onClick={handleLinkClick}>
-                HIWG RESEARCH CHAT
-              </NavItem>
-              <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
-                TEACHING
-              </NavItem>
-              <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
-                RESOURCES
-              </NavItem>
-              <CvLink onClick={handleLinkClick} />
-            </div>
+          <div id="mobile-menu" className="lg:hidden flex flex-col items-start gap-3 pb-6">
+            <NavItem href="/about" pathname={pathname} onClick={handleLinkClick}>
+              About
+            </NavItem>
+            <NavItem href="/research" pathname={pathname} onClick={handleLinkClick}>
+              Research
+            </NavItem>
+            <NavItem href="/lab/hil" pathname={pathname} onClick={handleLinkClick}>
+              Lab
+            </NavItem>
+            <NavItem href="/lab/hiwg" pathname={pathname} onClick={handleLinkClick}>
+              HIWG Research Chat
+            </NavItem>
+            <NavItem href="/teaching" pathname={pathname} onClick={handleLinkClick}>
+              Teaching
+            </NavItem>
+            <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
+              Resources
+            </NavItem>
+            <CvLink onClick={handleLinkClick} />
           </div>
         )}
       </div>
@@ -108,7 +114,7 @@ const CvLink = ({ onClick }) => (
     target="_blank"
     rel="noopener noreferrer"
     onClick={onClick}
-    className="relative block px-3 py-2 text-base font-medium text-gray-500 hover:text-gray-900 transition-colors duration-200"
+    className={`${itemClass} ${idleClass}`}
   >
     CV
   </a>
@@ -117,22 +123,14 @@ const CvLink = ({ onClick }) => (
 const NavItem = ({ href, pathname, children, onClick }) => {
   // Pages are served with a trailing slash (trailingSlash: true); hrefs are not.
   const isActive = pathname.replace(/\/$/, "") === href;
-  // Desktop keeps medium weight so the centered nav doesn't shift between
-  // pages; the mobile menu has no underline bar, so it marks the page in semibold.
   return (
     <Link
       href={href}
       onClick={onClick}
-      className={`relative block px-3 py-2 text-base transition-colors duration-200 ${
-        isActive
-          ? "text-accent font-semibold lg:font-medium"
-          : "text-gray-500 font-medium hover:text-gray-900"
-      }`}
+      aria-current={isActive ? "page" : undefined}
+      className={`${itemClass} ${isActive ? activeClass : idleClass}`}
     >
       {children}
-      {isActive && (
-        <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-accent rounded-full hidden lg:block" />
-      )}
     </Link>
   );
 };
@@ -141,6 +139,7 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [closeTimeout, setCloseTimeout] = useState(null);
   const wrapperRef = useRef(null);
+  const isActive = pathname.startsWith("/lab");
 
   const handleMouseEnter = () => {
     if (closeTimeout) {
@@ -192,36 +191,31 @@ const LabDropdown = ({ pathname, onLinkClick }) => {
         aria-haspopup="true"
         aria-expanded={isOpen}
         aria-controls="lab-menu"
-        className={`relative text-base font-medium transition-colors duration-200 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 ${
-          pathname.startsWith("/lab") ? "text-accent" : "text-gray-500 hover:text-gray-900"
-        }`}
+        className={`${itemClass} ${isActive ? activeClass : idleClass} focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500`}
       >
-        LAB
+        Lab
         <svg aria-hidden="true" className="inline-block ml-1 w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 9l-7 7-7-7" />
         </svg>
-        {pathname.startsWith("/lab") && (
-          <span className="absolute bottom-[-8px] left-0 right-0 h-0.5 bg-accent rounded-full" />
-        )}
       </button>
 
       {/* dropdown */}
       {isOpen && (
         <div
           id="lab-menu"
-          className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden"
+          className="absolute top-full left-0 mt-2 w-56 bg-white border border-gray-200 z-50"
         >
           <Link
             href="/lab/hil"
             onClick={handleLinkClick}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
+            className="block px-4 py-2 text-[0.95rem] text-gray-900 hover:bg-gray-50 transition-colors duration-150"
           >
             Health Innovation Lab
           </Link>
           <Link
             href="/lab/hiwg"
             onClick={handleLinkClick}
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
+            className="block px-4 py-2 text-[0.95rem] text-gray-900 hover:bg-gray-50 transition-colors duration-150"
           >
             HIWG Research Chat
           </Link>

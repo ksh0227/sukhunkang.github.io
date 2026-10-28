@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Inter } from "next/font/google";
+import { Newsreader } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
@@ -11,7 +11,15 @@ import { publications, workingPapers, paperToSchema } from "./data/papers";
 export const metadata = rootMetadata;
 
 // Self-hosted at build time by next/font: no request to Google at runtime.
-const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+// One serif for everything. Both styles, so italic labels use the true italic
+// rather than a synthetic slant; the opsz axis tunes letterforms to each size.
+const serif = Newsreader({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  axes: ["opsz"],
+  variable: "--font-serif",
+  display: "swap",
+});
 
 export default function RootLayout({ children }) {
   const personSchema = {
@@ -314,7 +322,7 @@ export default function RootLayout({ children }) {
   };
 
   return (
-    <html lang="en" suppressHydrationWarning className={sans.variable}>
+    <html lang="en" suppressHydrationWarning className={serif.variable}>
       <head>
         <script
           type="application/ld+json"
@@ -357,7 +365,7 @@ export default function RootLayout({ children }) {
         <Suspense fallback={null}>
           <AITrafficTracker />
         </Suspense>
-        <div id="main-content" className="flex-1 pt-16">{children}</div>
+        <div id="main-content" className="flex-1">{children}</div>
         <Footer />
         <GoogleAnalytics gaId="G-5XRGPSLYNT" />
       </body>

@@ -4,7 +4,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #003660;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -17,11 +17,21 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-serif), "Iowan Old Style", Georgia, "Times New Roman", serif;
+  line-height: 1.55;
 }
 
+/* An 18px root, so every rem-based size and space scales with the serif
+   (which sets smaller than a sans at the same size). 17px on phones. */
 html {
   overflow-y: scroll;
+  font-size: 17px;
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 18px;
+  }
 }
 
 html, body {

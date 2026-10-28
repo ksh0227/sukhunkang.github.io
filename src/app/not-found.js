@@ -9,7 +9,7 @@ export default function NotFound() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow max-w-4xl mx-auto px-6 py-24 text-center">
         <p className="text-sm font-semibold text-accent">404</p>
-        <h1 className="text-3xl font-bold text-gray-900 mt-2 mb-4">
+        <h1 className="text-[2.4rem] leading-tight font-normal text-gray-900 mt-2 mb-4">
           Page not found
         </h1>
         <p className="text-gray-600 mb-8">
@@ -17,7 +17,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200"
+          className="text-accent underline decoration-accent underline-offset-2 hover:decoration-2 transition-colors duration-200"
         >
           Return to the homepage
         </Link>

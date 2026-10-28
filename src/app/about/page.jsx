@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const inlineLink =
-  "text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200";
+  "text-accent underline decoration-accent underline-offset-2 hover:decoration-2 transition-colors duration-200";
 
 // Year first, laid out like the News list on the home page.
 const awards = [
@@ -46,14 +46,14 @@ const media = [
 
 const rowClass = "py-3 flex flex-col sm:flex-row gap-1 sm:gap-6";
 const yearClass = "sm:w-24 flex-shrink-0 text-sm text-gray-500 tabular-nums sm:pt-0.5";
-const headingClass = "text-2xl font-semibold text-gray-900 border-b border-gray-200 pb-3";
+const headingClass = "text-2xl font-medium text-gray-900 border-b border-gray-200 pb-3";
 
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow max-w-4xl mx-auto px-6 py-8">
         <section className="mt-8">
-          <h1 className="text-3xl font-bold mb-4">About</h1>
+          <h1 className="text-[2.4rem] leading-tight font-normal mb-4">About</h1>
           <div className="space-y-4 text-gray-700 leading-relaxed">
             <p>
               I am an Assistant Professor of Technology Management at the
@@ -162,7 +162,7 @@ export default function About() {
                     href={item.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-gray-300 underline-offset-4 hover:text-accent hover:decoration-accent transition-colors duration-200"
+                    className="underline decoration-accent underline-offset-4 hover:text-accent hover:decoration-2 transition-colors duration-200"
                   >
                     “{item.title}”
                   </a>

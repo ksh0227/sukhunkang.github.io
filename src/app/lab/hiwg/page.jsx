@@ -35,7 +35,7 @@ function formatDate(iso) {
 }
 
 const linkClass =
-  "text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent transition-colors duration-200";
+  "text-accent underline decoration-accent underline-offset-2 hover:decoration-2 transition-colors duration-200";
 
 // Zoom join links deliberately do NOT appear here, and are not stored in this
 // repo at all: it is public and the meeting's join URL does not expire, so a
@@ -138,7 +138,7 @@ const HIWG = () => {
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow max-w-4xl mx-auto px-6 py-8">
         <section className="mt-8">
-          <h1 className="text-3xl font-bold mb-4">{seriesInfo.name}</h1>
+          <h1 className="text-[2.4rem] leading-tight font-normal mb-4">{seriesInfo.name}</h1>
           <p className="text-gray-800 leading-relaxed">
             {seriesInfo.description}
           </p>
@@ -181,7 +181,7 @@ const HIWG = () => {
 
         {upcoming.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-2xl font-semibold mb-4">Upcoming Chats</h2>
+            <h2 className="text-2xl font-medium mb-4">Upcoming Chats</h2>
             <ul className="space-y-6">
               {upcoming.map((session) => (
                 <SessionEntry key={session.number} session={session} />
@@ -192,7 +192,7 @@ const HIWG = () => {
 
         {past.length > 0 && (
           <section className="mt-10">
-            <h2 className="text-2xl font-semibold mb-4">Past Chats</h2>
+            <h2 className="text-2xl font-medium mb-4">Past Chats</h2>
             <ul className="space-y-6">
               {past.map((session) => (
                 <SessionEntry key={session.number} session={session} />
@@ -202,7 +202,7 @@ const HIWG = () => {
         )}
 
         <section className="mt-10 mb-8">
-          <h2 className="text-2xl font-semibold">Earlier Presenters</h2>
+          <h2 className="text-2xl font-medium">Earlier Presenters</h2>
           <p className="mt-1 text-sm text-gray-600">
             Presenters from before July 2024, listed without dates.
           </p>

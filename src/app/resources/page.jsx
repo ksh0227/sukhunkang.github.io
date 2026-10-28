@@ -6,8 +6,8 @@ export default function Resources() {
         <main className="flex-grow max-w-4xl mx-auto px-6 py-8">
           
           <section className="mt-8">
-            <h1 className="text-3xl font-bold mb-4">Resources</h1>
-            <h2 className="text-2xl font-semibold mb-3">Educational Materials</h2>
+            <h1 className="text-[2.4rem] leading-tight font-normal mb-4">Resources</h1>
+            <h2 className="text-2xl font-medium mb-3">Educational Materials</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               Slide decks covering key topics in pharmaceutical regulation and drug development policy.
             </p>
@@ -43,7 +43,7 @@ export default function Resources() {
           </section>
 
           <section className="mt-8">
-            <h2 className="text-2xl font-semibold">Conference Organization</h2>
+            <h2 className="text-2xl font-medium">Conference Organization</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
                <li>
                 Rethinking Strategy & Innovation in Biopharmaceutical and Healthcare Industries, SMS2025
@@ -64,7 +64,7 @@ export default function Resources() {
           </section>
 
           <section className="mt-8">
-            <h2 className="text-2xl font-semibold">Useful Consortia / Workshops for Strategy PhD</h2>
+            <h2 className="text-2xl font-medium">Useful Consortia / Workshops for Strategy PhD</h2>
             <ul className="list-disc list-outside pl-6 mt-2 space-y-1">
               <li>
                 Trans-Atlantic Doctoral Conference{" "}
