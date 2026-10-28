@@ -178,10 +178,10 @@ export default function Home() {
         <h2 className={`${sectionLabelClass} mb-2 md:mb-0`}>News</h2>
         <ul className="divide-y divide-gray-200">
           {news.map((item) => (
-            <li key={item.text} className="py-3 first:pt-0 flex flex-col sm:flex-row gap-1 sm:gap-6">
+            <li key={item.text} className="py-3 first:pt-0 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6">
               <time
                 dateTime={item.date}
-                className="sm:w-20 flex-shrink-0 text-[0.95rem] text-gray-500 tabular-nums sm:pt-px"
+                className="sm:w-20 flex-shrink-0 text-[0.95rem] text-gray-500 tabular-nums"
               >
                 {formatNewsDate(item.date)}
               </time>

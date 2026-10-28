@@ -139,7 +139,7 @@ These files use `"use client"` directive for interactivity:
 - `NavBar.jsx` - Mobile menu toggle, dropdown
 - `AITrafficTracker.jsx` - AI-referral analytics
 
-Everything else is a server component; the Research page's abstracts use native `<details>`.
+Everything else is a server component. The Research page's "Abstract" toggle needs no JS: a label around a visually hidden checkbox, with the abstract shown by `group-has-[:checked]/paper:block`, so it sits on one line with the Journal and SSRN links.
 
 ## Styling Conventions
 
@@ -151,7 +151,7 @@ Everything else is a server component; the Research page's abstracts use native 
 - Links are underlined in navy; hover thickens the line:
   - Links inside sentences: `text-accent underline decoration-accent underline-offset-2 hover:decoration-2`
   - Standalone links (SSRN, Journal, Syllabus): `textLinkClass` in `components/grid.js`, plain words, no brackets
-- Home, Research, and Teaching use the label-column grid in `components/grid.js`: from `md` up, an 11rem column of right-aligned italic labels (section names, journal and year, course level) beside the content; below `md` the labels stack above. Use its exported classes rather than retyping them.
+- Home, Research, and Teaching use the label-column grid in `components/grid.js`: from `md` up, an 11rem column of right-aligned italic labels (section names, journal and year, course level) beside the content; below `md` the labels stack above. Use its exported classes rather than retyping them. Label and content align on their first text baseline (`gridClass` carries `md:items-baseline`); never nudge a label with padding to line it up. A row whose content has no text (photos) uses `gridTopClass`. Side-by-side rows elsewhere (News, About's year lists, the nav) use `items-baseline` the same way.
 - Awards are bulleted lists (`bulletListClass`), placed below the paper's summary.
 - Responsive breakpoints: `sm:`, `md:`, `lg:`, `xl:`
 - Container: `max-w-4xl mx-auto px-6`

@@ -11,10 +11,10 @@ import {
   bulletListClass,
 } from "../components/grid";
 
-// Server component: no client JS. The abstract and notes live inside a native
-// <details>, so they ship in the static HTML (crawlable) while staying
-// collapsed by default. Links and awards stay visible, outside the <summary>,
-// so clicking a link never toggles the disclosure.
+// Server component: no client JS. The links and the "Abstract" toggle share
+// one row (Journal, SSRN, Abstract). The toggle is a label around a visually
+// hidden checkbox; the abstract and notes ship in the static HTML (crawlable)
+// and show when the checkbox is checked (group-has-[:checked]), below the row.
 function PaperItem({ paper, first }) {
   const coauthors = formatCoauthors(paper.authors);
   const hasAwards = paper.awards && paper.awards.length > 0;
@@ -43,7 +43,7 @@ function PaperItem({ paper, first }) {
           <span className="italic">Working Paper</span>
         )}
       </p>
-      <div>
+      <div className="group/paper">
         <h3 className={entryTitleClass}>{paper.title}</h3>
         {coauthors && <p className="text-[0.95rem] text-gray-600 mt-1">{coauthors}</p>}
         {/* Verbatim abstract sentences; a paper with no abstract shows its hook. */}
@@ -58,41 +58,48 @@ function PaperItem({ paper, first }) {
           </ul>
         )}
 
-        {hasLinks && (
+        {(hasLinks || hasExpandable) && (
           <p className="mt-3 flex flex-wrap gap-x-5 text-[0.95rem]">
-            {paper.links.map((link, i) => (
-              <a
-                key={i}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={textLinkClass}
-                aria-label={`${link.label} for ${paper.title}`}
+            {hasLinks &&
+              paper.links.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={textLinkClass}
+                  aria-label={`${link.label} for ${paper.title}`}
+                >
+                  {link.label}
+                </a>
+              ))}
+            {hasExpandable && (
+              <label
+                className={`cursor-pointer select-none ${textLinkClass} rounded-sm has-[:focus-visible]:outline has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-blue-500`}
               >
-                {link.label}
-              </a>
-            ))}
+                <input
+                  type="checkbox"
+                  className="sr-only"
+                  aria-controls={`abstract-${paper.id}`}
+                />
+                {summaryLabel}
+              </label>
+            )}
           </p>
         )}
 
         {hasExpandable && (
-          <details className={hasLinks ? "mt-1" : "mt-3"}>
-            <summary className={`text-[0.95rem] cursor-pointer select-none w-fit ${textLinkClass}`}>
-              {summaryLabel}
-            </summary>
-            <div className="mt-3 pl-4 border-l border-gray-300">
-              {paper.abstract && (
-                <p className="text-[0.95rem] text-gray-700 leading-relaxed">
-                  {paper.abstract}
-                </p>
-              )}
-              {hasNotes && (
-                <p className="text-[0.95rem] text-gray-600 italic mt-2">
-                  {paper.notes.join("; ")}
-                </p>
-              )}
-            </div>
-          </details>
+          <div
+            id={`abstract-${paper.id}`}
+            className="hidden group-has-[:checked]/paper:block mt-3 pl-4 border-l border-gray-300"
+          >
+            {paper.abstract && (
+              <p className="text-[0.95rem] text-gray-700 leading-relaxed">{paper.abstract}</p>
+            )}
+            {hasNotes && (
+              <p className="text-[0.95rem] text-gray-600 italic mt-2">{paper.notes.join("; ")}</p>
+            )}
+          </div>
         )}
       </div>
     </article>

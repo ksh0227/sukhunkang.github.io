@@ -44,8 +44,8 @@ const media = [
   },
 ];
 
-const rowClass = "py-3 flex flex-col sm:flex-row gap-1 sm:gap-6";
-const yearClass = "sm:w-24 flex-shrink-0 text-sm text-gray-500 tabular-nums sm:pt-0.5";
+const rowClass = "py-3 flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6";
+const yearClass = "sm:w-24 flex-shrink-0 text-sm text-gray-500 tabular-nums";
 const headingClass = "text-2xl font-medium text-gray-900 border-b border-gray-200 pb-3";
 
 export default function About() {

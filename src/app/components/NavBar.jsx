@@ -26,7 +26,9 @@ const Navbar = () => {
   return (
     <nav className="bg-white">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="flex justify-between items-center pt-6 pb-5">
+        {/* lg and up: name and menu items share a text baseline despite
+            different sizes. Below lg the row holds the menu icon, so center. */}
+        <div className="flex justify-between items-center lg:items-baseline pt-6 pb-5">
           <Link
             href="/"
             onClick={handleLinkClick}

@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import {
   gridClass,
+  gridTopClass,
   sectionLabelClass,
   entryLabelClass,
   sectionClass,
@@ -213,7 +214,7 @@ export default function Teaching() {
           </div>
         </section>
 
-        <section className={`${gridClass} ${sectionClass}`}>
+        <section className={`${gridTopClass} ${sectionClass}`}>
           <h2 className={`${sectionLabelClass} mb-4 md:mb-0`}>In the Classroom</h2>
           <div className="flex overflow-x-scroll snap-x snap-mandatory space-x-4 pb-4">
             <img
