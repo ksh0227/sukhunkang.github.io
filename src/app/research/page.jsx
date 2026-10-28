@@ -134,7 +134,7 @@ export default function Research() {
         </section>
 
         <PaperSection title="Publications" papers={publications} />
-        <PaperSection title="Working Papers" papers={workingPapers} />
+        <PaperSection title="Selected Working Papers" papers={workingPapers} />
       </main>
     </div>
   );

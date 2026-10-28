@@ -1,9 +1,15 @@
 // Home-page news, newest first. `date` is "YYYY-MM" and displays as "Oct 2026".
 // Dates come from the source: Crossref for the BMJ EBM article, the article
-// pages for The Conversation and The Incidental Economist, and the HBP store
-// page for the case.
+// pages for The Conversation and The Incidental Economist, the HBP store
+// page for the case, and the UCSB Technology Management news page (dated
+// September 15, 2026) for the Hoenen Prize.
 
 export const news = [
+  {
+    date: "2026-09",
+    text: "Sukhun Kang wins the 2026 Sebastian Hoenen Research Prize.",
+    url: "https://tmp.ucsb.edu/news/ucsb-department-technology-management-professor-sukhun-kang-wins-sei-consortiums-2026",
+  },
   {
     date: "2026-05",
     text: "“Clinical Trials That Are Actually Marketing Ploys Targeting Doctors” in The Conversation.",
