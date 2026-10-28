@@ -28,6 +28,7 @@ src/app/
 │   ├── NavBar.jsx      # Navigation (menu button below 1024 px), CV link
 │   ├── Footer.jsx      # Copyright line & profile icons
 │   ├── icons.jsx       # Footer profile icons (matching tiles)
+│   ├── grid.js         # Shared label-column grid classes (Home, Research, Teaching)
 │   └── ProfileCard.jsx  # Lab member cards
 ├── data/
 │   ├── papers.js       # All papers: Research page, JSON-LD, llms.txt
@@ -70,12 +71,15 @@ Add an entry to `publications` or `workingPapers` in `src/app/data/papers.js`. T
   venue: "Journal Name",          // omit for working papers
   year: "2026",
   authors: ["Sukhun Kang", "Coauthor"],
-  hook: "One-sentence summary.",
+  hook: "One-sentence summary.",  // shown only when there is no abstract
+  excerpt: "Two or three whole sentences copied verbatim from the abstract.",
   abstract: "...",
   awards: ["2026 Award Name"],
   links: [{ label: "SSRN", url: "https://..." }],
 },
 ```
+
+`excerpt` is the paragraph under the title on Research (and on Home for papers in `FEATURED`). Copy whole sentences from the abstract exactly; never paraphrase or write a summary claim. Pick sentences that stand alone (skip ones that start "This tension", "Such regulations"). A paper with no abstract shows its `hook`.
 
 ### Adding a Lab Member
 
@@ -140,15 +144,17 @@ Everything else is a server component; the Research page's abstracts use native 
 ## Styling Conventions
 
 - Tailwind CSS utility classes (no custom CSS beyond globals.css)
-- Font: Inter everywhere, loaded through `next/font` in `layout.js` (self-hosted at build)
-- One accent color, `accent` (UCSB navy `#003660`, in `tailwind.config.mjs`), for every link:
-  - Links inside sentences: `text-accent underline decoration-accent/30 underline-offset-2 hover:decoration-accent`
-  - Standalone bracketed links (`[SSRN]`, `[PDF]`): `text-accent hover:underline underline-offset-2`
+- Font: Newsreader (serif, normal and italic) everywhere, loaded through `next/font` in `layout.js` (self-hosted at build). Root size 18px (17px below 640px) in `globals.css`, so rem sizes scale with it. Headings are regular or medium weight, not bold.
+- UCSB colors only, in `tailwind.config.mjs`:
+  - Text is UCSB navy: the `gray` scale is retinted toward `#003660` (900 is the navy itself), so every `text-gray-*` reads as navy or navy-gray. Text shades stop at 500 (contrast 5.1:1); 400 and lighter are for rules and markers.
+  - `accent` is UCSB navy `#003660` (the navy in the TM logo); `gold` (`#FEBC11`) marks the current page in the nav.
+- Links are underlined in navy; hover thickens the line:
+  - Links inside sentences: `text-accent underline decoration-accent underline-offset-2 hover:decoration-2`
+  - Standalone links (SSRN, Journal, Syllabus): `textLinkClass` in `components/grid.js`, plain words, no brackets
+- Home, Research, and Teaching use the label-column grid in `components/grid.js`: from `md` up, an 11rem column of right-aligned italic labels (section names, journal and year, course level) beside the content; below `md` the labels stack above. Use its exported classes rather than retyping them.
+- Awards are bulleted lists (`bulletListClass`), placed below the paper's summary.
 - Responsive breakpoints: `sm:`, `md:`, `lg:`, `xl:`
-- Common patterns:
-  - Container: `max-w-4xl mx-auto px-4`
-  - Spacing: `gap-4`, `mb-6`, `py-12`
-  - Typography: `text-gray-900`, `font-medium`, `text-lg`
+- Container: `max-w-4xl mx-auto px-6`
 
 ## Deployment
 
