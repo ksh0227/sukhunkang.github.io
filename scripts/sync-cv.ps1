@@ -4,16 +4,16 @@
 # Detect machine
 $username = $env:USERNAME
 if ($username -eq "Sacony") {
-    $cvSource = "C:\Users\Sacony\Dropbox\Academic\Admin\CV\Sukhun Kang - CV.pdf"
     $repoRoot = "C:\Users\Sacony\Dropbox\Academic\Admin\Personal Website\sukhunkang.github.io"
 } elseif ($username -eq "Sukhun") {
-    $cvSource = "C:\Users\Sukhun\Dropbox\Academic\Admin\CV\Sukhun Kang - CV.pdf"
     $repoRoot = "C:\Users\Sukhun\Dropbox\Academic\Admin\Personal Website\sukhunkang.github.io"
 } else {
     Write-Host "Unknown machine: $username"
     exit 1
 }
 
+# The CV project sits beside the repo: Personal Website\CV
+$cvSource = Join-Path (Split-Path $repoRoot -Parent) "CV\Sukhun Kang - CV.pdf"
 $cvDest = Join-Path $repoRoot "public\Sukhun-Kang-CV.pdf"
 $logFile = Join-Path $repoRoot "scripts\sync-cv.log"
 

@@ -8,6 +8,8 @@ Repository: sukhunkang.github.io
 
 A Next.js 15 academic portfolio website showcasing research, teaching, and the Health Innovation Lab.
 
+The CV project (`../CV/`) sits beside this repo. For a new item that belongs on both (a paper, an award, a board seat, a student placement), start the session in the parent folder (`Personal Website/`); its CLAUDE.md says where each kind of item goes on each side.
+
 ## Tech Stack
 
 - **Framework:** Next.js 15.3.5 (App Router)
@@ -47,7 +49,7 @@ src/app/
 
 | Task | File to Edit |
 |------|--------------|
-| Update CV | Replace `/public/Sukhun-Kang-CV.pdf` |
+| Update CV | Edit `../CV/cv.qmd` and render; `scripts/sync-cv.ps1` copies the PDF to `/public/Sukhun-Kang-CV.pdf` daily |
 | Add publication | `src/app/data/papers.js` |
 | Update bio/awards | `src/app/about/page.jsx` |
 | Update home-page news | `src/app/data/news.js` |
