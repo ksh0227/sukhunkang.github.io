@@ -30,7 +30,7 @@ export const publications = [
   {
     id: "pub-2",
     title:
-      "Implementation of 21st Century Cures Act Expanded Access Policies Requirement",
+      "Implementation of 21st Century Cures Act Expanded Access Policies Requirements",
     venue: "Clinical Pharmacology & Therapeutics",
     year: "2021",
     volume: "110(6): 1579-1584",
@@ -107,6 +107,7 @@ export const workingPapers = [
     abstract:
       "We investigate how data privacy regulations shape research and development (R&D). Such regulations are designed to protect individuals, but the innovation process that develops valuable new products for those same individuals depends on collecting, analyzing, and sharing their data. We examine this tension in the context of the pharmaceutical industry, where data is a key input to R&D, and the European Union’s (EU) General Data Protection Regulation (GDPR), the most comprehensive data privacy regulation to date. Leveraging firm-level variation in exposure to the GDPR, we find that the regulation lowers clinical trials by 18 percent. Firms also shift the types of R&D they pursue: trials are less likely to include sites in the EU or to be conducted across multiple countries, and they target a narrower set of diseases. Research collaborations decline overall and shift away from new partners towards established relationships. When looking at R&D outcomes, we observe that trials take longer to complete, are less likely to succeed, and report results with greater delay. The decline in clinical trials is greatest among young firms. These findings reveal how data privacy regulations shape not only the rate of innovation but also the process by which it is pursued and its outcomes.",
     awards: [
+      "2026 AOM TIM Best Conference Paper Award, Finalist",
       "2026 AOM Best Paper Proceedings",
       "2026 Runner-up for ISA Babbage International Policy Forum Industrial Innovation Policy Award",
     ],
