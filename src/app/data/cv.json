@@ -1,0 +1,1122 @@
+{
+  "_generated": "by scripts/build-cv-data.mjs from ../CV/cv.qmd; edit cv.qmd, not this file",
+  "version": "a7907dfae0fd",
+  "lastUpdated": "October 2026",
+  "sections": [
+    {
+      "title": "Academic Appointment",
+      "items": [
+        {
+          "type": "entry",
+          "title": "University of California, Santa Barbara",
+          "date": "2023–Present",
+          "lines": [
+            {
+              "text": "Assistant Professor of Technology Management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "items": [
+        {
+          "type": "entry",
+          "title": "London Business School",
+          "date": "2023",
+          "lines": [
+            {
+              "text": "Ph.D. in Strategy and Entrepreneurship"
+            },
+            {
+              "text": [
+                {
+                  "t": "Dissertation",
+                  "i": true
+                },
+                {
+                  "t": ": Essays on Innovation Commercialization"
+                }
+              ]
+            },
+            {
+              "text": [
+                {
+                  "t": "Committee",
+                  "i": true
+                },
+                {
+                  "t": ": Gary Dushnitsky (chair), Sungyong Chang, Sendil Ethiraj, Olenka Kacperczyk, Abhishek Nagaraj"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entry",
+          "title": "University of Southern California",
+          "date": "",
+          "lines": [
+            {
+              "text": [
+                {
+                  "t": "M.S. in Entrepreneurship and Innovation ("
+                },
+                {
+                  "t": "Focus",
+                  "i": true
+                },
+                {
+                  "t": ": Entrepreneurial strategy)"
+                }
+              ],
+              "date": "2016"
+            },
+            {
+              "text": [
+                {
+                  "t": "M.S. in Computer Engineering ("
+                },
+                {
+                  "t": "Focus",
+                  "i": true
+                },
+                {
+                  "t": ": Computer architecture)"
+                }
+              ],
+              "date": "2010"
+            }
+          ]
+        },
+        {
+          "type": "entry",
+          "title": "University of Illinois at Urbana-Champaign",
+          "date": "2007",
+          "lines": [
+            {
+              "text": "B.S. in Computer Engineering"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Publications",
+      "items": [
+        {
+          "type": "publication",
+          "number": 3,
+          "title": "Uncovering Seeding Trials: Examining Non-Scientific Purposes in Clinical Trials",
+          "authors": "with Ivan Lin and Sungyong Chang",
+          "venue": "BMJ Evidence-Based Medicine",
+          "year": "2026, Online First",
+          "url": "https://doi.org/10.1136/bmjebm-2025-114242"
+        },
+        {
+          "type": "publication",
+          "number": 2,
+          "title": "Implementation of 21st Century Cures Act Expanded Access Policies Requirements",
+          "authors": "with Sungyong Chang, Joseph Ross, and Jennifer Miller",
+          "venue": "Clinical Pharmacology & Therapeutics",
+          "year": "2021",
+          "url": "https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.2401"
+        },
+        {
+          "type": "publication",
+          "number": 1,
+          "title": "Entrepreneurship, Innovation, and Political Competition: How the Public Sector Helps the Sharing Economy Create Value",
+          "authors": "with Yongwook Paik and Robert Seamans",
+          "venue": "Strategic Management Journal",
+          "year": "2019",
+          "url": "https://sms.onlinelibrary.wiley.com/doi/full/10.1002/smj.2937"
+        }
+      ]
+    },
+    {
+      "title": "Working Papers",
+      "items": [
+        {
+          "type": "paper",
+          "title": "When Do Firms Provide Early Access to Investigational Drugs? Evidence from Expanded Access in the Oncology Drug Market 1990–2020",
+          "authors": "with Sungyong Chang",
+          "status": "2nd Round Revise & Resubmit",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4885005",
+          "notes": []
+        },
+        {
+          "type": "paper",
+          "title": "Revealed Relatedness: How New Mapping Criteria Reshape Organizational Search",
+          "status": "2nd Round Revise & Resubmit",
+          "notes": [
+            "2023 AOM Annual Meeting Best Paper Proceedings",
+            "2024 Runner-up for ISA Giarratani Rising Star Award"
+          ]
+        },
+        {
+          "type": "paper",
+          "title": "Bridges or Barriers? How Venture Capital Portfolio Ties Shape Startups’ Market Entry",
+          "authors": "with Sarath Balachandran and Sungyong Chang",
+          "status": "1st Round Revise & Resubmit",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993926",
+          "notes": [
+            "2025 AOM Annual Meeting Best Paper Proceedings",
+            "2025 AOM Sumantra Ghoshal Research and Practice Award",
+            "2025 AOM STR Distinguished Paper Award in Corporate and International Strategy"
+          ]
+        },
+        {
+          "type": "paper",
+          "title": "Data Privacy Regulation and Innovation",
+          "authors": "with Jennifer Kao",
+          "status": "1st Round Revise & Resubmit",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6104788",
+          "notes": [
+            "2026 AOM TIM Best Conference Paper Award, Finalist",
+            "2026 AOM Annual Meeting Best Paper Proceedings",
+            "2026 Runner-up for ISA Babbage Best Paper in Industrial Innovation Policy Award"
+          ]
+        },
+        {
+          "type": "paper",
+          "title": "Do Biomedical Researchers Study Topics Related to Their Own Ethnicity? Evidence from the NIH",
+          "authors": "with Wesley Greenblatt and Young Hou",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Selected Work in Progress",
+      "items": [
+        {
+          "type": "paper",
+          "title": "Attention Triage in Sequential Innovation",
+          "authors": "with Sandra Barbosu and Sungyong Chang",
+          "notes": [
+            "2026 ISA Best Paper in Innovation and Entrepreneurship Award"
+          ]
+        },
+        {
+          "type": "paper",
+          "title": "Orchestrating an Ecosystem of Innovative Startups: Ex-Ante and Ex-Post Actions and Orchestrator’s Performance",
+          "authors": "with Gary Dushnitsky",
+          "notes": []
+        }
+      ]
+    },
+    {
+      "title": "Awards & Honors",
+      "items": [
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Sebastian Hoenen Research Prize, SEI Consortium",
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "AOM TIM Best Conference Paper Award, Finalist",
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Swildens Family Faculty Fellowship, UCSB",
+          "date": "2026–2029"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "ISA Babbage Best Paper in Industrial Innovation Policy Award, Runner-up",
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "ISA Best Paper in Innovation and Entrepreneurship Award",
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "AOM Sumantra Ghoshal Research and Practice Award",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "AOM STR Distinguished Paper Award in Corporate and International Strategy",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "University of California Regents’ Junior Faculty Fellowship",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "ISA Giarratani Rising Star Award, Runner-up",
+          "date": "2024"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "AOM TIM Dissertation Award, Finalist",
+          "date": "2024"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "AOM STR Dissertation Award, Finalist",
+          "date": "2024"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Sir James Ball PhD Prize, LBS",
+          "date": "2022"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Organization Science/INFORMS Dissertation Proposal Competition, Finalist (one of 8 selected from 100+ proposals)",
+          "date": "2022"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Best Reviewer Award, AOM (TIM)",
+          "date": "2021"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Best Reviewer Award, AOM (ENT)",
+          "date": "2019"
+        }
+      ]
+    },
+    {
+      "title": "Grants",
+      "note": "*indicates co-investigator",
+      "items": [
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Swildens Family Faculty Fellowship, UCSB",
+          "date": "2026–2029"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Faculty Career Development Award, UCSB",
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "University of California Regents’ Junior Faculty Fellowship",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Faculty Travel Grant, UCSB",
+          "date": "2023, 2024, 2025"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Proposal Writing for Success (PROWESS) Grant, UCSB",
+          "date": "2024"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Strategy Research Foundation (SRF) Dissertation Research Grant, SMS",
+          "date": "2022–2023"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Wheeler Institute for Business and Development Research Grant, LBS",
+          "date": "2021"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Wheeler Institute for Business and Development Research Grant, LBS*",
+          "date": "2020"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Institute of Innovation and Entrepreneurship Research Grant, LBS*",
+          "date": "2020"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Wheeler Institute for Business and Development Research Grant, LBS*",
+          "date": "2019"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Institute of Innovation and Entrepreneurship Research Grant, LBS",
+          "date": "2019"
+        },
+        {
+          "type": "item",
+          "kind": "bulletitem",
+          "text": "Fellowship for Doctoral Students, LBS",
+          "date": "2016–2023"
+        }
+      ]
+    },
+    {
+      "title": "Invited Presentations",
+      "items": [
+        {
+          "type": "talks",
+          "year": "2026–27",
+          "venues": [
+            "SMS Berlin",
+            "People and Organizations Conference",
+            "SEI Consortium",
+            "AOM Philadelphia"
+          ]
+        },
+        {
+          "type": "talks",
+          "year": "2025–26",
+          "venues": [
+            "ISA Washington DC",
+            "Strategy Science Conference",
+            "UC Merced Yosemite Retreat in Entrepreneurship and Innovation",
+            "University of California, Santa Barbara, Technology and Organizations Research Seminar (TORS)",
+            "Entrepreneurship & Innovation Policy Virtual Seminar Series",
+            "Utah Winter Strategy Conference",
+            "UT Austin Technology and Entrepreneurship Conference",
+            "Duke Fuqua Strategy Junior Faculty Conference",
+            "SMS San Francisco",
+            "IQVIA Institute Research Forum",
+            "University of Washington, West Coast Research Symposium",
+            "FDA’s Economics Brownbag",
+            "HIWG Research Chat",
+            "AOM Copenhagen"
+          ]
+        },
+        {
+          "type": "talks",
+          "year": "2024–25",
+          "venues": [
+            "Harvard Medical School, Program On Regulation, Therapeutics, And Law (PORTAL) Guest Lecture Series",
+            "ISA Boston",
+            "UCLA, Seminar on Pharmaceutical Economics and Policy",
+            "UC Merced, Economics Department Seminar",
+            "SoCal Strategy/OT Workshop",
+            "Korea University, International Business Department Seminar",
+            "Troesh Entrepreneurship Conference",
+            "USC, Research Roundtable on Platform Dynamics",
+            "International Conference on Entrepreneurship Ecosystem",
+            "UCLA, Price Center Workshop in Entrepreneurship and Innovation",
+            "University of Oregon, West Coast Research Symposium",
+            "AOM Chicago"
+          ]
+        },
+        {
+          "type": "talks",
+          "year": "2023–24",
+          "venues": [
+            "HIWG Research Chat",
+            "ISA Sacramento",
+            "UCLA, Price Center Workshop in Entrepreneurship and Innovation",
+            "University of Maryland, Smith Entrepreneurship Research Conference",
+            "Korea Advanced Institute of Science and Technology (KAIST) College of Business, Technology/Organization/Strategy Department Seminar",
+            "USC, SoCal Strategy/OT Workshop",
+            "University of California, Riverside, Management Department Seminar",
+            "University of California, Santa Barbara, Technology and Organizations Research Seminar (TORS)",
+            "SMS Toronto",
+            "AOM Boston"
+          ]
+        },
+        {
+          "type": "talks",
+          "year": "2022–23",
+          "venues": [
+            "Max Planck Institute for Innovation and Competition, Workshop on the Organisation, Economics and Policy of Scientific Research",
+            "University of Sussex Business School, SPRU Freeman Friday Seminar",
+            "University of California, Santa Barbara, Technology Management Seminar",
+            "National University of Singapore (NUS), Strategy and Policy Seminar",
+            "HIWG Research Chat",
+            "Global Conference on Regulatory Science",
+            "SMS London",
+            "AOM Seattle"
+          ]
+        },
+        {
+          "type": "talks",
+          "year": "2021–22",
+          "venues": [
+            "CCC Doctoral Conference",
+            "Trans-Atlantic Doctoral Conference",
+            "IP & Innovation PhD Seminar",
+            "East Coast Doctoral Conference",
+            "Wharton Innovation Doctoral Symposium",
+            "SMS Virtual",
+            "Research Policy Conference",
+            "DRUID Annual Meeting",
+            "AOM Virtual",
+            "IP & Innovation PhD Seminar",
+            "Trans-Atlantic Doctoral Conference"
+          ]
+        },
+        {
+          "type": "talks",
+          "year": "2020–21 and earlier",
+          "venues": [
+            "SMS Virtual",
+            "People and Organizations Conference",
+            "Trans-Atlantic Doctoral Conference",
+            "West Coast Research Symposium"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Other Publications, Cases, and Media",
+      "items": [
+        {
+          "type": "publication",
+          "title": "Clinical Trials That Are Actually Marketing Ploys Targeting Doctors: How Seeding Trials Put Profit over Patients",
+          "authors": "with I. Lin and S. Chang",
+          "venue": "The Conversation",
+          "year": "2026",
+          "url": "https://theconversation.com/clinical-trials-that-are-actually-marketing-ploys-targeting-doctors-how-seeding-trials-put-profit-over-patients-280398"
+        },
+        {
+          "type": "publication",
+          "title": "Behind the Scenes of a YouTube Mega-Hit: Baby Shark, The Pinkfong Company, and What’s Next",
+          "authors": "with A. Nagaraj",
+          "venue": "Berkeley Haas Case",
+          "year": "2025",
+          "url": "https://store.hbr.org/product/behind-the-scenes-of-a-youtube-mega-hit-baby-shark-the-pinkfong-company-and-what-s-next/B6077"
+        },
+        {
+          "type": "publication",
+          "title": "Measuring Biopharmaceutical Innovation in the Modern Era",
+          "authors": "with S. Barbosu, S. Chang, and F. David",
+          "venue": "The Incidental Economist",
+          "year": "2025",
+          "url": "https://theincidentaleconomist.com/wordpress/measuring-biopharmaceutical-innovation-in-the-modern-era/"
+        },
+        {
+          "type": "publication",
+          "title": "Conversation with Sukhun Kang on access to medicines",
+          "venue": "The PI-Squared Initiative (The Burnes Center for Social Change at Northeastern University Podcast)",
+          "year": "2025",
+          "url": "https://burnes.northeastern.edu/pi-squared/"
+        },
+        {
+          "type": "publication",
+          "title": "Why should collaboration enhance oncology drug innovation?",
+          "venue": "Think at London Business School (The Why Podcast)",
+          "year": "2023",
+          "url": "https://www.london.edu/think/why-should-collaboration-enhance-oncology-drug-innovation"
+        },
+        {
+          "type": "publication",
+          "title": "WearMon: Reliability Monitoring Using Adaptive Critical Path Testing",
+          "authors": "with B. Zandian, W. Dweik, T. Punihaole, and M. Annavaram",
+          "venue": "IEEE/IFIP International Conference on Dependable Systems and Networks",
+          "year": "2010"
+        },
+        {
+          "type": "publication",
+          "title": "Magellan: A Search and Machine Learning-Based Framework for Fast Multi-Core Design Space Exploration and Optimization",
+          "authors": "with R. Kumar",
+          "venue": "Design, Automation and Test in Europe",
+          "year": "2008"
+        }
+      ]
+    },
+    {
+      "title": "Teaching",
+      "items": [
+        {
+          "type": "subhead",
+          "text": "UC Santa Barbara, Technology Management"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Instructor, TMP412, “Technology Strategy,” Master’s-level course",
+          "date": "2025–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Rating: 4.7/5 (Winter 2026)",
+          "sub": true
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Instructor, TMP120, “Strategy,” Undergraduate-level course",
+          "date": "2023–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Rating: 4.5/5 (Winter 2024); 4.8/5 (Winter 2025); 4.8/5 (Winter 2026)",
+          "sub": true
+        },
+        {
+          "type": "subhead",
+          "text": "London Business School, Strategy and Entrepreneurship"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Teaching Assistant, Executive Education, “Developing Strategy for Value Creation”",
+          "date": "2021"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Grader, C002, “Strategic Management”",
+          "date": "2017"
+        },
+        {
+          "type": "subhead",
+          "text": "University of Southern California"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Instructor, EE201, “Introduction to Digital Design”",
+          "date": "2008–2010"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Teaching Assistant, ACAD182, “Case Studies in Innovation”",
+          "date": "2015"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Teaching Assistant, EE560, “Digital System Design”",
+          "date": "2009–2010"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Teaching Assistant, EE557, “Advanced Computer Architecture”",
+          "date": "2008"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Grader, GSBA550, “Entrepreneurship”",
+          "date": "2016"
+        }
+      ]
+    },
+    {
+      "title": "Service",
+      "items": [
+        {
+          "type": "subhead",
+          "text": "Editorial Review Board"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Strategic Entrepreneurship Journal",
+          "date": "2026–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "Organization Science",
+          "date": "2025–Present"
+        },
+        {
+          "type": "subhead",
+          "text": "Ad-hoc Refereeing"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "California Management Review; Clinical Pharmacology & Therapeutics; Entrepreneurship Theory and Practice; Journal of Business Venturing; Journal of Management Studies; Journal of Public Economics; Management Science; National Science Foundation; Research Policy; Strategic Management Journal; Strategy Science; Socio-Economic Review"
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "(Conferences) AOM Annual Meetings; AOM TIM Best Conference Paper Award; AOM TIM Dissertation Award; Organization Science/INFORMS Dissertation Proposal Competition; SMS Conferences"
+        },
+        {
+          "type": "subhead",
+          "text": "Affiliations"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Health Innovation Lab (HIL), Founder and Co-director",
+          "date": "2024–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Health Innovation Working Group (HIWG), Co-founder and Organizer",
+          "date": "2021–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Working Group on Compassionate Use & Preapproval Access (CUPA) at NYU, Member",
+          "date": "2021–Present"
+        },
+        {
+          "type": "subhead",
+          "text": "Professional Service"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "Strategic Management Society",
+              "i": true
+            },
+            {
+              "t": ", Rep-at-Large of Knowledge and Innovation IG"
+            }
+          ],
+          "date": "2026–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "Academy of Management",
+              "i": true
+            },
+            {
+              "t": ", Research Committee of STR Division"
+            }
+          ],
+          "date": "2025–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "Strategic Management Society",
+              "i": true
+            },
+            {
+              "t": ", Rep-at-Large of Research Methods Community"
+            }
+          ],
+          "date": "2025–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "Industry Studies Association",
+              "i": true
+            },
+            {
+              "t": ", Giarratani Rising Star Award Committee"
+            }
+          ],
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "International Rare Diseases Research Consortium (IRDiRC)",
+              "i": true
+            },
+            {
+              "t": ", Member of Task Force on Funding Models to Support the Spectrum of Rare Disease Research and Development"
+            }
+          ],
+          "date": "2023–2024"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "Working Group on Compassionate Use & Preapproval Access (CUPA) at NYU",
+              "i": true
+            },
+            {
+              "t": ", Speaker"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "– A panel on Expanded Access at CUPA Webinar",
+          "date": "2023",
+          "sub": true
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "– A panel on Advanced Topics in Expanded Access at CUPA Webinar",
+          "date": "2023",
+          "sub": true
+        },
+        {
+          "type": "item",
+          "kind": "subitem",
+          "text": "– A panel on Expanded Access at CUPACON",
+          "date": "2022",
+          "sub": true
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "LBS",
+              "i": true
+            },
+            {
+              "t": ", Strategy and Entrepreneurship Area PhD Committee"
+            }
+          ],
+          "date": "2018"
+        },
+        {
+          "type": "subhead",
+          "text": "Conference Organization"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, Virtual Webinar on Agentic AI in Strategic Management Research, SMS",
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, PDW on the Frontiers in Organizational Search, AOM",
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, West Coast Research Symposium, Doctoral Consortium",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, Conference Extension on Strategy and Innovation in Pharmaceutical Industry, SMS",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, Managing Your Dissertation Workshop, AOM",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, PDW on Strategy and Innovation in Pharmaceutical Industry, AOM",
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, PDW on Strategy and Innovation in Pharmaceutical Industry, AOM",
+          "date": "2024"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, PDW on the Empirical Research on Organizational Search, AOM",
+          "date": "2024"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, PDW on Strategy and Innovation in Pharmaceutical Industry, AOM",
+          "date": "2023"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, PDW on the Landscape of Research on Organizational Search, AOM",
+          "date": "2022"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, Presenter symposium on Strategy in Pharmaceutical Industry, AOM",
+          "date": "2022"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, Panel symposium on Science and Firm Strategy, AOM",
+          "date": "2021"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Co-organizer, Presenter symposium on Where Do Ecosystems Come From?, AOM",
+          "date": "2021"
+        },
+        {
+          "type": "subhead",
+          "text": "Service to UCSB"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "UCSB, Faculty Legislature (Senate) Representative",
+          "date": "2024–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Technology Management Department, Social Committee",
+          "date": "2023–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "College of Engineering, Faculty Search Committee",
+          "date": "2023–2024"
+        },
+        {
+          "type": "subhead",
+          "text": "Mentoring"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "AOM",
+              "i": true
+            },
+            {
+              "t": ", STR Dissertation Consortium Mentor"
+            }
+          ],
+          "date": "2026"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "UCSB",
+              "i": true
+            },
+            {
+              "t": ", McNair Scholars Program Mentor"
+            }
+          ],
+          "date": "2025–Present"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "UCSB",
+              "i": true
+            },
+            {
+              "t": ", Research Mentorship Program Mentor"
+            }
+          ],
+          "date": "2025"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "West Coast Research Symposium",
+              "i": true
+            },
+            {
+              "t": ", Doctoral Consortium Mentor"
+            }
+          ],
+          "date": "2024–2025"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": [
+            {
+              "t": "CancerX",
+              "i": true
+            },
+            {
+              "t": ", Accelerator Mentor"
+            }
+          ],
+          "date": "2024–2025"
+        }
+      ]
+    },
+    {
+      "title": "Students Advised",
+      "items": [
+        {
+          "type": "subhead",
+          "text": "Current PhD"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Masoom Suchdeo (UCSB PhD): Committee Member for Doctoral Thesis"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Mostafa Khoshbash (UCSB PhD): Committee Member for Doctoral Thesis"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Zerin Dong (UC Merced PhD): External Committee Member for Oral Examination"
+        },
+        {
+          "type": "subhead",
+          "text": "Undergraduates"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Fan Ye (UCSB), Research Assistant, Harvard Medical School"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Janice Jiang (UCSB), MS in Biostatistics, Harvard University"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Sean Wang (UCSB), Data Scientist, Applied Materials"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Ivan Lin (UCSB), Project Engineer, Leed Electric Inc."
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Kuan-I (Brian) Lu (UCSB), Master of Business Analytics, MIT"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Pramukh Shankar (UCSB), MS in Applied Urban Science and Informatics, NYU Tandon School of Engineering"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Carter Kulm (UCSB), MS in Data Science, UT Austin"
+        },
+        {
+          "type": "item",
+          "kind": "subbullet",
+          "text": "Amy Ji (UCSB), IQVIA"
+        }
+      ]
+    },
+    {
+      "title": "Industry Experience",
+      "items": [
+        {
+          "type": "entry",
+          "title": "Primer Accelerator",
+          "date": "2016",
+          "lines": [
+            {
+              "text": "Intern, Los Angeles, CA, USA"
+            }
+          ]
+        },
+        {
+          "type": "entry",
+          "title": "City of Glendale",
+          "date": "2015",
+          "lines": [
+            {
+              "text": "MBA Intern, Glendale, CA, USA"
+            }
+          ]
+        },
+        {
+          "type": "entry",
+          "title": "Samsung Electronics",
+          "date": "2012–2014",
+          "lines": [
+            {
+              "text": "Engineer, Yongin, South Korea"
+            }
+          ]
+        },
+        {
+          "type": "entry",
+          "title": "I&C Technology",
+          "date": "2010–2012",
+          "lines": [
+            {
+              "text": "Research Engineer, Seoul, South Korea"
+            }
+          ]
+        },
+        {
+          "type": "entry",
+          "title": "Egghead",
+          "date": "2010",
+          "lines": [
+            {
+              "text": "Founder, Seoul, South Korea"
+            }
+          ]
+        },
+        {
+          "type": "entry",
+          "title": "LG Electronics",
+          "date": "2007",
+          "lines": [
+            {
+              "text": "Intern, Seoul, South Korea"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

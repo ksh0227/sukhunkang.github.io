@@ -16,7 +16,7 @@ const FEATURED = ["wp-3", "wp-4", "pub-3"];
 
 const profileLinks = [
   { label: "Email", href: "mailto:sukhunkang@ucsb.edu" },
-  { label: "CV", href: "/Sukhun-Kang-CV.pdf" },
+  { label: "CV", href: "/cv/" },
   {
     label: "Google Scholar",
     href: "https://scholar.google.co.uk/citations?user=FMHJcysAAAAJ",
@@ -30,7 +30,7 @@ const profileLinks = [
 const quietLink =
   "hover:text-gray-900 hover:underline underline-offset-2 transition-colors duration-200";
 
-// Opens off-site links (and the CV PDF) in a new tab; mailto and site pages stay put.
+// Opens off-site links and PDFs in a new tab; mailto and site pages stay put.
 const newTab = (href) =>
   href.startsWith("http") || href.endsWith(".pdf")
     ? { target: "_blank", rel: "noopener noreferrer" }

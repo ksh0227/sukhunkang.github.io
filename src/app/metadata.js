@@ -1,3 +1,5 @@
+import cv from "./data/cv.json";
+
 const baseUrl = "https://sukhunkang.com";
 
 const defaultImage = {
@@ -107,6 +109,34 @@ export const teachingMetadata = {
     title: "Teaching | Sukhun Kang",
     description:
       "Business strategy teaching and case studies at UC Santa Barbara.",
+    images: [defaultImage.url],
+  },
+};
+
+// The CV page's position comes from the CV itself (data/cv.json, generated
+// from cv.qmd), so a new title there updates these descriptions too.
+const cvText = (v) => (typeof v === "string" ? v : v.map((s) => s.t).join(""));
+const cvAppointment = cv.sections.find((s) => s.title === "Academic Appointment")?.items[0];
+const cvPosition = cvAppointment
+  ? `${cvText(cvAppointment.lines[0].text)} at ${cvText(cvAppointment.title)}`
+  : "UC Santa Barbara";
+
+export const cvMetadata = {
+  title: "CV | Sukhun Kang",
+  description: `Curriculum vitae of Sukhun Kang, ${cvPosition}: publications, working papers, awards, grants, presentations, teaching, and service.`,
+  authors: [defaultAuthor],
+  alternates: { canonical: `${baseUrl}/cv/` },
+  openGraph: {
+    title: "CV | Sukhun Kang",
+    description: `Curriculum vitae of Sukhun Kang, ${cvPosition}.`,
+    url: `${baseUrl}/cv/`,
+    type: "profile",
+    images: [defaultImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CV | Sukhun Kang",
+    description: `Curriculum vitae of Sukhun Kang, ${cvPosition}.`,
     images: [defaultImage.url],
   },
 };

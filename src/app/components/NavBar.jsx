@@ -50,7 +50,9 @@ const Navbar = () => {
             <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
               Resources
             </NavItem>
-            <CvLink />
+            <NavItem href="/cv" pathname={pathname} onClick={handleLinkClick}>
+              CV
+            </NavItem>
           </div>
 
           {/* below lg: menu button */}
@@ -101,26 +103,15 @@ const Navbar = () => {
             <NavItem href="/resources" pathname={pathname} onClick={handleLinkClick}>
               Resources
             </NavItem>
-            <CvLink onClick={handleLinkClick} />
+            <NavItem href="/cv" pathname={pathname} onClick={handleLinkClick}>
+              CV
+            </NavItem>
           </div>
         )}
       </div>
     </nav>
   );
 };
-
-// The CV is a PDF, not a page, so it opens in a new tab and is never "active".
-const CvLink = ({ onClick }) => (
-  <a
-    href="/Sukhun-Kang-CV.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    onClick={onClick}
-    className={`${itemClass} ${idleClass}`}
-  >
-    CV
-  </a>
-);
 
 const NavItem = ({ href, pathname, children, onClick }) => {
   // Pages are served with a trailing slash (trailingSlash: true); hrefs are not.

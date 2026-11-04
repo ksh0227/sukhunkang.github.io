@@ -35,8 +35,10 @@ src/app/
 ├── data/
 │   ├── papers.js       # All papers: Research page, JSON-LD, llms.txt
 │   ├── news.js         # Home-page News list
-│   └── hiwg.js         # HIWG Research Chat schedule
+│   ├── hiwg.js         # HIWG Research Chat schedule
+│   └── cv.json         # GENERATED from ../CV/cv.qmd by scripts/build-cv-data.mjs; never edit
 ├── about/page.jsx      # Biography, awards, media
+├── cv/page.jsx         # The CV page: letterhead plus cv.json
 ├── research/page.jsx   # Publications and working papers
 ├── teaching/page.jsx   # Courses, cases, testimonials
 ├── resources/page.jsx  # Educational materials
@@ -49,7 +51,8 @@ src/app/
 
 | Task | File to Edit |
 |------|--------------|
-| Update CV | Edit `../CV/cv.qmd` and render; `scripts/sync-cv.ps1` copies the PDF to `/public/Sukhun-Kang-CV.pdf` daily |
+| Update CV | Edit `../CV/cv.qmd` and render, then run `scripts/sync-cv.ps1` by hand in the same session (no longer scheduled): it copies the PDF to `/public/Sukhun-Kang-CV.pdf`, regenerates `src/app/data/cv.json` for the `/cv` page, commits those two, pushes, and checks the deploy |
+| CV page layout or letterhead | `src/app/cv/page.jsx` (never its text: that comes from `cv.qmd`) |
 | Add publication | `src/app/data/papers.js` |
 | Update bio/awards | `src/app/about/page.jsx` |
 | Update home-page news | `src/app/data/news.js` |
@@ -107,6 +110,16 @@ export const news = [
   // ...
 ];
 ```
+
+### The CV Page (`/cv`)
+
+`src/app/cv/page.jsx` renders `src/app/data/cv.json`, which `scripts/build-cv-data.mjs` generates from `../CV/cv.qmd`, the file the PDF is rendered from. Never edit the JSON or retype CV text in the page; change `cv.qmd`, render, and run `scripts/sync-cv.ps1` (or `node scripts/build-cv-data.mjs` alone to regenerate without publishing).
+
+- **The generator is strict.** A Typst construct it does not know stops it with the line number and writes nothing, and each construct's count in the source must match what it consumed. Teach it the new construct (`parseStatements` or `inline`); never loosen the checks. It also refuses any key the page does not render (`RENDERED_KEYS`): a new field needs the page and that list changed together.
+- **Left off the page on purpose (user, 2026-11-03):** the Personal section and grant amounts (`OMIT_SECTIONS`, `AMOUNT`, and the `MONEY_LEFT` leak guard in the generator). They are cut in the generator, not the page, because `cv.json` is public in this repo; anything money-like left in any text fails the run.
+- **The letterhead's address, email, and website are constants in `page.jsx`** (the address is not in the CV). The position comes from the CV's Academic Appointment, as does the page's meta description (`cvMetadata`).
+- **Verify after a build:** `node scripts/check-cv-page.mjs` (the publish script runs it too). Section by section, it compares the page's words with the PDF's, checks that every text field appears in the PDF word for word, and checks that dates sit with their text. It fails on any difference the design does not explain. It needs `pdftotext`, which Git for Windows ships. Do not use `pdftotext -layout` to place dates: it draws the CV's italic dates one line above their rows.
+- **Publishing:** `scripts/sync-cv.ps1`, by hand after a render (see the parent CLAUDE.md, "Finishing an update"). The live page's `<header data-cv-version>` carries `cv.json`'s content fingerprint, which the script looks for after the deploy.
 
 ### Updating the Home Page Bio
 
