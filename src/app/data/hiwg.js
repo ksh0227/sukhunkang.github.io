@@ -440,21 +440,8 @@ export const sessions = [
     registerUrl: "",
     links: [],
   },
-  {
-    number: 57,
-    date: "2026-11-10",
-    time: "11:00 AM - 12:00 PM PT",
-    speaker: "Seojin Kim",
-    affiliation: "Drexel",
-    profileUrl: "",
-    title: "",
-    topic: "The impact of Dobbs on US hospitals",
-    coauthors: [],
-    abstract: "",
-    note: "",
-    registerUrl: "",
-    links: [],
-  },
+  // #57 (2026-11-10, Seojin Kim, Drexel) is intentionally absent: that session
+  // was cancelled. Same rule as #55: the gap is deliberate, do not renumber.
   {
     number: 58,
     date: "2026-12-08",
