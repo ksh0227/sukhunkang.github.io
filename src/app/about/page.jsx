@@ -98,7 +98,7 @@ export default function About() {
               and in how they change the way firms compete and make decisions.
               Much of my work looks at the forces around innovation, such as
               regulation, science, and capital, and at how they shape which
-              ideas firms pursue and how quickly those ideas reach patients. My
+              ideas firms pursue and how quickly those ideas reach the market. My
               goal is to understand how technology can be used to foster
               innovation that benefits firms and society.
             </p>
