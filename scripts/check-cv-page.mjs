@@ -76,6 +76,10 @@ function preparePdf(text) {
   const numbered = (text.match(/^\d+\n+(?=\f)/gm) || []).length;
   if (numbered !== pages) throw new Error(`PDF text: ${pages} pages but ${numbered} page-number lines; layout changed?`);
   text = text.replace(/^\d+\n+(?=\f)/gm, "");
+  // The form feed itself starts the next page's first line, so a section
+  // heading at the top of a page would read "\fHEADING" and miss the ^HEADING
+  // match below (first seen 2026-11-13, when OTHER PUBLICATIONS opened page 4).
+  text = text.replace(/\f/g, "\n");
 
   // The page omits the Personal section, which runs from its heading to the
   // Last Updated stamp, and everything after the stamp (stamp, page end).
