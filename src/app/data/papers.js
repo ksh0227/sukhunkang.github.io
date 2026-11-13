@@ -135,6 +135,18 @@ export const workingPapers = [
     notes: ["Previous title: “How Do Investors Shape Startups' Response to New Market Opportunities?”"],
   },
   {
+    id: "wp-9",
+    title:
+      "Selective Catch-Up in Innovation: Evidence from the Chinese Biopharmaceutical Industry",
+    authors: ["Sukhun Kang", "Sandra Barbosu"],
+    hook: "We argue that a latecomer can catch up in development while still remaining a follower in research.",
+    excerpt:
+      "We argue that a latecomer can catch up in development while still remaining a follower in research. We test this argument in the biopharmaceutical industry, where China’s share of the world’s drugs licensed abroad is now second only to that of the United States.",
+    abstract:
+      "Increasing sales of technology from latecomer to frontier economies are often interpreted as evidence that the latecomers have caught up in innovation. Sales can reflect two capabilities: research, which creates a new technology, or development, which turns it into a product that meets regulatory and market requirements. We argue that a latecomer can catch up in development while still remaining a follower in research. We test this argument in the biopharmaceutical industry, where China’s share of the world’s drugs licensed abroad is now second only to that of the United States. We first document that Chinese sponsors complete clinical trials sooner than US sponsors and register larger single-country trials. Across targets, drugs originating in China advance to the next stage of development more often than those originating in the US. However, these drugs more often act on targets that another drug had already taken into late-stage clinical trials. We then show that China’s licensing rises with the number of its drugs entering clinical trials. Finally, Chinese entry into clinical trials rose more in the therapeutic areas where China’s disease burden rose more. A latecomer’s rising share of technology sales can therefore reflect the scale and volume of development while it remains a follower in research on new targets.",
+    links: [],
+  },
+  {
     id: "wp-7",
     title:
       "Do Biomedical Researchers Study Topics Related to Their Own Ethnicities? Evidence from NIH",
