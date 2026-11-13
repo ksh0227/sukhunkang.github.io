@@ -1,7 +1,8 @@
 # sync-cv.ps1: publish the CV. Copies the rendered PDF from the CV project into
 # public/, regenerates the /cv page data (src/app/data/cv.json) from the same
 # cv.qmd, builds the site and checks the page against the PDF, then commits
-# those two files only, pushes, and confirms the deploy and the live page.
+# those two files only, pushes, and confirms the deploy and the live page,
+# whose words it checks against the PDF on every run.
 #
 # Run by hand right after rendering the CV, as part of the CV update:
 #   powershell -ExecutionPolicy Bypass -File scripts/sync-cv.ps1 [-DryRun]
@@ -54,6 +55,29 @@ function Invoke-Git {
     if ($LASTEXITCODE -ne 0) { Fail "git $($args -join ' ') failed (exit $LASTEXITCODE)" }
 }
 
+# The live /cv page, checked word for word against the PDF by running
+# check-cv-page.mjs on the downloaded page. Every real run does this, "No
+# changes" included (user, 2026-11-13: "everytime CV page also should be
+# checked"). Saved with -OutFile so the bytes reach node undecoded.
+function Test-LiveCvPage {
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    $liveHtml = Join-Path $env:TEMP "sync-cv-live-check.html"
+    $bust = [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
+    try {
+        Invoke-WebRequest -Uri "https://sukhunkang.com/cv/?v=$bust" -OutFile $liveHtml -UseBasicParsing -TimeoutSec 30
+    } catch {
+        Log "ERROR: could not download the live CV page: $($_.Exception.Message)"
+        return $false
+    }
+    $out = & node scripts/check-cv-page.mjs --html $liveHtml 2>&1
+    if ($LASTEXITCODE -ne 0) {
+        Log "ERROR: the live CV page does not match the PDF: $($out -join ' ')"
+        return $false
+    }
+    Log "Live CV page checked against the PDF: $($out | Select-Object -Last 2 | Select-Object -First 1)"
+    return $true
+}
+
 if (-not (Test-Path $cvSource)) { Fail "Source CV not found at $cvSource" }
 if (-not (Get-Command node -ErrorAction SilentlyContinue)) { Fail "node not found" }
 Set-Location $repoRoot
@@ -92,6 +116,7 @@ $jsonChanged = [bool](git status --porcelain -- $jsonPath) -or ($DryRun -and [bo
 
 if (-not $pdfChanged -and -not $jsonChanged) {
     Log "No changes"
+    if (-not $DryRun -and -not (Test-LiveCvPage)) { exit 1 }
     exit 0
 }
 
@@ -194,5 +219,8 @@ if ($jsonChanged -and -not $failed) {
     if ($verified) { Log "Verified live CV page, version $($cv.version) ($elapsed s)" }
     else { $failed = $true; Log "ERROR: live CV page does not show version $($cv.version) after $maxWaitSec s. $rerun" }
 }
+
+# 6d. The live page's words, against the PDF, on every run.
+if (-not $failed -and -not (Test-LiveCvPage)) { $failed = $true }
 
 if ($failed) { exit 1 }
