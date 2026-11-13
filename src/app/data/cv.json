@@ -1,7 +1,7 @@
 {
   "_generated": "by scripts/build-cv-data.mjs from ../CV/cv.qmd; edit cv.qmd, not this file",
-  "version": "a7907dfae0fd",
-  "lastUpdated": "October 2026",
+  "version": "a44b5c7317fb",
+  "lastUpdated": "November 2026",
   "sections": [
     {
       "title": "Academic Appointment",
@@ -177,6 +177,12 @@
             "2026 AOM Annual Meeting Best Paper Proceedings",
             "2026 Runner-up for ISA Babbage Best Paper in Industrial Innovation Policy Award"
           ]
+        },
+        {
+          "type": "paper",
+          "title": "Selective Catch-Up in Innovation: Evidence from the Chinese Biopharmaceutical Industry",
+          "authors": "with Sandra Barbosu",
+          "notes": []
         },
         {
           "type": "paper",
